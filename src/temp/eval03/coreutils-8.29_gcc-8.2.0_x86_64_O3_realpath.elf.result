@@ -1,0 +1,13 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_realpath.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+canonicalize_filename_mode           0/1          0%         100%       1/1        100%          11%
+rpl_getcwd                           0/1          0%         100%       1/1        100%           8%
+quotearg_buffer_restyled             0/5          0%         100%       5/5        100%           3%
+quotearg_n_style_colon               0/1          0%         100%       0/1          0%          20%
+seen_file                            0/1          0%         100%       0/1          0%          50%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+Dwarf_parsing_error 26
+Function : 34/35
+Total Env : 14% 98%
+Total ida : 57% 14%

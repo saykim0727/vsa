@@ -1,0 +1,12 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_timeout.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+process_long_option                  2/3 66.66666666666667%        95.0%       3/3      100.0% 5.882352941176471%
+xstrtod                              0/1        0.0%       100.0%       1/1      100.0%       100.0%
+parse_duration                       2/2      100.0%        50.0%       2/2      100.0%        50.0%
+version_etc                          0/1        0.0%       100.0%       0/1        0.0%         4.0%
+settimeout                           1/2       50.0% 85.71428571428571%       2/2      100.0% 33.333333333333336%
+main                                 0/3        0.0%       100.0%       2/3 66.66666666666667%        20.0%
+Dwarf_parsing_error 12
+Function : 19/22
+Total Env : 36.111111111111114% 88.45238095238096%
+Total ida : 77.77777777777779% 35.5359477124183%

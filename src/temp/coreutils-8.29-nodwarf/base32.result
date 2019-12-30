@@ -1,0 +1,20 @@
+base32Func_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+usage                                1/1        100%          66%       1/1        100%           0%
+xnumtoumax                           8/9         88%          38%       8/9         88%          11%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+xstrtoumax                         13/14         92%          18%     13/14         92%          13%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 8/8        100%          11%       8/8        100%           0%
+xdectoumax                           6/6        100%          25%       6/6        100%           0%
+Dwarf_parsing_error 1
+Function : 16/46
+Total Env : 83% 26%
+Total ida : 86% 1%

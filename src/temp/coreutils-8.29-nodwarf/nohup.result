@@ -1,0 +1,21 @@
+nohupFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quotearg_n_style                     3/4         75%          78%       3/4         75%          40%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+parse_long_options                   8/9         88%          73%       8/9         88%          63%
+quotearg_style                       2/2        100%          33%       2/2        100%           0%
+initialize_exit_failure              1/1        100%           0%       1/1        100%           0%
+rpl_fcntl                            5/8         62%          66%       7/8         87%          72%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                               17/20         85%          15%     20/20        100%           4%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 1
+Function : 17/25
+Total Env : 76% 38%
+Total ida : 81% 20%

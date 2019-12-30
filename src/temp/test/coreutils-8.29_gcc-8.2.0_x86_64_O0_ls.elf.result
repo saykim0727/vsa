@@ -1,0 +1,52 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O0_ls.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+visit_dir                            5/5        100%          28%       5/5        100%          16%
+clear_files                          2/2        100%          50%       2/2        100%          33%
+quote_n_mem                          3/3        100%          40%       3/3        100%          25%
+argmatch                             8/8        100%          33%       8/8        100%          11%
+xstrtoul                           13/14         92%          27%     13/14         92%           6%
+known_term_type                      2/2        100%          50%       2/2        100%          33%
+dev_ino_push                         8/8        100%          20%       8/8        100%          11%
+mbs_align_pad                        3/3        100%          40%       3/3        100%          25%
+quote_n                              2/2        100%          50%       2/2        100%          33%
+dev_ino_free                         1/1        100%          66%       1/1        100%          50%
+_obstack_begin                       5/5        100%          28%       5/5        100%          16%
+humblock                             7/7        100%          22%       7/7        100%          12%
+tzalloc                              4/4        100%          33%       4/4        100%          20%
+x2realloc                            2/2        100%          50%       2/2        100%          33%
+wc_ensure_printable                  3/3        100%          40%       3/3        100%          25%
+_obstack_begin_worker                5/5        100%          37%       5/5        100%          16%
+hash_delete                          7/8         87%          22%       8/8        100%          11%
+x2nrealloc                           4/4        100%          33%       4/4        100%          20%
+quote                                1/1        100%          66%       1/1        100%          50%
+set_program_name                     3/3        100%          50%       3/3        100%          25%
+_getopt_initialize                   5/5        100%          28%       5/5        100%          16%
+usage                                1/1        100%          80%       1/1        100%          50%
+xgethostname                         3/4         75%          40%       4/4        100%          20%
+file_escape_init                     1/1        100%          66%       1/1        100%          50%
+initialize_exit_failure              1/1        100%          66%       1/1        100%          50%
+abmon_init                         6/134          4%          25%     7/134          5%          12%
+mbsalign                           20/21         95%           9%     21/21        100%           4%
+parse_ls_color                      5/11         45%          54%      8/11         72%           9%
+extend_abbrs                         3/3        100%          40%       3/3        100%          25%
+exchange                            9/10         90%          18%     10/10        100%           9%
+xstrtoumax                         13/14         92%          27%     13/14         92%           6%
+set_line_length                      2/2        100%          50%       2/2        100%          33%
+rpl_getopt_internal                  8/8        100%          33%       8/8        100%          11%
+emit_ancillary_info                 4/11         36%          80%      4/11         36%           5%
+rpl_getopt_long                      5/5        100%          37%       5/5        100%          16%
+getenv_quoting_style                 2/2        100%          75%       2/2        100%          33%
+argmatch_invalid                     4/4        100%          42%       4/4        100%          20%
+clone_quoting_options                3/3        100%          40%       3/3        100%          25%
+set_quoting_style                    2/2        100%          50%       2/2        100%          33%
+wc_truncate                          4/4        100%          42%       4/4        100%          20%
+human_options                        4/4        100%          33%       4/4        100%          20%
+first_percent_b                      1/1        100%          66%       1/1        100%          50%
+bad_cast                             1/1        100%          66%       1/1        100%          50%
+c_isalnum                            1/1        100%          66%       1/1        100%          50%
+dev_ino_pop                          4/4        100%          42%       4/4        100%          20%
+free_pending_ent                     1/1        100%          66%       1/1        100%          50%
+Dwarf_parsing_error 3
+Function : 50/173
+Total Env : 93% 44%
+Total ida : 95% 25%

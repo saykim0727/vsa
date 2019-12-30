@@ -1,0 +1,8 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_printf.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+quotearg_buffer_restyled             0/5        0.0%       100.0%       5/5      100.0%       3.125%
+version_etc                          0/1        0.0%       100.0%       0/1        0.0%         4.0%
+Dwarf_parsing_error 17
+Function : 20/21
+Total Env : 0.0% 100.0%
+Total ida : 50.0% 3.5625%

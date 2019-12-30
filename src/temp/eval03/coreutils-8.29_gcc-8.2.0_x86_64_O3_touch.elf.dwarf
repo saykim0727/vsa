@@ -1,0 +1,1374 @@
+0 void usage (...)
+{
+  4 int status 	(DW_OP_reg3 RBX)
+}
+
+1 _Bool touch (...)
+{
+  1 char_[6] __PRETTY_FUNCTION__ 	(DW_OP_addr 0x413ca0)
+}
+
+4 int main (...)
+{
+  4 int argc 	(DW_OP_reg12 R12)
+  8 char** argv 	(DW_OP_reg6 RBP)
+  4 int c 	(DW_OP_reg3 RBX)
+  1 _Bool date_set 	(DW_OP_reg13 R13)
+  1 _Bool ok 	(DW_OP_reg13 R13)
+  8 char* flex_date 	(DW_OP_reg14 R14)
+  144 stat ref_stats 	(DW_OP_fbreg -208)
+  16 timespec now 	(DW_OP_fbreg -240)
+  16 timespec notnow 	(DW_OP_fbreg -224)
+  16 timespec notnow1 	(DW_OP_fbreg -208)
+  8 tm* tm 	(DW_OP_reg0 RAX)
+}
+
+0 void emit_ancillary_info (...)
+{
+}
+
+4 int printf (...)
+{
+}
+
+4 int stat (...)
+{
+}
+
+4 int lstat (...)
+{
+}
+
+16 timespec get_stat_mtime (...)
+{
+}
+
+4 int fprintf (...)
+{
+}
+
+0 void None (...)
+{
+}
+
+0 void get_reldate (...)
+{
+}
+
+16 timespec get_stat_atime (...)
+{
+}
+
+
+8 ptrdiff_t argmatch (...)
+{
+  8 char* arg 	(DW_OP_reg5 RDI)
+  8 char** arglist 	(DW_OP_reg14 R14)
+  8 char* vallist 	(DW_OP_reg1 RDX)
+  8 size_t valsize 	(DW_OP_reg2 RCX)
+  8 size_t i 	(DW_OP_reg3 RBX)
+  8 ptrdiff_t matchind 	(DW_OP_reg15 R15)
+}
+
+8 ptrdiff_t __xargmatch_internal (...)
+{
+  8 char* context 	(DW_OP_reg15 R15)
+  8 char* arg 	(DW_OP_reg13 R13)
+  8 char** arglist 	(DW_OP_reg3 RBX)
+  8 char* vallist 	(DW_OP_reg6 RBP)
+  8 size_t valsize 	(DW_OP_reg12 R12)
+  8 argmatch_exit_fn exit_fn 	(DW_OP_reg14 R14)
+  8 ptrdiff_t res 	(DW_OP_reg0 RAX)
+}
+
+8 char* argmatch_to_argument (...)
+{
+  8 char* value 	(DW_OP_reg5 RDI)
+  8 char** arglist 	(DW_OP_reg4 RSI)
+  8 char* vallist 	(DW_OP_reg1 RDX)
+  8 size_t valsize 	(DW_OP_reg2 RCX)
+}
+
+0 void None (...)
+{
+}
+
+0 void argmatch_invalid (...)
+{
+}
+
+0 void argmatch_valid (...)
+{
+  8 char** arglist 	(DW_OP_reg15 R15)
+  8 char* vallist 	(DW_OP_reg6 RBP)
+  8 size_t valsize 	(DW_OP_reg13 R13)
+  8 size_t i 	(DW_OP_reg3 RBX)
+  8 char* last_val 	(DW_OP_reg14 R14)
+}
+
+4 int putc_unlocked (...)
+{
+}
+
+4 int fprintf (...)
+{
+}
+
+
+0 void close_stdout (...)
+{
+  8 char* write_error 	(DW_OP_reg6 RBP)
+}
+
+0 void close_stdout_set_file_name (...)
+{
+  8 char* file 	(DW_OP_reg5 RDI)
+}
+
+0 void close_stdout_set_ignore_EPIPE (...)
+{
+  1 _Bool ignore 	(DW_OP_reg5 RDI)
+}
+
+
+4 int fd_reopen (...)
+{
+  4 int desired_fd 	(DW_OP_reg6 RBP)
+  8 char* file 	(DW_OP_reg5 RDI)
+  4 int flags 	(DW_OP_reg4 RSI)
+  4 mode_t mode 	(DW_OP_reg1 RDX)
+  4 int fd2 	(DW_OP_reg12 R12)
+  4 int saved_errno 	(DW_OP_reg13 R13)
+}
+
+4 int open (...)
+{
+}
+
+
+4 int fdutimensat (...)
+{
+  4 int fd 	(DW_OP_reg5 RDI)
+  4 int dir 	(DW_OP_reg12 R12)
+  8 char* file 	(DW_OP_reg3 RBX)
+  8 timespec* ts 	(DW_OP_reg6 RBP)
+  4 int atflag 	(DW_OP_reg13 R13)
+  4 int result 	(DW_OP_reg0 RAX)
+}
+
+
+0 void gettime (...)
+{
+  8 timespec* ts 	(DW_OP_reg3 RBX)
+  16 timeval tv 	(DW_OP_fbreg -32)
+}
+
+
+1 _Bool mktime_ok (...)
+{
+}
+
+1 _Bool to_tm_year (...)
+{
+}
+
+0 void None (...)
+{
+}
+
+8 table* lookup_zone (...)
+{
+}
+
+8 char* time_zone_str (...)
+{
+  4 int time_zone 	(DW_OP_reg6 RBP)
+  8 char* time_zone_buf 	(DW_OP_reg12 R12)
+  4 int offset_from_hour 	(DW_OP_reg6 RBP)
+  4 int ss 	(DW_OP_reg5 RDI)
+}
+
+1 _Bool parse_datetime2 (...)
+{
+  8 timespec* result 	(DW_OP_reg5 RDI)
+  8 char* p 	(DW_OP_reg6 RBP)
+  8 timespec* now 	(DW_OP_reg14 R14)
+  4 unsignedint flags 	(DW_OP_reg2 RCX)
+  8 timezone_t tzdefault 	(DW_OP_reg13 R13)
+  8 char* tzstring 	(DW_OP_reg9 R9)
+  56 tm tm 	(DW_OP_fbreg -944)
+  56 tm tm0 	(DW_OP_fbreg -880)
+  1 char_[27] time_zone_buf 	(DW_OP_fbreg -976)
+  1 char_[100] dbg_tm 	(DW_OP_fbreg -688)
+  1 _Bool ok 	(DW_OP_reg12 R12)
+  1 char_[100] tz1buf 	(DW_OP_fbreg -576)
+  16 timespec gettime_buffer 	(DW_OP_fbreg -992)
+  8 timezone_t tz 	(DW_OP_reg15 R15)
+  56 tm tmp 	(DW_OP_fbreg -816)
+  280 parser_control pc 	(DW_OP_fbreg -352)
+  8 char* tzbase 	(DW_OP_reg4 RSI)
+  8 ptrdiff_t tzsize 	(DW_OP_reg5 RDI)
+  8 timezone_t tz1 	(DW_OP_reg15 R15)
+  8 char* z 	(DW_OP_reg1 RDX)
+  8 time_t probe 	(DW_OP_fbreg -688)
+  56 tm probe_tm 	(DW_OP_fbreg -464)
+  1 char_[100] dbg_ord 	(DW_OP_fbreg -464)
+  1 char_[30] tz2buf 	(DW_OP_fbreg -752)
+  8 timezone_t tz2 	(DW_OP_reg2 RCX)
+  1 char_[13] tm_year_buf 	(DW_OP_fbreg -752)
+  4 int d4 	(DW_OP_reg0 RAX)
+  56 tm lmt 	(DW_OP_fbreg -752)
+  8 intmax_t sec 	(DW_OP_reg3 RBX)
+  56 tm gmt 	(DW_OP_fbreg -752)
+  56 tm lmt 	(DW_OP_fbreg -752)
+}
+
+1 _Bool parse_datetime (...)
+{
+  8 timespec* result 	(DW_OP_reg13 R13)
+  8 char* p 	(DW_OP_reg14 R14)
+  8 timespec* now 	(DW_OP_reg15 R15)
+  8 char* tzstring 	(DW_OP_reg12 R12)
+  8 timezone_t tz 	(DW_OP_reg3 RBX)
+  1 _Bool ok 	(DW_OP_reg6 RBP)
+}
+
+8 char* str_days (...)
+{
+  1 char_[14] ordinal_values 	(DW_OP_addr 0x414fa0)
+  1 char_[7] days_values 	(DW_OP_addr 0x414f80)
+}
+
+8 char* debug_strfdatetime (...)
+{
+}
+
+8 char* debug_strfdate (...)
+{
+}
+
+4 int yyparse (...)
+{
+  8 parser_control* pc 	(DW_OP_reg11 R11)
+  4 int yychar 	(DW_OP_reg13 R13)
+  8 YYSTYPE yylval 	(DW_OP_fbreg -1312)
+  2 yytype_int16_[20] yyssa 	(DW_OP_fbreg -1360)
+  8 YYSTYPE_[20] yyvsa 	(DW_OP_fbreg -1184)
+  4 int yyresult 	(DW_OP_reg0 RAX)
+  4 int yytoken 	(DW_OP_reg0 RAX)
+  8 YYSTYPE yyval 	(DW_OP_fbreg -1248)
+}
+
+0 void debug_print_relative_time (...)
+{
+}
+
+8 table* lookup_word (...)
+{
+}
+
+1 _Bool time_zone_hhmm (...)
+{
+}
+
+0 void debug_mktime_not_ok (...)
+{
+}
+
+4 int yylex (...)
+{
+}
+
+0 void dbg_printf (...)
+{
+  8 char* msg 	(DW_OP_reg3 RBX)
+  24 va_list args 	(DW_OP_fbreg -216)
+}
+
+0 void debug_print_current_time (...)
+{
+}
+
+4 int snprintf (...)
+{
+}
+
+1 _Bool c_isspace (...)
+{
+}
+
+0 void yydestruct (...)
+{
+}
+
+1 _Bool print_rel_part (...)
+{
+}
+
+4 int c_toupper (...)
+{
+}
+
+4 int fprintf (...)
+{
+}
+
+0 void digits_to_date_time (...)
+{
+  8 parser_control* pc 	(DW_OP_reg5 RDI)
+  24 textint text_int 	(DW_OP_fbreg +0)
+}
+
+8 char* debug_strftime (...)
+{
+}
+
+4 int sprintf (...)
+{
+}
+
+4 int yyerror (...)
+{
+}
+
+1 _Bool apply_relative_time (...)
+{
+}
+
+0 void set_hhmmss (...)
+{
+}
+
+8 char* tm_year_str (...)
+{
+}
+
+4 int to_hour (...)
+{
+}
+
+1 _Bool time_overflow (...)
+{
+}
+
+1 unsignedchar to_uchar (...)
+{
+}
+
+1 _Bool c_isdigit (...)
+{
+}
+
+1 _Bool c_isalpha (...)
+{
+}
+
+
+1 _Bool posix_time_parse (...)
+{
+}
+
+1 _Bool year (...)
+{
+}
+
+1 _Bool posixtime (...)
+{
+  8 time_t* p 	(DW_OP_reg12 R12)
+  8 char* s 	(DW_OP_reg15 R15)
+  4 unsignedint syntax_bits 	(DW_OP_reg6 RBP)
+  56 tm tm1 	(DW_OP_fbreg -128)
+  8 tm* tm 	(DW_OP_reg1 RDX)
+  8 time_t t 	(DW_OP_fbreg -160)
+  8 time_t dummy 	(DW_OP_fbreg -152)
+  1 char_[16] buf 	(DW_OP_fbreg -144)
+}
+
+8 char* stpcpy (...)
+{
+}
+
+8 char* strcpy (...)
+{
+}
+
+
+4 int posix2_version (...)
+{
+  8 char* s 	(DW_OP_reg0 RAX)
+  8 char* e 	(DW_OP_fbreg -24)
+  8 longint i 	(DW_OP_reg0 RAX)
+}
+
+
+0 void set_program_name (...)
+{
+  8 char* argv0 	(DW_OP_reg3 RBX)
+  8 char* slash 	(DW_OP_reg0 RAX)
+}
+
+
+8 char* quotearg_n_style (...)
+{
+}
+
+0 void quotearg_free (...)
+{
+  8 slotvec* sv 	(DW_OP_reg12 R12)
+}
+
+8 char* gettext_quote (...)
+{
+}
+
+8 char* quotearg_alloc_mem (...)
+{
+}
+
+4 int set_char_quoting (...)
+{
+}
+
+8 size_t quotearg_buffer_restyled (...)
+{
+  8 char* buffer 	(DW_OP_reg15 R15)
+  8 size_t buffersize 	(DW_OP_reg14 R14)
+  8 char* arg 	(DW_OP_reg1 RDX)
+  8 size_t argsize 	(DW_OP_reg11 R11)
+  4 enum quoting_style 	(DW_OP_reg8 R8)
+  4 int flags 	(DW_OP_reg9 R9)
+  8 unsignedint* quote_these_too 	(DW_OP_fbreg +0)
+  8 char* left_quote 	(DW_OP_fbreg +8)
+  8 char* right_quote 	(DW_OP_fbreg +16)
+  8 size_t i 	(DW_OP_reg12 R12)
+  1 unsignedchar c 	(DW_OP_reg6 RBP)
+  1 _Bool is_right_quote 	(DW_OP_reg10 R10)
+  1 _Bool escaping 	(DW_OP_reg4 RSI)
+  1 _Bool c_and_shell_quote_compat 	(DW_OP_reg13 R13)
+  8 size_t m 	(DW_OP_reg5 RDI)
+  1 _Bool printable 	(DW_OP_reg13 R13)
+  8 mbstate_t mbstate 	(DW_OP_fbreg -72)
+  4 wchar_t w 	(DW_OP_fbreg -76)
+  8 size_t bytes 	(DW_OP_reg15 R15)
+  8 size_t ilim 	(DW_OP_reg2 RCX)
+}
+
+8 char* quotearg_n_style_colon (...)
+{
+  4 int n 	(DW_OP_reg5 RDI)
+  4 unsignedintenum s 	(DW_OP_reg4 RSI)
+  8 char* arg 	(DW_OP_reg0 RAX)
+  56 quoting_options options 	(DW_OP_fbreg -80)
+}
+
+8 char* quotearg_colon_mem (...)
+{
+  8 char* arg 	(DW_OP_reg5 RDI)
+  8 size_t argsize 	(DW_OP_reg4 RSI)
+}
+
+8 size_t quotearg_buffer (...)
+{
+  8 char* buffer 	(DW_OP_reg13 R13)
+  8 size_t buffersize 	(DW_OP_reg14 R14)
+  8 char* arg 	(DW_OP_reg15 R15)
+  8 size_t argsize 	(DW_OP_reg2 RCX)
+  8 quoting_options* o 	(DW_OP_reg3 RBX)
+  4 int e 	(DW_OP_reg12 R12)
+  8 size_t r 	(DW_OP_reg0 RAX)
+}
+
+8 char* quotearg_n_custom_mem (...)
+{
+}
+
+8 char* quotearg_style_mem (...)
+{
+  4 unsignedintenum s 	(DW_OP_reg8 R8)
+  8 char* arg 	(DW_OP_reg12 R12)
+  8 size_t argsize 	(DW_OP_reg13 R13)
+}
+
+8 char* quotearg_colon (...)
+{
+  8 char* arg 	(DW_OP_reg5 RDI)
+}
+
+8 char* quotearg_style (...)
+{
+  4 unsignedintenum s 	(DW_OP_reg8 R8)
+  8 char* arg 	(DW_OP_reg12 R12)
+}
+
+0 void None (...)
+{
+}
+
+8 char* quotearg_n_style_mem (...)
+{
+}
+
+8 quoting_options* clone_quoting_options (...)
+{
+  8 quoting_options* o 	(DW_OP_reg3 RBX)
+  4 int e 	(DW_OP_reg12 R12)
+  8 quoting_options* p 	(DW_OP_reg0 RAX)
+}
+
+56 quoting_options quoting_options_from_style (...)
+{
+}
+
+4 int set_quoting_flags (...)
+{
+  8 quoting_options* o 	(DW_OP_reg5 RDI)
+  4 int i 	(DW_OP_reg4 RSI)
+  4 int r 	(DW_OP_reg0 RAX)
+}
+
+8 char* quotearg_n_options (...)
+{
+}
+
+8 char* quotearg_char_mem (...)
+{
+}
+
+8 char* quotearg_custom_mem (...)
+{
+  8 char* left_quote 	(DW_OP_reg5 RDI)
+  8 char* right_quote 	(DW_OP_reg4 RSI)
+  8 char* arg 	(DW_OP_reg12 R12)
+  8 size_t argsize 	(DW_OP_reg13 R13)
+}
+
+8 char* quotearg_alloc (...)
+{
+  8 char* arg 	(DW_OP_reg14 R14)
+  8 size_t argsize 	(DW_OP_reg15 R15)
+  8 quoting_options* o 	(DW_OP_reg3 RBX)
+}
+
+8 char* quotearg_custom (...)
+{
+  8 char* left_quote 	(DW_OP_reg5 RDI)
+  8 char* right_quote 	(DW_OP_reg4 RSI)
+  8 char* arg 	(DW_OP_reg12 R12)
+}
+
+0 void set_custom_quoting (...)
+{
+}
+
+8 char* quote_n_mem (...)
+{
+}
+
+4 unsignedintenum get_quoting_style (...)
+{
+  8 quoting_options* o 	(DW_OP_reg5 RDI)
+}
+
+8 char* quote_n (...)
+{
+}
+
+8 char* quotearg (...)
+{
+  8 char* arg 	(DW_OP_reg5 RDI)
+}
+
+1 _Bool c_isupper (...)
+{
+}
+
+8 char* quotearg_char (...)
+{
+}
+
+4 int strcaseeq9 (...)
+{
+}
+
+4 int strcaseeq3 (...)
+{
+}
+
+4 int strcaseeq2 (...)
+{
+}
+
+4 int strcaseeq1 (...)
+{
+}
+
+4 int strcaseeq0 (...)
+{
+}
+
+4 int strcaseeq6 (...)
+{
+}
+
+4 int strcaseeq5 (...)
+{
+}
+
+8 char* quote_mem (...)
+{
+  8 char* arg 	(DW_OP_reg5 RDI)
+  8 size_t argsize 	(DW_OP_reg4 RSI)
+}
+
+4 int strcaseeq7 (...)
+{
+}
+
+8 char* quotearg_n_mem (...)
+{
+}
+
+8 * memset (...)
+{
+}
+
+8 char* quote (...)
+{
+  8 char* arg 	(DW_OP_reg5 RDI)
+}
+
+4 int strcaseeq8 (...)
+{
+}
+
+4 int strcaseeq4 (...)
+{
+}
+
+8 char* xcharalloc (...)
+{
+  8 size_t n 	(DW_OP_reg3 RBX)
+}
+
+0 void set_quoting_style (...)
+{
+  8 quoting_options* o 	(DW_OP_reg5 RDI)
+  4 unsignedintenum s 	(DW_OP_reg4 RSI)
+}
+
+8 char* quotearg_n (...)
+{
+}
+
+8 char* quotearg_n_custom (...)
+{
+}
+
+8 char* quotearg_mem (...)
+{
+  8 char* arg 	(DW_OP_reg5 RDI)
+  8 size_t argsize 	(DW_OP_reg4 RSI)
+}
+
+
+0 void version_etc (...)
+{
+  8 FILE* stream 	(DW_OP_reg5 RDI)
+  8 char* command_name 	(DW_OP_reg4 RSI)
+  8 char* package 	(DW_OP_reg1 RDX)
+  8 char* version 	(DW_OP_reg2 RCX)
+  24 va_list authors 	(DW_OP_fbreg -168)
+}
+
+0 void version_etc_va (...)
+{
+}
+
+0 void version_etc_ar (...)
+{
+  8 FILE* stream 	(DW_OP_reg5 RDI)
+  8 char* command_name 	(DW_OP_reg4 RSI)
+  8 char* package 	(DW_OP_reg1 RDX)
+  8 char* version 	(DW_OP_reg2 RCX)
+  8 char** authors 	(DW_OP_reg8 R8)
+  8 size_t n_authors 	(DW_OP_reg9 R9)
+}
+
+0 void None (...)
+{
+}
+
+0 void version_etc_arn (...)
+{
+  8 FILE* stream 	(DW_OP_reg6 RBP)
+  8 char* command_name 	(DW_OP_reg4 RSI)
+  8 char* package 	(DW_OP_reg1 RDX)
+  8 char* version 	(DW_OP_reg2 RCX)
+  8 char** authors 	(DW_OP_reg3 RBX)
+  8 size_t n_authors 	(DW_OP_reg12 R12)
+}
+
+0 void emit_bug_reporting_address (...)
+{
+}
+
+4 int fprintf (...)
+{
+}
+
+4 int printf (...)
+{
+}
+
+
+8 * xcalloc (...)
+{
+  8 size_t n 	(DW_OP_reg5 RDI)
+  8 size_t s 	(DW_OP_reg4 RSI)
+}
+
+8 * xnmalloc (...)
+{
+  8 size_t n 	(DW_OP_reg5 RDI)
+  8 size_t s 	(DW_OP_reg4 RSI)
+}
+
+8 * x2nrealloc (...)
+{
+}
+
+8 * x2realloc (...)
+{
+  8 void* p 	(DW_OP_reg5 RDI)
+  8 size_t* pn 	(DW_OP_reg4 RSI)
+}
+
+8 char* xstrdup (...)
+{
+  8 char* string 	(DW_OP_reg6 RBP)
+}
+
+0 void None (...)
+{
+}
+
+8 char* xcharalloc (...)
+{
+  8 size_t n 	(DW_OP_reg3 RBX)
+}
+
+8 * xzalloc (...)
+{
+  8 size_t s 	(DW_OP_reg3 RBX)
+}
+
+8 * xmalloc (...)
+{
+}
+
+8 * xmemdup (...)
+{
+}
+
+8 * memset (...)
+{
+}
+
+8 * xrealloc (...)
+{
+}
+
+8 * xnrealloc (...)
+{
+  8 void* p 	(DW_OP_reg5 RDI)
+  8 size_t n 	(DW_OP_reg4 RSI)
+  8 size_t s 	(DW_OP_reg1 RDX)
+}
+
+8 * memcpy (...)
+{
+}
+
+
+0 void exchange (...)
+{
+  8 char** argv 	(DW_OP_reg5 RDI)
+  8 _getopt_data* d 	(DW_OP_reg4 RSI)
+  4 int middle 	(DW_OP_reg2 RCX)
+}
+
+4 int _getopt_internal_r (...)
+{
+}
+
+4 int process_long_option (...)
+{
+  4 int argc 	(DW_OP_reg5 RDI)
+  8 char** argv 	(DW_OP_reg4 RSI)
+  8 char* optstring 	(DW_OP_reg1 RDX)
+  8 rpl_option* longopts 	(DW_OP_reg2 RCX)
+  8 int* longind 	(DW_OP_reg8 R8)
+  4 int long_only 	(DW_OP_reg9 R9)
+  8 _getopt_data* d 	(DW_OP_fbreg +0)
+  4 int print_errors 	(DW_OP_fbreg +8)
+  8 char* prefix 	(DW_OP_fbreg +16)
+  8 rpl_option* pfound 	(DW_OP_reg3 RBX)
+}
+
+4 int rpl_getopt_internal (...)
+{
+}
+
+0 void None (...)
+{
+}
+
+4 int rpl_getopt (...)
+{
+  4 int argc 	(DW_OP_reg12 R12)
+  8 char** argv 	(DW_OP_reg15 R15)
+  8 char* optstring 	(DW_OP_reg13 R13)
+}
+
+8 * memset (...)
+{
+}
+
+4 int fprintf (...)
+{
+}
+
+8 char* _getopt_initialize (...)
+{
+}
+
+
+4 int rpl_getopt_long (...)
+{
+  4 int argc 	(DW_OP_reg5 RDI)
+  8 char** argv 	(DW_OP_reg4 RSI)
+  8 char* options 	(DW_OP_reg1 RDX)
+  8 rpl_option* long_options 	(DW_OP_reg2 RCX)
+  8 int* opt_index 	(DW_OP_reg8 R8)
+}
+
+4 int _getopt_long_r (...)
+{
+  4 int argc 	(DW_OP_reg5 RDI)
+  8 char** argv 	(DW_OP_reg4 RSI)
+  8 char* options 	(DW_OP_reg1 RDX)
+  8 rpl_option* long_options 	(DW_OP_reg2 RCX)
+  8 int* opt_index 	(DW_OP_reg8 R8)
+  8 _getopt_data* d 	(DW_OP_reg9 R9)
+}
+
+4 int rpl_getopt_long_only (...)
+{
+  4 int argc 	(DW_OP_reg5 RDI)
+  8 char** argv 	(DW_OP_reg4 RSI)
+  8 char* options 	(DW_OP_reg1 RDX)
+  8 rpl_option* long_options 	(DW_OP_reg2 RCX)
+  8 int* opt_index 	(DW_OP_reg8 R8)
+}
+
+4 int _getopt_long_only_r (...)
+{
+  4 int argc 	(DW_OP_reg5 RDI)
+  8 char** argv 	(DW_OP_reg4 RSI)
+  8 char* options 	(DW_OP_reg1 RDX)
+  8 rpl_option* long_options 	(DW_OP_reg2 RCX)
+  8 int* opt_index 	(DW_OP_reg8 R8)
+  8 _getopt_data* d 	(DW_OP_reg9 R9)
+}
+
+
+8 size_t rpl_mbrtowc (...)
+{
+  8 wchar_t* pwc 	(DW_OP_reg12 R12)
+  8 char* s 	(DW_OP_reg6 RBP)
+  8 size_t n 	(DW_OP_reg1 RDX)
+  8 mbstate_t* ps 	(DW_OP_reg2 RCX)
+  8 size_t ret 	(DW_OP_reg3 RBX)
+  4 wchar_t wc 	(DW_OP_fbreg -36)
+}
+
+
+8 long_int shr (...)
+{
+}
+
+8 long_int guess_time_tm (...)
+{
+}
+
+8 tm* convert_time (...)
+{
+}
+
+0 void None (...)
+{
+}
+
+8 long_int ydhms_diff (...)
+{
+}
+
+8 time_t mktime_internal (...)
+{
+  8 tm* tp 	(DW_OP_reg13 R13)
+  8 void* convert 	(DW_OP_reg12 R12)
+  8 mktime_offset_t* offset 	(DW_OP_reg1 RDX)
+  8 long_int t 	(DW_OP_fbreg -216)
+  56 tm tm 	(DW_OP_fbreg -192)
+  4 int min 	(DW_OP_reg4 RSI)
+  4 int hour 	(DW_OP_reg5 RDI)
+  4 int mday 	(DW_OP_reg8 R8)
+  4 int mon 	(DW_OP_reg9 R9)
+  4 int mon_remainder 	(DW_OP_reg2 RCX)
+  8 long_int year 	(DW_OP_reg15 R15)
+  4 int delta 	(DW_OP_reg6 RBP)
+  8 long_int ot 	(DW_OP_fbreg -208)
+  56 tm otm 	(DW_OP_fbreg -128)
+}
+
+8 tm* ranged_convert (...)
+{
+}
+
+1 _Bool isdst_differ (...)
+{
+}
+
+1 _Bool leapyear (...)
+{
+}
+
+8 long_int long_int_avg (...)
+{
+}
+
+8 time_t rpl_mktime (...)
+{
+  8 tm* tp 	(DW_OP_reg3 RBX)
+}
+
+
+0 void None (...)
+{
+}
+
+8 timezone_t tzalloc (...)
+{
+}
+
+8 timezone_t set_tz (...)
+{
+  8 timezone_t tz 	(DW_OP_reg6 RBP)
+  4 int saved_errno 	(DW_OP_reg13 R13)
+}
+
+1 _Bool save_abbr (...)
+{
+  8 timezone_t tz 	(DW_OP_reg6 RBP)
+  8 tm* tm 	(DW_OP_reg13 R13)
+  8 char* zone 	(DW_OP_reg12 R12)
+  8 char* zone_copy 	(DW_OP_reg3 RBX)
+  8 size_t zone_size 	(DW_OP_reg15 R15)
+  8 size_t zone_used 	(DW_OP_reg0 RAX)
+}
+
+0 void tzfree (...)
+{
+}
+
+1 _Bool revert_tz (...)
+{
+}
+
+8 tm* localtime_rz (...)
+{
+  8 timezone_t tz 	(DW_OP_reg5 RDI)
+  8 time_t* t 	(DW_OP_reg13 R13)
+  8 tm* tm 	(DW_OP_reg1 RDX)
+  8 timezone_t old_tz 	(DW_OP_reg3 RBX)
+}
+
+8 time_t mktime_z (...)
+{
+  8 timezone_t tz 	(DW_OP_reg12 R12)
+  8 tm* tm 	(DW_OP_reg6 RBP)
+  8 timezone_t old_tz 	(DW_OP_reg3 RBX)
+  8 time_t t 	(DW_OP_fbreg -120)
+  56 tm tm_1 	(DW_OP_fbreg -112)
+}
+
+0 void extend_abbrs (...)
+{
+}
+
+1 _Bool isdst_differ (...)
+{
+}
+
+4 int setenv_TZ (...)
+{
+}
+
+1 _Bool change_env (...)
+{
+}
+
+4 int equal_tm (...)
+{
+}
+
+8 * memcpy (...)
+{
+}
+
+
+8 time_t rpl_timegm (...)
+{
+  8 tm* tmp 	(DW_OP_reg5 RDI)
+  8 mktime_offset_t gmtime_offset 	(DW_OP_addr 0x61a540)
+}
+
+
+4 int rpl_vfprintf (...)
+{
+  8 FILE* fp 	(DW_OP_reg13 R13)
+  8 char* format 	(DW_OP_reg4 RSI)
+  8 __va_list_tag* args 	(DW_OP_reg1 RDX)
+  1 char_[2000] buf 	(DW_OP_fbreg -2048)
+  8 char* output 	(DW_OP_reg6 RBP)
+  8 size_t len 	(DW_OP_reg3 RBX)
+  8 size_t lenbuf 	(DW_OP_fbreg -2056)
+  4 int saved_errno 	(DW_OP_reg13 R13)
+}
+
+
+4 int close_stream (...)
+{
+  8 FILE* stream 	(DW_OP_reg6 RBP)
+}
+
+4 int ferror_unlocked (...)
+{
+}
+
+
+1 _Bool hard_locale (...)
+{
+  4 int category 	(DW_OP_reg5 RDI)
+  1 _Bool hard 	(DW_OP_reg0 RAX)
+  8 char* p 	(DW_OP_reg1 RDX)
+}
+
+
+8 char* locale_charset (...)
+{
+  8 char* codeset 	(DW_OP_reg3 RBX)
+}
+
+8 char* get_charset_aliases (...)
+{
+}
+
+8 char* strcpy (...)
+{
+}
+
+4 int getc_unlocked (...)
+{
+}
+
+8 * memcpy (...)
+{
+}
+
+4 int open (...)
+{
+}
+
+
+8 size_t nstrftime (...)
+{
+  8 char* s 	(DW_OP_reg5 RDI)
+  8 size_t maxsize 	(DW_OP_reg4 RSI)
+  8 char* format 	(DW_OP_reg1 RDX)
+  8 tm* tp 	(DW_OP_reg2 RCX)
+  8 timezone_t tz 	(DW_OP_reg8 R8)
+  4 int ns 	(DW_OP_reg9 R9)
+  1 _Bool tzset_called 	(DW_OP_fbreg -17)
+}
+
+8 char* memcpy_lowcase (...)
+{
+}
+
+4 int iso_week_days (...)
+{
+}
+
+8 char* memcpy_uppcase (...)
+{
+}
+
+8 size_t __strftime_internal (...)
+{
+  8 char* s 	(DW_OP_reg10 R10)
+  8 size_t maxsize 	(DW_OP_reg13 R13)
+  8 char* format 	(DW_OP_reg11 R11)
+  8 tm* tp 	(DW_OP_reg2 RCX)
+  1 _Bool upcase 	(DW_OP_reg8 R8)
+  8 _Bool* tzset_called 	(DW_OP_reg9 R9)
+  8 timezone_t tz 	(DW_OP_fbreg +0)
+  4 int ns 	(DW_OP_fbreg +8)
+  8 char* zone 	(DW_OP_reg12 R12)
+  8 size_t i 	(DW_OP_reg14 R14)
+  8 char* p 	(DW_OP_reg10 R10)
+  4 int modifier 	(DW_OP_reg13 R13)
+  4 int number_value 	(DW_OP_reg4 RSI)
+  4 int tz_colon_mask 	(DW_OP_reg5 RDI)
+  1 char_[23] buf 	(DW_OP_fbreg -1120)
+  1 _Bool to_uppcase 	(DW_OP_reg9 R9)
+  1 _Bool change_case 	(DW_OP_reg6 RBP)
+  8 size_t _n 	(DW_OP_reg8 R8)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  8 size_t len 	(DW_OP_reg13 R13)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  1 char_[5] ufmt 	(DW_OP_fbreg -1120)
+  8 char* u 	(DW_OP_reg0 RAX)
+  1 char_[1024] ubuf 	(DW_OP_fbreg -1088)
+  8 size_t len 	(DW_OP_reg2 RCX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  4 int padding 	(DW_OP_reg13 R13)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  4 int j 	(DW_OP_reg5 RDI)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  56 tm ltm 	(DW_OP_fbreg -1088)
+  8 time_t t 	(DW_OP_reg2 RCX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  4 int year 	(DW_OP_reg5 RDI)
+  4 int year_adjust 	(DW_OP_reg5 RDI)
+  4 int days 	(DW_OP_reg8 R8)
+  4 int yy 	(DW_OP_reg4 RSI)
+  4 int yy 	(DW_OP_reg4 RSI)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+  4 int min_diff 	(DW_OP_reg5 RDI)
+  4 int sec_diff 	(DW_OP_reg0 RAX)
+  8 size_t _w 	(DW_OP_reg0 RAX)
+  8 size_t _incr 	(DW_OP_reg15 R15)
+  8 size_t _delta 	(DW_OP_reg1 RDX)
+}
+
+8 * memset (...)
+{
+}
+
+8 * memcpy (...)
+{
+}
+
+
+4 int rpl_fclose (...)
+{
+  8 FILE* fp 	(DW_OP_reg3 RBX)
+  4 int saved_errno 	(DW_OP_reg12 R12)
+  4 int fd 	(DW_OP_reg0 RAX)
+  4 int result 	(DW_OP_reg0 RAX)
+}
+
+
+0 void clear_ungetc_buffer_preserving_position (...)
+{
+}
+
+4 int rpl_fflush (...)
+{
+  8 FILE* stream 	(DW_OP_reg3 RBX)
+}
+
+
+4 int rpl_fseeko (...)
+{
+  8 FILE* fp 	(DW_OP_reg5 RDI)
+  8 off_t offset 	(DW_OP_reg4 RSI)
+  4 int whence 	(DW_OP_reg1 RDX)
+  8 off_t pos 	(DW_OP_reg0 RAX)
+}
+
+
+0 void fseterr (...)
+{
+  8 FILE* fp 	(DW_OP_reg5 RDI)
+}
+
+
+8 char* vasnprintf (...)
+{
+  8 char* resultbuf 	(DW_OP_reg5 RDI)
+  8 size_t* lengthp 	(DW_OP_reg4 RSI)
+  8 char* format 	(DW_OP_reg14 R14)
+  8 __va_list_tag* args 	(DW_OP_reg12 R12)
+  648 char_directives d 	(DW_OP_fbreg -1424)
+  240 arguments a 	(DW_OP_fbreg -1664)
+  8 char* cp 	(DW_OP_reg14 R14)
+  8 char_directive* dp 	(DW_OP_reg13 R13)
+  8 size_t allocated 	(DW_OP_reg3 RBX)
+  8 size_t n 	(DW_OP_reg2 RCX)
+  8 char* memory 	(DW_OP_reg14 R14)
+  8 char* memory 	(DW_OP_reg0 RAX)
+  4 int flags 	(DW_OP_reg0 RAX)
+  8 size_t width 	(DW_OP_reg14 R14)
+  8 size_t count 	(DW_OP_reg2 RCX)
+  8 size_t precision 	(DW_OP_reg2 RCX)
+  8 size_t tmp_length 	(DW_OP_reg2 RCX)
+  1 char_[700] tmpbuf 	(DW_OP_fbreg -768)
+  8 char* tmp 	(DW_OP_reg9 R9)
+  8 char* pad_ptr 	(DW_OP_reg10 R10)
+  4 int arg 	(DW_OP_reg1 RDX)
+  4 int arg 	(DW_OP_reg2 RCX)
+  16 longdouble arg 	(DW_OP_regx ST0)
+  2 fpucw_t _cw 	(DW_OP_fbreg -1672)
+  2 fpucw_t _ncw 	(DW_OP_fbreg -1672)
+  2 fpucw_t _ncw 	(DW_OP_fbreg -1672)
+  8 size_t pad 	(DW_OP_reg1 RDX)
+  8 char* end 	(DW_OP_reg4 RSI)
+  8 size_t n 	(DW_OP_reg2 RCX)
+  4 int_[2] prefixes 	(DW_OP_fbreg -1672)
+  8 size_t n 	(DW_OP_reg2 RCX)
+  8 size_t n 	(DW_OP_reg2 RCX)
+  4 int count 	(DW_OP_reg2 RCX)
+  4 int retcount 	(DW_OP_reg0 RAX)
+  4 int arg 	(DW_OP_reg9 R9)
+  4 unsignedint arg 	(DW_OP_reg9 R9)
+  4 int arg 	(DW_OP_reg9 R9)
+  4 unsignedint arg 	(DW_OP_reg9 R9)
+  4 int arg 	(DW_OP_reg9 R9)
+  4 unsignedint arg 	(DW_OP_reg9 R9)
+  8 longint arg 	(DW_OP_reg9 R9)
+  8 longunsignedint arg 	(DW_OP_reg9 R9)
+  8 longlongint arg 	(DW_OP_reg9 R9)
+  8 longlongunsignedint arg 	(DW_OP_reg9 R9)
+  8 double arg 	(DW_OP_reg9 R9)
+  16 longdouble arg 	(DW_OP_reg9 R9)
+  4 int arg 	(DW_OP_reg9 R9)
+  4 wint_t arg 	(DW_OP_reg9 R9)
+  8 char* arg 	(DW_OP_reg9 R9)
+  8 wchar_t* arg 	(DW_OP_reg9 R9)
+  8 void* arg 	(DW_OP_reg9 R9)
+  4 int saved_errno 	(DW_OP_reg3 RBX)
+  8 size_t n 	(DW_OP_reg2 RCX)
+}
+
+1 char decimal_point_char (...)
+{
+}
+
+8 size_t xsum (...)
+{
+}
+
+4 int is_infinite_or_zerol (...)
+{
+}
+
+8 size_t xsum4 (...)
+{
+}
+
+8 size_t xmax (...)
+{
+}
+
+8 * memcpy (...)
+{
+}
+
+4 int snprintf (...)
+{
+}
+
+
+4 int printf_fetchargs (...)
+{
+  8 __va_list_tag* args 	(DW_OP_reg5 RDI)
+  8 arguments* a 	(DW_OP_reg4 RSI)
+  8 size_t i 	(DW_OP_reg1 RDX)
+  8 argument* ap 	(DW_OP_reg0 RAX)
+  4 wchar_t_[7] wide_null_string 	(DW_OP_addr 0x417600)
+}
+
+
+4 int printf_parse (...)
+{
+  8 char* format 	(DW_OP_reg5 RDI)
+  8 char_directives* d 	(DW_OP_reg8 R8)
+  8 arguments* a 	(DW_OP_reg15 R15)
+  8 size_t d_allocated 	(DW_OP_reg11 R11)
+  8 size_t a_allocated 	(DW_OP_reg9 R9)
+  1 char c 	(DW_OP_reg6 RBP)
+  8 size_t arg_index 	(DW_OP_reg14 R14)
+  8 char_directive* dp 	(DW_OP_reg12 R12)
+  8 size_t n 	(DW_OP_reg0 RAX)
+  8 size_t n 	(DW_OP_reg2 RCX)
+  8 size_t n 	(DW_OP_reg2 RCX)
+  4 arg_type type 	(DW_OP_reg2 RCX)
+  4 int flags 	(DW_OP_reg0 RAX)
+}
+
+8 size_t xsum (...)
+{
+}
+
+8 * memcpy (...)
+{
+}
+
+
+0 void __libc_csu_init (...)
+{
+  4 int argc 	(0x00000006
+  8 char** argv 	(0x00000058
+  8 char** envp 	(0x000000aa
+  8 size_t size 	(0x000000fa
+  8 size_t i 	(0x00000138
+}
+
+
+4 int atexit (...)
+{
+  8 void* func 	(0x00000173
+}
+
+

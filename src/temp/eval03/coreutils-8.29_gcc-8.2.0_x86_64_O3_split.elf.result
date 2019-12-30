@@ -1,0 +1,15 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_split.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+open_safer                           0/1          0%         100%       0/1          0%          16%
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+create                               0/2          0%         100%       0/2          0%          50%
+xstrtoumax                           1/1        100%          94%       1/1        100%          33%
+quotearg_buffer_restyled             0/5          0%         100%       5/5        100%           3%
+quotearg_n_style_colon               0/1          0%         100%       0/1          0%          20%
+main                                 0/3          0%         100%       0/3          0%           6%
+closeout                             1/2         50%          96%       2/2        100%          33%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+Dwarf_parsing_error 30
+Function : 40/42
+Total Env : 27% 98%
+Total ida : 44% 18%

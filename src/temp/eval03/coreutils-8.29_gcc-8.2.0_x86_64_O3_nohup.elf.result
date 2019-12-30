@@ -1,0 +1,10 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_nohup.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+rpl_fcntl                            0/1          0%         100%       0/1          0%          14%
+quotearg_buffer_restyled             0/5          0%         100%       5/5        100%           3%
+parse_long_options                   0/1          0%         100%       0/1          0%           7%
+Dwarf_parsing_error 18
+Function : 23/23
+Total Env : 25% 98%
+Total ida : 50% 7%

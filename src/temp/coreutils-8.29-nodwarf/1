@@ -1,0 +1,810 @@
+1Func_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/0          0%           0%       0/0          0%           0%
+Dwarf_parsing_error 0
+Function : 1/0
+Total Env : 0% 0%
+Total ida : 0% 0%
+base64Func_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+Global                               0/1          0%         100%       0/1          0%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+usage                                1/1        100%          66%       1/1        100%           0%
+xnumtoumax                           8/9         88%          38%       8/9         88%          11%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+xstrtoumax                         13/14         92%          18%     13/14         92%          13%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 8/8        100%          11%       8/8        100%           0%
+xdectoumax                           6/6        100%          25%       6/6        100%           0%
+Dwarf_parsing_error 1
+Function : 16/47
+Total Env : 83% 33%
+Total ida : 86% 1%
+chconFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+Global                               0/7          0%         100%       0/7          0%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+usage                                1/1        100%          80%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                8/10         80%          27%     10/10        100%           9%
+Dwarf_parsing_error 1
+Function : 13/117
+Total Env : 79% 36%
+Total ida : 84% 1%
+chgrpFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/5          0%           0%       0/5          0%           0%
+Dwarf_parsing_error 0
+Function : 1/96
+Total Env : 0% 0%
+Total ida : 0% 0%
+chmodFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          80%       1/1        100%           0%
+main                                8/13         61%          27%     13/13        100%           7%
+Global                               0/4          0%         100%       0/4          0%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 4/99
+Total Env : 65% 58%
+Total ida : 75% 1%
+chrootFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/4          0%         100%       0/4          0%           0%
+is_root                              3/3        100%          25%       3/3        100%           0%
+initialize_exit_failure              1/1        100%           0%       1/1        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+main                               14/25         56%          17%     25/25        100%           3%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 6/38
+Total Env : 76% 40%
+Total ida : 83% 0%
+cksumFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+rpl_fclose                           4/4        100%          20%       4/4        100%           0%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+fdadvise                             5/5        100%          16%       5/5        100%           0%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+fadvise                              2/2        100%           0%       2/2        100%           0%
+xset_binary_mode                     2/2        100%          33%       2/2        100%           0%
+rpl_fseeko                           4/4        100%           0%       4/4        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+set_char_quoting                     7/7        100%           0%       7/7        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 4/4        100%          33%       4/4        100%           0%
+parse_long_options                   8/9         88%          73%       8/9         88%          63%
+quotearg_n_style_colon               3/4         75%          86%       3/4         75%          83%
+cksum                               7/10         70%          58%      8/10         80%          27%
+__gl_setmode                         2/2        100%           0%       2/2        100%           0%
+set_binary_mode                      3/3        100%          25%       3/3        100%           0%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          36%     12/12        100%           0%
+__gl_setmode_check                   1/1        100%           0%       1/1        100%           0%
+Global                               0/0          0%         100%       0/0          0%           0%
+rpl_fflush                           1/1        100%           0%       1/1        100%           0%
+clear_ungetc_buffer_preserving_position       1/1        100%           0%       1/1        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+Dwarf_parsing_error 1
+Function : 27/30
+Total Env : 86% 33%
+Total ida : 87% 12%
+csplitFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+rpl_fclose                           4/4        100%          20%       4/4        100%           0%
+fd_reopen                            7/7        100%          12%       7/7        100%           0%
+process_line_count                   5/5        100%          16%       5/5        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+free_buffer                          3/3        100%           0%       3/3        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+process_regexp                       7/7        100%           0%       7/7        100%           0%
+delete_all_files                     3/3        100%          25%       3/3        100%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+safe_read                            4/4        100%           0%       4/4        100%           0%
+handle_line_error                    2/3         66%          75%       2/3         66%          50%
+get_new_buffer                       4/4        100%           0%       4/4        100%           0%
+parse_patterns                       4/7         57%          42%       6/7         85%          25%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+split_file                           2/2        100%           0%       2/2        100%           0%
+xnumtoimax                           8/9         88%          38%       8/9         88%          11%
+load_buffer                          5/5        100%           0%       5/5        100%           0%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+make_filename                        1/1        100%          83%       1/1        100%           0%
+keep_new_line                        4/4        100%          20%       4/4        100%           0%
+xmemdup                              2/2        100%          33%       2/2        100%           0%
+dump_rest_of_file                    1/1        100%           0%       1/1        100%           0%
+save_line_to_file                    2/2        100%          71%       2/2        100%           0%
+new_line_control                     1/1        100%          50%       1/1        100%           0%
+write_to_file                        7/7        100%          30%       7/7        100%           0%
+record_line_starts                   6/6        100%           0%       6/6        100%           0%
+cleanup                              0/1          0%         100%       1/1        100%          50%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+remove_line                          2/2        100%           0%       2/2        100%           0%
+rpl_fcntl                            6/8         75%          62%       7/8         87%          72%
+set_input_file                       1/1        100%          75%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 6/7         85%          77%       6/7         85%          76%
+close_output_file                    2/4         50%          71%       3/4         75%          40%
+set_char_quoting                     7/7        100%           0%       7/7        100%           0%
+find_line                            4/4        100%          20%       4/4        100%           0%
+clear_line_control                   1/1        100%           0%       1/1        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+save_buffer                          2/2        100%           0%       2/2        100%           0%
+quotearg_n_style                     3/4         75%          40%       3/4         75%          40%
+xdectoimax                           6/6        100%          25%       6/6        100%           0%
+create_new_buffer                    2/2        100%          33%       2/2        100%           0%
+create_output_file                   2/3         66%          50%       3/3        100%          25%
+quotearg_style                       2/2        100%          33%       2/2        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+save_to_hold_area                    2/2        100%          33%       2/2        100%           0%
+dup_safer                            1/1        100%          50%       1/1        100%           0%
+quotearg_n_style_colon               3/4         75%          85%       3/4         75%          83%
+max_out                              4/5         80%          20%       5/5        100%          16%
+rpl_fflush                           1/1        100%           0%       1/1        100%           0%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+read_input                           3/3        100%          40%       3/3        100%           0%
+rpl_fseeko                           4/4        100%           0%       4/4        100%           0%
+Global                               2/8         25%          98%       0/8          0%           0%
+regexp_error                         3/4         75%          70%       3/4         75%          40%
+xstrtoimax                         11/12         91%          21%     11/12         91%          15%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+fopen_safer                          7/7        100%          12%       7/7        100%           0%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+clear_ungetc_buffer_preserving_position       1/1        100%           0%       1/1        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+umaxtostr                            3/3        100%           0%       3/3        100%           0%
+Dwarf_parsing_error 5
+Function : 69/77
+Total Env : 83% 32%
+Total ida : 86% 12%
+ddFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/8          0%           0%       0/8          0%           0%
+Dwarf_parsing_error 0
+Function : 1/74
+Total Env : 0% 0%
+Total ida : 0% 0%
+dfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          66%       1/1        100%           0%
+main                                6/16         37%          25%     16/16        100%          11%
+Global                               0/9          0%         100%       0/9          0%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 4/126
+Total Env : 59% 54%
+Total ida : 75% 2%
+dircolorsFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          66%       1/1        100%           0%
+main                                6/14         42%          14%     14/14        100%           0%
+Global                               0/0          0%         100%       0/0          0%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 4/41
+Total Env : 60% 51%
+Total ida : 75% 0%
+duFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+humblock                             5/7         71%          16%       7/7        100%          12%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+human_options                        4/4        100%          20%       4/4        100%           0%
+Global                              0/14          0%         100%      0/14          0%           0%
+argmatch                             8/8        100%          11%       8/8        100%           0%
+bad_cast                             1/1        100%           0%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+xzalloc                              1/1        100%          50%       1/1        100%           0%
+main                               10/22         45%          33%     20/22         90%          13%
+Dwarf_parsing_error 3
+Function : 13/161
+Total Env : 62% 27%
+Total ida : 68% 1%
+envFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+Global                               0/1          0%         100%       0/1          0%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+usage                                1/1        100%          66%       1/1        100%           0%
+initialize_exit_failure              1/1        100%           0%       1/1        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                8/10         80%          20%     10/10        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 1
+Function : 14/22
+Total Env : 81% 32%
+Total ida : 85% 0%
+expandFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/0          0%           0%       0/0          0%           0%
+Dwarf_parsing_error 0
+Function : 1/43
+Total Env : 0% 0%
+Total ida : 0% 0%
+exprFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/1          0%           0%       0/1          0%           0%
+Dwarf_parsing_error 0
+Function : 1/53
+Total Env : 0% 0%
+Total ida : 0% 0%
+factorFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                              0/10          0%           0%      0/10          0%           0%
+Dwarf_parsing_error 0
+Function : 1/88
+Total Env : 0% 0%
+Total ida : 0% 0%
+getlimitsFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+decimal_absval_add_one               5/5        100%          16%       5/5        100%           0%
+Global                               0/0          0%         100%       0/0          0%           0%
+parse_long_options                   8/9         88%          73%       8/9         88%          63%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+main                                 2/3         66%          66%       2/3         66%          66%
+initialize_exit_failure              1/1        100%           0%       1/1        100%           0%
+Dwarf_parsing_error 0
+Function : 8/14
+Total Env : 79% 51%
+Total ida : 79% 24%
+hostidFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+Global                               0/0          0%         100%       0/0          0%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+parse_long_options                   8/9         88%          73%       8/9         88%          63%
+usage                                1/1        100%          66%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 3/3        100%          50%       3/3        100%          25%
+Dwarf_parsing_error 1
+Function : 16/17
+Total Env : 83% 43%
+Total ida : 85% 9%
+idFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+getugroups                           9/9        100%           0%       9/9        100%           0%
+realloc_groupbuf                     2/2        100%           0%       2/2        100%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+print_group_list                   11/11        100%          26%     11/11        100%           8%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+xgetgroups                           4/4        100%          20%       4/4        100%           0%
+print_user                           3/3        100%          40%       3/3        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                               15/17         88%          11%     17/17        100%           5%
+mgetgroups                         13/13        100%           7%     13/13        100%           7%
+print_group                          5/5        100%          28%       5/5        100%           0%
+gidtostr_ptr                         2/1        200%          50%       1/1        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+uidtostr_ptr                         1/1        100%          50%       1/1        100%           0%
+Global                               0/7          0%         100%       0/7          0%           0%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+print_full_info                      7/7        100%          56%       7/7        100%          12%
+umaxtostr                            3/3        100%           0%       3/3        100%           0%
+Dwarf_parsing_error 1
+Function : 28/37
+Total Env : 92% 36%
+Total ida : 90% 9%
+killFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          80%       1/1        100%           0%
+main                                 6/7         85%          25%       6/7         85%          25%
+Global                               0/0          0%         100%       0/0          0%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 4/27
+Total Env : 71% 57%
+Total ida : 71% 6%
+lnFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+Global                               0/2          0%         100%       0/2          0%           0%
+quotearg_n_style                     3/4         75%          78%       3/4         75%          40%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+quotearg_style                       2/2        100%          33%       2/2        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+usage                                1/1        100%          83%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 3/7         42%          78%       6/7         85%          64%
+Dwarf_parsing_error 1
+Function : 13/113
+Total Env : 71% 48%
+Total ida : 77% 15%
+lognameFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+Global                               0/0          0%         100%       0/0          0%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+parse_long_options                   8/9         88%          73%       8/9         88%          63%
+usage                                1/1        100%          66%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 3/3        100%          50%       3/3        100%          25%
+Dwarf_parsing_error 1
+Function : 16/17
+Total Env : 83% 43%
+Total ida : 85% 9%
+make-prime-listFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/0          0%           0%       0/0          0%           0%
+Dwarf_parsing_error 0
+Function : 1/7
+Total Env : 0% 0%
+Total ida : 0% 0%
+md5sumFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          66%       1/1        100%           0%
+main                                9/17         52%          18%     16/17         94%          15%
+Global                               0/2          0%         100%       0/2          0%           0%
+ptr_align                            4/4        100%           0%       4/4        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 5/44
+Total Env : 70% 41%
+Total ida : 78% 3%
+mkdirFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+Global                               0/5          0%         100%       0/5          0%           0%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+usage                                1/1        100%          75%       1/1        100%           0%
+main                                 5/9         55%          61%       8/9         88%          46%
+Dwarf_parsing_error 1
+Function : 9/32
+Total Env : 66% 62%
+Total ida : 70% 29%
+niceFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+Global                               0/1          0%         100%       0/1          0%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+initialize_exit_failure              1/1        100%           0%       1/1        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                8/13         61%          46%     13/13        100%           7%
+perm_related_errno                   1/1        100%           0%       1/1        100%           0%
+Dwarf_parsing_error 1
+Function : 14/21
+Total Env : 80% 29%
+Total ida : 85% 0%
+nlFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/0          0%         100%       0/0          0%           0%
+Dwarf_parsing_error 22
+Function : 23/45
+Total Env : 0% 4%
+Total ida : 0% 0%
+nohupFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+Global                               1/1        100%          97%       0/1          0%           0%
+quotearg_n_style                     3/4         75%          78%       3/4         75%          40%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+parse_long_options                   8/9         88%          73%       8/9         88%          63%
+quotearg_style                       2/2        100%          33%       2/2        100%           0%
+initialize_exit_failure              1/1        100%           0%       1/1        100%           0%
+rpl_fcntl                            5/8         62%          66%       7/8         87%          72%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                               17/20         85%          15%     20/20        100%           4%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 1
+Function : 17/25
+Total Env : 82% 44%
+Total ida : 81% 20%
+odFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/8          0%           0%       0/8          0%           0%
+Dwarf_parsing_error 0
+Function : 1/48
+Total Env : 0% 0%
+Total ida : 0% 0%
+pasteFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+xstrdup                              1/1        100%          50%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+set_char_quoting                     7/7        100%           0%       7/7        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 5/6         83%          37%       6/6        100%          14%
+xmemdup                              2/2        100%          33%       2/2        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+collapse_escapes                     3/3        100%          25%       3/3        100%           0%
+quotearg_n_style_colon               3/4         75%          86%       3/4         75%          83%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+Global                               0/0          0%         100%       0/0          0%           0%
+bad_cast                             1/1        100%           0%       1/1        100%           0%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+Dwarf_parsing_error 3
+Function : 23/23
+Total Env : 74% 41%
+Total ida : 76% 18%
+pathchkFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/0          0%         100%       0/0          0%           0%
+quotearg_n_style                     3/4         75%          78%       3/4         75%          40%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+component_len                        2/2        100%           0%       2/2        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+set_char_quoting                     7/7        100%           0%       7/7        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 6/6        100%          25%       6/6        100%           0%
+no_leading_hyphen                    2/2        100%          50%       2/2        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+quotearg_n_style_colon               3/4         75%          85%       3/4         75%          83%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+component_start                      1/1        100%           0%       1/1        100%           0%
+validate_file_name                 22/23         95%          24%     23/23        100%           4%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+quotearg_style                       2/2        100%          33%       2/2        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+Dwarf_parsing_error 1
+Function : 23/32
+Total Env : 82% 44%
+Total ida : 84% 19%
+pinkyFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/4          0%           0%       0/4          0%           0%
+Dwarf_parsing_error 0
+Function : 1/42
+Total Env : 0% 0%
+Total ida : 0% 0%
+ptxFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/2          0%           0%       0/2          0%           0%
+Dwarf_parsing_error 0
+Function : 1/83
+Total Env : 0% 0%
+Total ida : 0% 0%
+pwdFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xnmalloc                             2/2        100%           0%       2/2        100%           0%
+file_name_init                       1/1        100%          50%       1/1        100%           0%
+logical_getcwd                       2/4         50%          75%       2/4         50%          71%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+quotearg_n_style                     3/4         75%          75%       3/4         75%          40%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xgetcwd                              1/1        100%          50%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 6/6        100%           0%       6/6        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+file_name_prepend                    7/7        100%           0%       7/7        100%           0%
+quotearg_style                       2/2        100%          33%       2/2        100%           0%
+find_dir_entry                      5/12         41%          44%     10/12         83%          67%
+nth_parent                           4/4        100%          20%       4/4        100%           0%
+robust_getcwd                        3/5         60%          78%       3/5         60%          57%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+get_root_dev_ino                     1/2         50%          80%       1/2         50%          75%
+Global                               0/0          0%         100%       0/0          0%           0%
+file_name_free                       1/1        100%          50%       1/1        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+Dwarf_parsing_error 1
+Function : 25/35
+Total Env : 79% 40%
+Total ida : 82% 16%
+realpathFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/0          0%           0%       0/0          0%           0%
+Dwarf_parsing_error 0
+Function : 1/52
+Total Env : 0% 0%
+Total ida : 0% 0%
+sortFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                              0/12          0%           0%      0/12          0%           0%
+Dwarf_parsing_error 0
+Function : 1/199
+Total Env : 0% 0%
+Total ida : 0% 0%
+splitFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+set_suffix_length                    8/8        100%          11%       8/8        100%          11%
+fd_reopen                            7/7        100%          12%       7/7        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+io_blksize                           0/1          0%           0%       0/1          0%         100%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+set_binary_mode                      3/3        100%          25%       3/3        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+set_char_quoting                     7/7        100%           0%       7/7        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                               15/20         75%          62%     17/20         85%          15%
+safe_read                            4/4        100%           0%       4/4        100%           0%
+ptr_align                            4/4        100%           0%       4/4        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+__gl_setmode                         2/2        100%           0%       2/2        100%           0%
+input_file_size                      7/8         87%          12%       8/8        100%           0%
+quotearg_n_style_colon               3/4         75%          85%       3/4         75%          83%
+xstrtoumax                         13/14         92%          18%     13/14         92%          13%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+__gl_setmode_check                   1/1        100%           0%       1/1        100%           0%
+Global                              0/10          0%         100%      0/10          0%           0%
+bad_cast                             1/1        100%           0%       1/1        100%           0%
+xset_binary_mode                     2/2        100%          33%       2/2        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+umaxtostr                            3/3        100%           0%       3/3        100%           0%
+Dwarf_parsing_error 1
+Function : 28/46
+Total Env : 83% 25%
+Total ida : 85% 11%
+statFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+xstrcat                             6/10         60%          40%      9/10         90%          30%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+argmatch                             8/8        100%          11%       8/8        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+xasprintf                            2/3         66%          93%       2/3         66%          90%
+xstrdup                              1/1        100%          50%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+getenv_quoting_style                 2/2        100%          60%       2/2        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+default_format                       5/5        100%           0%       5/5        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                               10/10        100%           0%     10/10        100%           0%
+xvasprintf                           5/5        100%          28%       5/5        100%          16%
+quote                                1/1        100%          50%       1/1        100%           0%
+xmemdup                              2/2        100%          33%       2/2        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+set_quoting_style                    2/2        100%           0%       2/2        100%           0%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+Global                               0/9          0%         100%       0/9          0%           0%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+Dwarf_parsing_error 2
+Function : 27/39
+Total Env : 82% 39%
+Total ida : 85% 13%
+sumFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/1          0%           0%       0/1          0%           0%
+Dwarf_parsing_error 0
+Function : 1/22
+Total Env : 0% 0%
+Total ida : 0% 0%
+syncFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/1          0%           0%       0/1          0%           0%
+Dwarf_parsing_error 0
+Function : 1/19
+Total Env : 0% 0%
+Total ida : 0% 0%
+tacFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+Global                               0/6          0%           0%       0/6          0%           0%
+Dwarf_parsing_error 0
+Function : 1/43
+Total Env : 0% 0%
+Total ida : 0% 0%
+teeFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+rpl_fclose                           4/4        100%          20%       4/4        100%           0%
+xnmalloc                             2/2        100%           0%       2/2        100%           0%
+tee_files                          10/11         90%          41%     10/11         90%          16%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+quotearg_n_style                     3/4         75%          75%       3/4         75%          40%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+argmatch_invalid                     4/4        100%          33%       4/4        100%           0%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+fdadvise                             5/5        100%          16%       5/5        100%           0%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+set_binary_mode                      3/3        100%          25%       3/3        100%           0%
+__gl_setmode                         2/2        100%           0%       2/2        100%           0%
+fadvise                              2/2        100%           0%       2/2        100%           0%
+xset_binary_mode                     2/2        100%          33%       2/2        100%           0%
+rpl_fseeko                           4/4        100%           0%       4/4        100%           0%
+__xargmatch_internal                 7/7        100%          22%       7/7        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+rpl_fcntl                            6/8         75%          62%       7/8         87%          72%
+usage                                1/1        100%          75%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 4/4        100%          42%       4/4        100%          20%
+quote                                1/1        100%          50%       1/1        100%           0%
+set_char_quoting                     7/7        100%           0%       7/7        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+argmatch                             8/8        100%          11%       8/8        100%           0%
+dup_safer                            1/1        100%          50%       1/1        100%           0%
+quotearg_n_style_colon               3/4         75%          85%       3/4         75%          83%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+__gl_setmode_check                   1/1        100%           0%       1/1        100%           0%
+Global                               1/1        100%          97%       0/1          0%           0%
+bad_cast                             1/1        100%           0%       1/1        100%           0%
+rpl_fflush                           1/1        100%           0%       1/1        100%           0%
+fopen_safer                          7/7        100%          12%       7/7        100%           0%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+clear_ungetc_buffer_preserving_position       1/1        100%           0%       1/1        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+argmatch_valid                       5/5        100%          28%       5/5        100%           0%
+Dwarf_parsing_error 1
+Function : 41/42
+Total Env : 91% 33%
+Total ida : 90% 13%
+touchFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_va                       5/5        100%          68%       5/5        100%          37%
+posixtime                           6/10         60%          73%      7/10         70%          56%
+quote_n_mem                          2/2        100%          50%       2/2        100%          33%
+quotearg_n_style                     2/3         66%          83%       2/3         66%          60%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+argmatch_invalid                     4/4        100%          33%       4/4        100%           0%
+year                                 4/6         66%          33%       6/6        100%          14%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+version_etc_arn                      4/4        100%          80%       4/4        100%          60%
+__xargmatch_internal                 7/7        100%          22%       7/7        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           12/23         52%          47%     22/23         95%          33%
+main                                6/11         54%          62%      7/11         63%          58%
+quote                                1/1        100%          50%       1/1        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+argmatch                             8/8        100%          11%       8/8        100%           0%
+posix_time_parse                     8/9         88%          46%       8/9         88%          20%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 10/10        100%          50%     10/10        100%          16%
+Global                               0/3          0%         100%       0/3          0%           0%
+version_etc                          3/4         75%          88%       3/4         75%          85%
+xmalloc                              1/1        100%          66%       1/1        100%          50%
+argmatch_valid                       5/5        100%          28%       5/5        100%           0%
+Dwarf_parsing_error 2
+Function : 27/80
+Total Env : 77% 49%
+Total ida : 81% 25%
+trFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          66%       1/1        100%           0%
+main                                8/23         34%          20%     21/23         91%          12%
+Global                              0/12          0%         100%      0/12          0%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 4/61
+Total Env : 58% 52%
+Total ida : 72% 3%
+tsortFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+set_nth_bit                          3/3        100%           0%       3/3        100%           0%
+init_tokenbuffer                     1/1        100%           0%       1/1        100%           0%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+protect_fd                           2/2        100%          33%       2/2        100%           0%
+freopen_safer                        7/7        100%          12%       7/7        100%           0%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+fdadvise                             5/5        100%          16%       5/5        100%           0%
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+new_item                             2/2        100%          33%       2/2        100%           0%
+fadvise                              2/2        100%           0%       2/2        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+xstrdup                              1/1        100%          50%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+set_char_quoting                     7/7        100%           0%       7/7        100%           0%
+usage                                1/1        100%          66%       1/1        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+main                                 3/3        100%          50%       3/3        100%          25%
+search_item                          6/8         75%          14%       8/8        100%           0%
+get_nth_bit                          2/2        100%           0%       2/2        100%           0%
+tsort                                7/9         77%          46%       8/9         88%          27%
+parse_long_options                   8/9         88%          73%       8/9         88%          63%
+xmemdup                              2/2        100%          33%       2/2        100%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+quotearg_n_style_colon               3/4         75%          86%       3/4         75%          83%
+quoting_options_from_style           1/2         50%          91%       1/2         50%          90%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+Global                               0/2          0%         100%       0/2          0%           0%
+readtoken                           9/10         90%          18%      9/10         90%          18%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+record_relation                      3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 1
+Function : 33/42
+Total Env : 87% 34%
+Total ida : 90% 11%
+unameFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+quotearg_n_options                 12/12        100%          40%     12/12        100%           0%
+quote                                1/1        100%          50%       1/1        100%           0%
+quote_n_mem                          3/3        100%          25%       3/3        100%           0%
+Global                               1/2         50%          97%       0/2          0%           0%
+xrealloc                             2/2        100%           0%       2/2        100%           0%
+quotearg_buffer_restyled           19/32         59%          17%     31/32         96%           6%
+usage                                1/1        100%          75%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+quote_n                              2/2        100%          33%       2/2        100%           0%
+xcharalloc                           1/1        100%          50%       1/1        100%           0%
+decode_switches                      4/4        100%          33%       4/4        100%          20%
+main                                 4/6         66%          60%       6/6        100%          14%
+print_element                        1/1        100%           0%       1/1        100%           0%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+Dwarf_parsing_error 1
+Function : 19/19
+Total Env : 85% 44%
+Total ida : 86% 13%

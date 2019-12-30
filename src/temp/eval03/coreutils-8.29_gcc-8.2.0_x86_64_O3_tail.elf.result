@@ -1,0 +1,24 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_tail.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+open_safer                           0/1          0%         100%       0/1          0%          16%
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+start_lines                          0/1          0%         100%       1/1        100%          50%
+rpl_fcntl                            0/1          0%         100%       0/1          0%          14%
+xnanosleep                           0/1          0%         100%       0/1          0%          50%
+rpl_nanosleep                        0/1          0%         100%       0/1          0%          50%
+posix2_version                       1/1        100%          75%       1/1        100%         100%
+start_bytes                          0/1          0%         100%       1/1        100%         100%
+xstrtoumax                           1/1        100%          94%       1/1        100%          33%
+quotearg_buffer_restyled             0/5          0%         100%       5/5        100%           3%
+check_fspec                          0/1          0%         100%       1/1        100%         100%
+hash_delete                          1/1        100%          80%       1/1        100%         100%
+quotearg_n_style_colon               0/1          0%         100%       0/1          0%          20%
+main                                 0/3          0%         100%       3/3        100%           4%
+file_lines                           0/1          0%         100%       1/1        100%          14%
+isapipe                              0/3          0%         100%       2/3         66%          33%
+xstrtod                              0/1          0%         100%       1/1        100%         100%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+Dwarf_parsing_error 35
+Function : 54/60
+Total Env : 22% 96%
+Total ida : 64% 44%

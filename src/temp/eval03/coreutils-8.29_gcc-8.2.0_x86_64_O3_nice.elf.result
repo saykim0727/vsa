@@ -1,0 +1,10 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_nice.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+xstrtol                              1/1        100%          94%       1/1        100%          33%
+main                                 0/1          0%         100%       1/1        100%         100%
+Dwarf_parsing_error 7
+Function : 12/13
+Total Env : 50% 96%
+Total ida : 75% 35%

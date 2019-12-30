@@ -1,0 +1,22 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_chown.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+open_safer                           0/1          0%         100%       0/1          0%          16%
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+xstrtoul                             1/1        100%          94%       1/1        100%          33%
+rpl_getcwd                           0/1          0%         100%       1/1        100%           8%
+openat_proc_name                     0/1          0%         100%       0/1          0%           0%
+change_file_owner                    0/1          0%         100%       1/1        100%          10%
+rpl_fcntl                            0/1          0%         100%       0/1          0%          14%
+parse_with_separator                 1/3         33%          96%       1/3         33%          25%
+main                                 2/6         33%          91%       5/6         83%           7%
+quotearg_buffer_restyled             0/5          0%         100%       5/5        100%           3%
+hash_delete                          1/1        100%          80%       1/1        100%         100%
+get_root_dev_ino                     0/1          0%         100%       0/1          0%         100%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+rpl_fchownat                         0/2          0%         100%       0/2          0%          33%
+openat_safer                         0/1          0%         100%       0/1          0%          16%
+fts_safe_changedir                   0/1          0%         100%       1/1        100%          50%
+Dwarf_parsing_error 50
+Function : 67/71
+Total Env : 22% 97%
+Total ida : 51% 26%

@@ -1,0 +1,17 @@
+16
+"set_program_name" 17 17
+"atexit" 3 3
+"_getopt_initialize" 13 13
+"exchange" 13 13
+"process_long_option" 102 100
+"_getopt_internal_r" 113 75
+"rpl_getopt_internal" 3 3
+"rpl_getopt_long" 3 3
+"emit_ancillary_info" 28 28
+"usage" 23 23
+"version_etc_arn" 16 16
+"version_etc_va" 10 10
+"version_etc" 5 5
+"last_component" 11 11
+"dir_len" 14 14
+"main" 46 46

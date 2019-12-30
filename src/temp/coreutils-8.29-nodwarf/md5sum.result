@@ -1,0 +1,10 @@
+md5sumFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          66%       1/1        100%           0%
+main                                9/17         52%          18%     16/17         94%          15%
+ptr_align                            4/4        100%           0%       4/4        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 5/44
+Total Env : 70% 21%
+Total ida : 78% 3%

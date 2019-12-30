@@ -1,0 +1,14 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_dircolors.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+internal_fnwmatch                    0/1          0%         100%       1/1        100%           7%
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+dc_parse_stream                      2/2        100%          89%       2/2        100%          14%
+quotearg_buffer_restyled             0/5          0%         100%       5/5        100%           3%
+quotearg_n_style_colon               0/1          0%         100%       0/1          0%          20%
+internal_fnmatch                     0/1          0%         100%       1/1        100%          10%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+gnu_fnmatch                          1/3         33%          92%       1/3         33%          20%
+Dwarf_parsing_error 23
+Function : 32/33
+Total Env : 29% 96%
+Total ida : 66% 10%

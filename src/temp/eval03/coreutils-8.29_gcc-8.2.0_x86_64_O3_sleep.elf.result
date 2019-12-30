@@ -1,0 +1,12 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_sleep.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+xnanosleep                           0/1          0%         100%       0/1          0%          50%
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+rpl_nanosleep                        0/1          0%         100%       0/1          0%          50%
+parse_long_options                   0/1          0%         100%       0/1          0%           7%
+xstrtod                              0/1          0%         100%       1/1        100%         100%
+main                                 0/2          0%         100%       2/2        100%          33%
+Dwarf_parsing_error 8
+Function : 15/17
+Total Env : 16% 98%
+Total ida : 50% 40%

@@ -1,0 +1,40 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O0_uptime.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_va                      6/16         37%          25%      7/16         43%          12%
+process_long_option                19/19        100%          13%     19/19        100%           5%
+quote_n_mem                          3/3        100%          40%       3/3        100%          25%
+xrealloc                             2/2        100%          50%       2/2        100%          33%
+quote_n                              2/2        100%          50%       2/2        100%          33%
+version_etc_arn                      6/6        100%          72%       6/6        100%           9%
+uptime                               4/4        100%          42%       4/4        100%          20%
+__strftime_internal              30/1182          2%           6%  131/1182         11%           0%
+quote                                1/1        100%          66%       1/1        100%          50%
+set_program_name                     3/3        100%          50%       3/3        100%          25%
+read_utmp                            8/8        100%          27%       8/8        100%          11%
+set_char_quoting                     7/7        100%          22%       7/7        100%          12%
+usage                                1/1        100%          75%       1/1        100%          50%
+xcharalloc                           1/1        100%          66%       1/1        100%          50%
+quotearg_buffer_restyled           16/32         50%          15%     32/32        100%           2%
+main                                 2/2        100%          77%       2/2        100%          25%
+print_uptime                        6/14         42%          25%     12/14         85%           6%
+exchange                            9/10         90%          18%     10/10        100%           9%
+_getopt_internal_r                 11/12         91%          35%     12/12        100%           7%
+_getopt_initialize                   5/5        100%          28%       5/5        100%          16%
+rpl_getopt_internal                  8/8        100%          33%       8/8        100%          11%
+parse_long_options                   8/9         88%          74%       8/9         88%           4%
+emit_ancillary_info                 4/11         36%          83%      4/11         36%           5%
+rpl_getopt_long                      5/5        100%          37%       5/5        100%          16%
+quotearg_n_style_colon               3/4         75%          84%       3/4         75%           5%
+xmalloc                              2/2        100%          50%       2/2        100%          33%
+x2nrealloc                           4/4        100%          33%       4/4        100%          20%
+quoting_options_from_style           1/2         50%          92%       1/2         50%          10%
+quotearg_n_options                  8/12         66%          20%     12/12        100%           7%
+select_plural                        1/1        100%          66%       1/1        100%          50%
+fwrite_uppcase                       3/3        100%          40%       3/3        100%          25%
+desirable_utmp_entry                 3/3        100%          40%       3/3        100%          25%
+fprintftime                          6/6        100%          33%       6/6        100%          14%
+fwrite_lowcase                       3/3        100%          40%       3/3        100%          25%
+Dwarf_parsing_error 1
+Function : 36/36
+Total Env : 86% 44%
+Total ida : 90% 19%

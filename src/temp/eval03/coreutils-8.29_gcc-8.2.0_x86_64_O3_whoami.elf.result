@@ -1,0 +1,8 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_whoami.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+parse_long_options                   0/1          0%         100%       0/1          0%           7%
+Dwarf_parsing_error 9
+Function : 12/13
+Total Env : 50% 96%
+Total ida : 50% 6%

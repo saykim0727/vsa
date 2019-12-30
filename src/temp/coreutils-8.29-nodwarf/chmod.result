@@ -1,0 +1,9 @@
+chmodFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+usage                                1/1        100%          80%       1/1        100%           0%
+main                                8/13         61%          27%     13/13        100%           7%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 4/99
+Total Env : 65% 33%
+Total ida : 75% 1%

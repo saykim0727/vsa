@@ -1,0 +1,41 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O0_printf.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+rpl_fclose                           4/4        100%          33%       4/4        100%          20%
+version_etc_va                      6/16         37%          25%      7/16         43%          12%
+quote_n_mem                          3/3        100%          40%       3/3        100%          25%
+quotearg_n_style                     3/4         75%          40%       3/4         75%          20%
+unicode_to_mb                      11/42         26%          31%     13/42         30%           7%
+get_charset_aliases                8/118          6%          20%    18/118         15%           5%
+print_direc                        10/15         66%          16%     14/15         93%           5%
+quote_n                              2/2        100%          50%       2/2        100%          33%
+version_etc_arn                      6/6        100%          72%       6/6        100%           9%
+rpl_fseeko                           4/4        100%          33%       4/4        100%          20%
+set_program_name                     3/3        100%          50%       3/3        100%          25%
+usage                                1/1        100%          80%       1/1        100%          50%
+u8_uctomb                            4/4        100%          33%       4/4        100%          20%
+print_unicode_char                   3/3        100%          40%       3/3        100%          25%
+main                                 4/4        100%          50%       4/4        100%          20%
+verify_numeric                       2/2        100%          60%       2/2        100%          33%
+print_esc                            7/7        100%          41%       7/7        100%          12%
+quote                                1/1        100%          66%       1/1        100%          50%
+locale_charset                       2/2        100%          50%       2/2        100%          33%
+quotearg_style                       2/2        100%          50%       2/2        100%          33%
+xrealloc                             2/2        100%          50%       2/2        100%          33%
+emit_ancillary_info                 4/11         36%          83%      4/11         36%           5%
+quotearg_buffer_restyled           16/32         50%          15%     32/32        100%           2%
+rpl_fflush                           1/1        100%          66%       1/1        100%          50%
+xcharalloc                           1/1        100%          66%       1/1        100%          50%
+quoting_options_from_style           1/2         50%          92%       1/2         50%          10%
+quotearg_n_options                  8/12         66%          20%     12/12        100%           7%
+to_uchar                             1/1        100%          66%       1/1        100%          50%
+vstrtoimax                           4/4        100%          33%       4/4        100%          20%
+print_esc_char                       1/1        100%          66%       1/1        100%          50%
+print_formatted                   14/270          5%          57%    15/270          5%           3%
+version_etc                          4/5         80%          85%       4/5         80%           4%
+clear_ungetc_buffer_preserving_position       1/1        100%          66%       1/1        100%          50%
+xmalloc                              2/2        100%          50%       2/2        100%          33%
+print_esc_string                     1/1        100%          66%       1/1        100%          50%
+Dwarf_parsing_error 1
+Function : 37/37
+Total Env : 82% 50%
+Total ida : 86% 24%

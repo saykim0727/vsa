@@ -1,0 +1,36 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_du.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+open_safer                           0/1          0%         100%       0/1          0%          16%
+update_cur_sifted_state              1/1        100%          96%       1/1        100%           6%
+read_file_system_list               3/14         21%          85%     14/14        100%           6%
+__strftime_internal                  0/5          0%         100%       1/5         20%           4%
+check_arrival                        0/3          0%         100%       2/3         66%           4%
+rpl_fcntl                            0/1          0%         100%       0/1          0%          14%
+quotearg_buffer_restyled             0/5          0%         100%       5/5        100%           3%
+build_wcs_buffer                     2/2        100%          90%       2/2        100%          33%
+sub_epsilon_src_nodes                0/1          0%         100%       0/1          0%           0%
+rpl_mbrtowc                          0/1          0%         100%       0/1          0%         100%
+fts_safe_changedir                   0/1          0%         100%       1/1        100%          50%
+main                                 0/4          0%         100%       2/4         50%           5%
+print_only_size                      0/1          0%         100%       0/1          0%           0%
+hash_delete                          1/1        100%          80%       1/1        100%         100%
+quotearg_n_style_colon               0/1          0%         100%       0/1          0%          20%
+set_regs                             0/2          0%         100%       0/2          0%           6%
+check_arrival_expand_ecl             0/1          0%         100%       0/1          0%          33%
+re_string_reconstruct                1/3         33%          96%       3/3        100%          14%
+merge_state_array                    1/2         50%          94%       1/2         50%          33%
+fprintftime                          0/1          0%         100%       1/1        100%         100%
+build_wcs_upper_buffer               0/4          0%         100%       3/4         75%          12%
+openat_safer                         0/1          0%         100%       0/1          0%          16%
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+expand_bkref_cache                   0/3          0%         100%       1/3         33%          10%
+re_search_internal                   2/5         40%          95%       4/5         80%           1%
+xstrtoumax                           1/1        100%          94%       1/1        100%          33%
+merge_state_with_log                 0/1          0%         100%       0/1          0%          33%
+two_way_long_needle                  2/2        100%          95%       2/2        100%          10%
+sift_states_backward                 0/1          0%         100%       0/1          0%          11%
+build_trtable                        1/3         33%          97%       1/3         33%           4%
+Dwarf_parsing_error 93
+Function : 124/130
+Total Env : 25% 97%
+Total ida : 50% 22%

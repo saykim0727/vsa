@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\B2R2.Core.fsproj" />
+    <ProjectReference Include="..\..\BinGraph\B2R2.BinGraph.fsproj" />
+    <ProjectReference Include="..\..\BinFile\B2R2.BinFile.fsproj" />
+    <ProjectReference Include="..\..\VSA\B2R2.VSA.fsproj" />
+  </ItemGroup>
+
+</Project>

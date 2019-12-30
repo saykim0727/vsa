@@ -1,0 +1,11 @@
+chrootFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+is_root                              3/3        100%          25%       3/3        100%           0%
+initialize_exit_failure              1/1        100%           0%       1/1        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+main                               14/25         56%          17%     25/25        100%           3%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+Dwarf_parsing_error 0
+Function : 6/38
+Total Env : 76% 23%
+Total ida : 83% 0%

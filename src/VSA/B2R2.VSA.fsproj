@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>false</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="MemoryRegion.fs" />
+    <Compile Include="Bool.fs" />
+    <Compile Include="StridedInterval.fs" />
+    <Compile Include="ValueSet.fs" />
+    <Compile Include="AbstractEnvironment.fs" />
+    <Compile Include="LoopAnalysis.fs" />
+    <Compile Include="Analysis.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\B2R2.Core.fsproj" />
+    <ProjectReference Include="..\BinGraph\B2R2.BinGraph.fsproj" />
+    <ProjectReference Include="..\BinIR\B2R2.BinIR.fsproj" />
+    <ProjectReference Include="..\ABI\B2R2.ABI.fsproj" />
+  </ItemGroup>
+
+</Project>

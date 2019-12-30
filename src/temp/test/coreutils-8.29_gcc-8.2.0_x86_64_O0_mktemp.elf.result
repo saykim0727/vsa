@@ -1,0 +1,65 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O0_mktemp.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+rpl_fclose                           4/4        100%          33%       4/4        100%          20%
+gen_tempname_len                     6/6        100%          33%       6/6        100%          14%
+version_etc_va                      6/16         37%          25%      7/16         43%          12%
+check_x_suffix                       2/2        100%          50%       2/2        100%          33%
+just                                 2/2        100%          50%       2/2        100%          33%
+process_long_option                19/19        100%          13%     19/19        100%           5%
+close_stream                         4/4        100%          33%       4/4        100%          20%
+quote_n_mem                          3/3        100%          40%       3/3        100%          25%
+isaac_refill                       22/22        100%          15%     22/22        100%           4%
+xrealloc                             2/2        100%          50%       2/2        100%          33%
+randint_all_new                      3/3        100%          40%       3/3        100%          25%
+mkdtemp_len                          4/4        100%          33%       4/4        100%          20%
+file_name_concat                     4/4        100%          33%       4/4        100%          20%
+quote_n                              2/2        100%          50%       2/2        100%          33%
+simple_new                           3/3        100%          40%       3/3        100%          25%
+version_etc_arn                      6/6        100%          72%       6/6        100%           9%
+randint_new                          2/2        100%          50%       2/2        100%          33%
+randread                             3/3        100%          40%       3/3        100%          25%
+rpl_fseeko                           4/4        100%          33%       4/4        100%          20%
+mkstemp_len                          4/4        100%          33%       4/4        100%          20%
+base_len                             3/3        100%          40%       3/3        100%          25%
+try_tempname_len                   13/14         92%          18%     14/14        100%           6%
+quote                                1/1        100%          66%       1/1        100%          50%
+xstrdup                              1/1        100%          66%       1/1        100%          50%
+set_program_name                     3/3        100%          50%       3/3        100%          25%
+_getopt_initialize                   5/5        100%          28%       5/5        100%          16%
+usage                                1/1        100%          75%       1/1        100%          50%
+xcharalloc                           1/1        100%          66%       1/1        100%          50%
+quotearg_buffer_restyled           16/32         50%          15%     32/32        100%           2%
+main                               20/23         86%          20%     23/23        100%           4%
+randint_all_free                     3/3        100%          40%       3/3        100%          25%
+randint_genmax                     10/20         50%          16%     13/20         65%           7%
+exchange                            9/10         90%          18%     10/10        100%           9%
+readisaac                            6/6        100%          33%       6/6        100%          14%
+_getopt_internal_r                 11/12         91%          35%     12/12        100%           7%
+rpl_fcntl                            6/8         75%          66%       7/8         87%           3%
+isaac_seed                         11/11        100%          15%     11/11        100%           8%
+rpl_getopt_internal                  8/8        100%          33%       8/8        100%          11%
+shift_left                           1/1        100%          66%       1/1        100%          50%
+randint_free                         1/1        100%          66%       1/1        100%          50%
+longest_relative_suffix              1/1        100%          66%       1/1        100%          50%
+xmemdup                              2/2        100%          50%       2/2        100%          33%
+ind                                  6/6        100%          25%       6/6        100%          14%
+randread_free                        2/2        100%          50%       2/2        100%          33%
+count_consecutive_X_s                3/3        100%          40%       3/3        100%          25%
+emit_ancillary_info                 4/11         36%          83%      4/11         36%           5%
+rpl_getopt_long                      5/5        100%          37%       5/5        100%          16%
+dup_safer                            1/1        100%          66%       1/1        100%          50%
+randread_new                         4/4        100%          33%       4/4        100%          20%
+rpl_fflush                           1/1        100%          66%       1/1        100%          50%
+readsource                           5/5        100%          44%       5/5        100%          16%
+quotearg_n_options                  8/12         66%          20%     12/12        100%           7%
+fopen_safer                          6/7         85%          53%       7/7        100%          12%
+last_component                       4/4        100%          33%       4/4        100%          20%
+mfile_name_concat                  11/11        100%          15%     11/11        100%           8%
+version_etc                          4/5         80%          85%       4/5         80%           4%
+clear_ungetc_buffer_preserving_position       1/1        100%          66%       1/1        100%          50%
+xmalloc                              2/2        100%          50%       2/2        100%          33%
+get_nonce                           6/16         37%          14%     16/16        100%           5%
+Dwarf_parsing_error 1
+Function : 61/61
+Total Env : 92% 42%
+Total ida : 96% 22%

@@ -1,0 +1,11 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_mkdir.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+main                                 0/1          0%         100%       0/1          0%          20%
+savewd_process_files                 0/1          0%         100%       0/1          0%          20%
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+savewd_restore                       0/1          0%         100%       1/1        100%         100%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+Dwarf_parsing_error 10
+Function : 16/18
+Total Env : 20% 98%
+Total ida : 40% 29%

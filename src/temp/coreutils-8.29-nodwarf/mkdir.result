@@ -1,0 +1,13 @@
+mkdirFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+version_etc_arn                      6/6        100%          70%       6/6        100%          40%
+version_etc_va                       6/7         85%          62%       6/7         85%          25%
+version_etc                          4/5         80%          85%       4/5         80%          80%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+emit_ancillary_info                  4/5         80%          81%       4/5         80%          78%
+usage                                1/1        100%          75%       1/1        100%           0%
+main                                 5/9         55%          61%       8/9         88%          46%
+Dwarf_parsing_error 1
+Function : 9/32
+Total Env : 66% 51%
+Total ida : 70% 29%

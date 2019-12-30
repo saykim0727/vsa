@@ -1,0 +1,1598 @@
+1 _Bool decode_format_string (...)
+{
+  8 char* s 	(DW_OP_fbreg -40)
+  8 char* s_orig 	(DW_OP_fbreg -24)
+  1 char_[21] __PRETTY_FUNCTION__ 	(DW_OP_addr 0x412320)
+  8 char* next 	(DW_OP_fbreg -32)
+}
+
+1 _Bool dump (...)
+{
+  8 char*_[2] block 	(DW_OP_fbreg -80)
+  8 uintmax_t current_offset 	(DW_OP_fbreg -24)
+  1 _Bool idx 	(DW_OP_fbreg -25)
+  1 _Bool ok 	(DW_OP_fbreg -26)
+  8 size_t n_bytes_read 	(DW_OP_fbreg -88)
+  1 char_[5] __PRETTY_FUNCTION__ 	(DW_OP_addr 0x412343)
+  8 size_t n_needed 	(DW_OP_fbreg -40)
+  4 int l_c_m 	(DW_OP_fbreg -44)
+  8 size_t bytes_to_write 	(DW_OP_fbreg -56)
+}
+
+1 _Bool skip (...)
+{
+  8 uintmax_t n_skip 	(DW_OP_fbreg -8408)
+  1 _Bool ok 	(DW_OP_fbreg -33)
+  4 int in_errno 	(DW_OP_fbreg -40)
+  144 stat file_stats 	(DW_OP_fbreg -8400)
+  1 char_[8192] buf 	(DW_OP_fbreg -8256)
+  8 size_t n_bytes_read 	(DW_OP_fbreg -56)
+  8 size_t n_bytes_to_read 	(DW_OP_fbreg -48)
+}
+
+1 _Bool decode_one_format (...)
+{
+  8 char* s_orig 	(DW_OP_fbreg -104)
+  8 char* s 	(DW_OP_fbreg -112)
+  8 char** next 	(DW_OP_fbreg -120)
+  8 tspec* tspec 	(DW_OP_fbreg -128)
+  4 enum size_spec 	(DW_OP_fbreg -36)
+  8 longunsignedint size 	(DW_OP_fbreg -80)
+  4 unsignedintenum fmt 	(DW_OP_fbreg -40)
+  8 void* print_function 	(DW_OP_fbreg -48)
+  8 char* p 	(DW_OP_fbreg -88)
+  1 char c 	(DW_OP_fbreg -53)
+  4 int field_width 	(DW_OP_fbreg -52)
+  1 char_[18] __PRETTY_FUNCTION__ 	(DW_OP_addr 0x412300)
+  8 lconv* locale 	(DW_OP_fbreg -64)
+  8 size_t decimal_point_len 	(DW_OP_fbreg -72)
+}
+
+1 _Bool check_and_close (...)
+{
+  4 int in_errno 	(DW_OP_fbreg -52)
+  1 _Bool ok 	(DW_OP_fbreg -33)
+}
+
+0 void print_named_ascii (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -72)
+  8 size_t blank 	(DW_OP_fbreg -80)
+  8 void* block 	(DW_OP_fbreg -88)
+  8 char* unused_fmt_string 	(DW_OP_fbreg -96)
+  4 int width 	(DW_OP_fbreg -100)
+  4 int pad 	(DW_OP_fbreg -104)
+  8 unsignedchar* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -52)
+  4 int masked_c 	(DW_OP_fbreg -56)
+  8 char* s 	(DW_OP_fbreg -48)
+  1 char_[2] buf 	(DW_OP_fbreg -58)
+}
+
+1 _Bool simple_strtoul (...)
+{
+  8 char* s 	(DW_OP_fbreg -40)
+  8 char** p 	(DW_OP_fbreg -48)
+  8 longunsignedint* val 	(DW_OP_fbreg -56)
+  8 longunsignedint sum 	(DW_OP_fbreg -24)
+  4 int c 	(DW_OP_fbreg -28)
+}
+
+0 void print_double (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -120)
+  8 size_t blank 	(DW_OP_fbreg -128)
+  8 void* block 	(DW_OP_fbreg -136)
+  8 char* fmt_string 	(DW_OP_fbreg -144)
+  4 int width 	(DW_OP_fbreg -148)
+  4 int pad 	(DW_OP_fbreg -152)
+  8 double* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -60)
+  4 int adjusted_width 	(DW_OP_fbreg -64)
+  8 double x 	(DW_OP_fbreg -48)
+  1 char_[40] buf 	(DW_OP_fbreg -112)
+  8 size_t j 	(DW_OP_fbreg -56)
+  8 {8 double x; 1 char_[8] b;} u 	(DW_OP_fbreg -72)
+}
+
+0 void print_long_double (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -152)
+  8 size_t blank 	(DW_OP_fbreg -160)
+  8 void* block 	(DW_OP_fbreg -168)
+  8 char* fmt_string 	(DW_OP_fbreg -176)
+  4 int width 	(DW_OP_fbreg -180)
+  4 int pad 	(DW_OP_fbreg -184)
+  8 longdouble* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -76)
+  4 int adjusted_width 	(DW_OP_fbreg -80)
+  16 longdouble x 	(DW_OP_fbreg -64)
+  1 char_[45] buf 	(DW_OP_fbreg -144)
+  8 size_t j 	(DW_OP_fbreg -72)
+  8 {16 longdouble x; 1 char_[16] b;} u 	(DW_OP_fbreg -96)
+}
+
+8 size_t gcd (...)
+{
+  8 size_t u 	(DW_OP_fbreg -40)
+  8 size_t v 	(DW_OP_fbreg -48)
+  8 size_t t 	(DW_OP_fbreg -24)
+}
+
+0 void print_char (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -56)
+  8 size_t blank 	(DW_OP_fbreg -64)
+  8 void* block 	(DW_OP_fbreg -72)
+  8 char* fmt_string 	(DW_OP_fbreg -80)
+  4 int width 	(DW_OP_fbreg -84)
+  4 int pad 	(DW_OP_fbreg -88)
+  8 unsignedchar* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -40)
+  4 int adjusted_width 	(DW_OP_fbreg -44)
+  1 unsignedchar x 	(DW_OP_fbreg -45)
+}
+
+0 void print_long_long (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -88)
+  8 size_t blank 	(DW_OP_fbreg -96)
+  8 void* block 	(DW_OP_fbreg -104)
+  8 char* fmt_string 	(DW_OP_fbreg -112)
+  4 int width 	(DW_OP_fbreg -116)
+  4 int pad 	(DW_OP_fbreg -120)
+  8 unsigned_long_long_int* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -60)
+  4 int adjusted_width 	(DW_OP_fbreg -64)
+  8 unsigned_long_long_int x 	(DW_OP_fbreg -48)
+  8 size_t j 	(DW_OP_fbreg -56)
+  8 {8 unsigned_long_long_int x; 1 char_[8] b;} u 	(DW_OP_fbreg -72)
+}
+
+0 void print_float (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -120)
+  8 size_t blank 	(DW_OP_fbreg -128)
+  8 void* block 	(DW_OP_fbreg -136)
+  8 char* fmt_string 	(DW_OP_fbreg -144)
+  4 int width 	(DW_OP_fbreg -148)
+  4 int pad 	(DW_OP_fbreg -152)
+  8 float* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -52)
+  4 int adjusted_width 	(DW_OP_fbreg -56)
+  4 float x 	(DW_OP_fbreg -40)
+  1 char_[31] buf 	(DW_OP_fbreg -96)
+  8 size_t j 	(DW_OP_fbreg -48)
+  8 {4 float x; 1 char_[4] b;} u 	(DW_OP_fbreg -100)
+}
+
+1 _Bool dump_strings (...)
+{
+  8 size_t bufsize 	(DW_OP_fbreg -56)
+  8 char* buf 	(DW_OP_fbreg -24)
+  8 uintmax_t address 	(DW_OP_fbreg -32)
+  1 _Bool ok 	(DW_OP_fbreg -33)
+  8 size_t i 	(DW_OP_fbreg -48)
+  4 int c 	(DW_OP_fbreg -60)
+}
+
+0 void print_short (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -72)
+  8 size_t blank 	(DW_OP_fbreg -80)
+  8 void* block 	(DW_OP_fbreg -88)
+  8 char* fmt_string 	(DW_OP_fbreg -96)
+  4 int width 	(DW_OP_fbreg -100)
+  4 int pad 	(DW_OP_fbreg -104)
+  8 shortunsignedint* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -52)
+  4 int adjusted_width 	(DW_OP_fbreg -56)
+  2 shortunsignedint x 	(DW_OP_fbreg -38)
+  8 size_t j 	(DW_OP_fbreg -48)
+  8 {2 shortunsignedint x; 1 char_[2] b;} u 	(DW_OP_fbreg -58)
+}
+
+4 int main (...)
+{
+  4 int argc 	(DW_OP_fbreg -164)
+  8 char** argv 	(DW_OP_fbreg -176)
+  4 int n_files 	(DW_OP_fbreg -36)
+  8 size_t i 	(DW_OP_fbreg -48)
+  4 int l_c_m 	(DW_OP_fbreg -88)
+  8 size_t desired_width 	(DW_OP_fbreg -56)
+  1 _Bool modern 	(DW_OP_fbreg -57)
+  1 _Bool width_specified 	(DW_OP_fbreg -58)
+  1 _Bool ok 	(DW_OP_fbreg -59)
+  8 size_t width_per_block 	(DW_OP_fbreg -72)
+  1 char_[13] multipliers 	(DW_OP_addr 0x412348)
+  8 uintmax_t pseudo_start 	(DW_OP_fbreg -80)
+  8 uintmax_t tmp 	(DW_OP_fbreg -120)
+  4 unsignedintenum s_err 	(DW_OP_fbreg -108)
+  4 int oi 	(DW_OP_fbreg -124)
+  4 int c 	(DW_OP_fbreg -84)
+  8 uintmax_t w_tmp 	(DW_OP_fbreg -136)
+  8 uintmax_t o1 	(DW_OP_fbreg -144)
+  8 uintmax_t o2 	(DW_OP_fbreg -152)
+  4 int fields_per_block 	(DW_OP_fbreg -92)
+  4 int block_width 	(DW_OP_fbreg -96)
+  4 int fields_per_block 	(DW_OP_fbreg -100)
+  4 int block_width 	(DW_OP_fbreg -104)
+}
+
+4 int get_lcm (...)
+{
+  4 int l_c_m 	(DW_OP_fbreg -20)
+  8 size_t i 	(DW_OP_fbreg -32)
+}
+
+0 void format_address_std (...)
+{
+  8 uintmax_t address 	(DW_OP_fbreg -72)
+  1 char c 	(DW_OP_fbreg -76)
+  1 char_[25] buf 	(DW_OP_fbreg -64)
+  8 char* p 	(DW_OP_fbreg -24)
+  8 char* pbound 	(DW_OP_fbreg -32)
+}
+
+1 _Bool parse_old_offset (...)
+{
+  8 char* s 	(DW_OP_fbreg -40)
+  8 uintmax_t* offset 	(DW_OP_fbreg -48)
+  4 int radix 	(DW_OP_fbreg -20)
+}
+
+0 void print_s_short (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -72)
+  8 size_t blank 	(DW_OP_fbreg -80)
+  8 void* block 	(DW_OP_fbreg -88)
+  8 char* fmt_string 	(DW_OP_fbreg -96)
+  4 int width 	(DW_OP_fbreg -100)
+  4 int pad 	(DW_OP_fbreg -104)
+  8 shortint* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -52)
+  4 int adjusted_width 	(DW_OP_fbreg -56)
+  2 shortint x 	(DW_OP_fbreg -38)
+  8 size_t j 	(DW_OP_fbreg -48)
+  8 {2 shortint x; 1 char_[2] b;} u 	(DW_OP_fbreg -58)
+}
+
+1 _Bool read_char (...)
+{
+  8 int* c 	(DW_OP_fbreg -40)
+  1 _Bool ok 	(DW_OP_fbreg -17)
+}
+
+0 void emit_ancillary_info (...)
+{
+  8 char* program 	(DW_OP_fbreg -184)
+  16 infomap_[7] infomap 	(DW_OP_fbreg -176)
+  8 char* node 	(DW_OP_fbreg -40)
+  8 infomap* map_prog 	(DW_OP_fbreg -48)
+  8 char* lc_messages 	(DW_OP_fbreg -56)
+}
+
+1 _Bool read_block (...)
+{
+  8 size_t n 	(DW_OP_fbreg -56)
+  8 char* block 	(DW_OP_fbreg -64)
+  8 size_t* n_bytes_in_buffer 	(DW_OP_fbreg -72)
+  1 _Bool ok 	(DW_OP_fbreg -17)
+  1 char_[11] __PRETTY_FUNCTION__ 	(DW_OP_addr 0x412338)
+  8 size_t n_needed 	(DW_OP_fbreg -32)
+  8 size_t n_read 	(DW_OP_fbreg -40)
+}
+
+1 _Bool open_next_file (...)
+{
+  1 _Bool ok 	(DW_OP_fbreg -33)
+}
+
+0 void dump_hexl_mode_trailer (...)
+{
+  8 size_t n_bytes 	(DW_OP_fbreg -40)
+  8 char* block 	(DW_OP_fbreg -48)
+  8 size_t i 	(DW_OP_fbreg -24)
+  1 unsignedchar c 	(DW_OP_fbreg -25)
+  1 unsignedchar c2 	(DW_OP_fbreg -26)
+}
+
+0 void print_s_char (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -56)
+  8 size_t blank 	(DW_OP_fbreg -64)
+  8 void* block 	(DW_OP_fbreg -72)
+  8 char* fmt_string 	(DW_OP_fbreg -80)
+  4 int width 	(DW_OP_fbreg -84)
+  4 int pad 	(DW_OP_fbreg -88)
+  8 signedchar* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -40)
+  4 int adjusted_width 	(DW_OP_fbreg -44)
+  1 signedchar x 	(DW_OP_fbreg -45)
+}
+
+0 void print_int (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -72)
+  8 size_t blank 	(DW_OP_fbreg -80)
+  8 void* block 	(DW_OP_fbreg -88)
+  8 char* fmt_string 	(DW_OP_fbreg -96)
+  4 int width 	(DW_OP_fbreg -100)
+  4 int pad 	(DW_OP_fbreg -104)
+  8 unsignedint* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -52)
+  4 int adjusted_width 	(DW_OP_fbreg -56)
+  4 unsignedint x 	(DW_OP_fbreg -40)
+  8 size_t j 	(DW_OP_fbreg -48)
+  8 {4 unsignedint x; 1 char_[4] b;} u 	(DW_OP_fbreg -60)
+}
+
+0 void write_block (...)
+{
+  8 uintmax_t current_offset 	(DW_OP_fbreg -56)
+  8 size_t n_bytes 	(DW_OP_fbreg -64)
+  8 char* prev_block 	(DW_OP_fbreg -72)
+  8 char* curr_block 	(DW_OP_fbreg -80)
+  1 _Bool first 	(DW_OP_addr 0x616271)
+  1 _Bool prev_pair_equal 	(DW_OP_addr 0x6164a5)
+  8 size_t i 	(DW_OP_fbreg -24)
+  4 int datum_width 	(DW_OP_fbreg -28)
+  4 int fields_per_block 	(DW_OP_fbreg -32)
+  4 int blank_fields 	(DW_OP_fbreg -36)
+  4 int field_width 	(DW_OP_fbreg -40)
+  4 int pad_width 	(DW_OP_fbreg -44)
+}
+
+0 void print_long (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -88)
+  8 size_t blank 	(DW_OP_fbreg -96)
+  8 void* block 	(DW_OP_fbreg -104)
+  8 char* fmt_string 	(DW_OP_fbreg -112)
+  4 int width 	(DW_OP_fbreg -116)
+  4 int pad 	(DW_OP_fbreg -120)
+  8 longunsignedint* p 	(DW_OP_fbreg -24)
+  8 uintmax_t i 	(DW_OP_fbreg -32)
+  4 int pad_remaining 	(DW_OP_fbreg -36)
+  4 int next_pad 	(DW_OP_fbreg -60)
+  4 int adjusted_width 	(DW_OP_fbreg -64)
+  8 longunsignedint x 	(DW_OP_fbreg -48)
+  8 size_t j 	(DW_OP_fbreg -56)
+  8 {8 longunsignedint x; 1 char_[8] b;} u 	(DW_OP_fbreg -72)
+}
+
+0 void print_ascii (...)
+{
+  8 size_t fields 	(DW_OP_fbreg -88)
+  8 size_t blank 	(DW_OP_fbreg -96)
+  8 void* block 	(DW_OP_fbreg -104)
+  8 char* unused_fmt_string 	(DW_OP_fbreg -112)
+  4 int width 	(DW_OP_fbreg -116)
+  4 int pad 	(DW_OP_fbreg -120)
+  8 unsignedchar* p 	(DW_OP_fbreg -40)
+  8 uintmax_t i 	(DW_OP_fbreg -48)
+  4 int pad_remaining 	(DW_OP_fbreg -52)
+  4 int next_pad 	(DW_OP_fbreg -68)
+  1 unsignedchar c 	(DW_OP_fbreg -69)
+  8 char* s 	(DW_OP_fbreg -64)
+  1 char_[4] buf 	(DW_OP_fbreg -73)
+}
+
+1 _Bool usable_st_size (...)
+{
+  8 stat* sb 	(DW_OP_fbreg -24)
+}
+
+0 void format_address_label (...)
+{
+  8 uintmax_t address 	(DW_OP_fbreg -24)
+  1 char c 	(DW_OP_fbreg -28)
+}
+
+0 void usage (...)
+{
+  4 int status 	(DW_OP_fbreg -52)
+}
+
+0 void format_address_paren (...)
+{
+  8 uintmax_t address 	(DW_OP_fbreg -24)
+  1 char c 	(DW_OP_fbreg -28)
+}
+
+8 size_t lcm (...)
+{
+  8 size_t u 	(DW_OP_fbreg -24)
+  8 size_t v 	(DW_OP_fbreg -32)
+}
+
+0 void format_address_none (...)
+{
+  8 uintmax_t address 	(DW_OP_fbreg -24)
+  1 char c 	(DW_OP_fbreg -28)
+}
+
+
+8 ptrdiff_t argmatch (...)
+{
+  8 char* arg 	(DW_OP_fbreg -56)
+  8 char** arglist 	(DW_OP_fbreg -64)
+  8 char* vallist 	(DW_OP_fbreg -72)
+  8 size_t valsize 	(DW_OP_fbreg -80)
+  8 size_t i 	(DW_OP_fbreg -24)
+  8 size_t arglen 	(DW_OP_fbreg -48)
+  8 ptrdiff_t matchind 	(DW_OP_fbreg -32)
+  1 _Bool ambiguous 	(DW_OP_fbreg -33)
+}
+
+8 ptrdiff_t __xargmatch_internal (...)
+{
+  8 char* context 	(DW_OP_fbreg -40)
+  8 char* arg 	(DW_OP_fbreg -48)
+  8 char** arglist 	(DW_OP_fbreg -56)
+  8 char* vallist 	(DW_OP_fbreg -64)
+  8 size_t valsize 	(DW_OP_fbreg -72)
+  8 argmatch_exit_fn exit_fn 	(DW_OP_fbreg -80)
+  8 ptrdiff_t res 	(DW_OP_fbreg -24)
+}
+
+8 char* argmatch_to_argument (...)
+{
+  8 char* value 	(DW_OP_fbreg -40)
+  8 char** arglist 	(DW_OP_fbreg -48)
+  8 char* vallist 	(DW_OP_fbreg -56)
+  8 size_t valsize 	(DW_OP_fbreg -64)
+  8 size_t i 	(DW_OP_fbreg -24)
+}
+
+0 void argmatch_valid (...)
+{
+  8 char** arglist 	(DW_OP_fbreg -56)
+  8 char* vallist 	(DW_OP_fbreg -64)
+  8 size_t valsize 	(DW_OP_fbreg -72)
+  8 size_t i 	(DW_OP_fbreg -40)
+  8 char* last_val 	(DW_OP_fbreg -48)
+}
+
+0 void argmatch_invalid (...)
+{
+  8 char* context 	(DW_OP_fbreg -56)
+  8 char* value 	(DW_OP_fbreg -64)
+  8 ptrdiff_t problem 	(DW_OP_fbreg -72)
+  8 char* format 	(DW_OP_fbreg -40)
+}
+
+
+0 void close_stdout (...)
+{
+  8 char* write_error 	(DW_OP_fbreg -40)
+}
+
+0 void close_stdout_set_file_name (...)
+{
+  8 char* file 	(DW_OP_fbreg -24)
+}
+
+0 void close_stdout_set_ignore_EPIPE (...)
+{
+  1 _Bool ignore 	(DW_OP_fbreg -20)
+}
+
+
+4 int dtoastr (...)
+{
+  8 char* buf 	(DW_OP_fbreg -72)
+  8 size_t bufsize 	(DW_OP_fbreg -80)
+  4 int flags 	(DW_OP_fbreg -84)
+  4 int width 	(DW_OP_fbreg -88)
+  8 double x 	(DW_OP_fbreg -96)
+  8 double promoted_x 	(DW_OP_fbreg -32)
+  1 char_[11] format 	(DW_OP_fbreg -63)
+  8 double abs_x 	(DW_OP_fbreg -40)
+  4 int prec 	(DW_OP_fbreg -20)
+  8 char* p 	(DW_OP_fbreg -48)
+  4 int n 	(DW_OP_fbreg -52)
+}
+
+
+4 int ftoastr (...)
+{
+  8 char* buf 	(DW_OP_fbreg -72)
+  8 size_t bufsize 	(DW_OP_fbreg -80)
+  4 int flags 	(DW_OP_fbreg -84)
+  4 int width 	(DW_OP_fbreg -88)
+  4 float x 	(DW_OP_fbreg -92)
+  8 double promoted_x 	(DW_OP_fbreg -32)
+  1 char_[11] format 	(DW_OP_fbreg -63)
+  4 float abs_x 	(DW_OP_fbreg -36)
+  4 int prec 	(DW_OP_fbreg -20)
+  8 char* p 	(DW_OP_fbreg -48)
+  4 int n 	(DW_OP_fbreg -52)
+}
+
+
+4 int ldtoastr (...)
+{
+  8 char* buf 	(DW_OP_fbreg -104)
+  8 size_t bufsize 	(DW_OP_fbreg -112)
+  4 int flags 	(DW_OP_fbreg -116)
+  4 int width 	(DW_OP_fbreg -120)
+  16 longdouble x 	(DW_OP_fbreg +0)
+  16 longdouble promoted_x 	(DW_OP_fbreg -48)
+  1 char_[11] format 	(DW_OP_fbreg -87)
+  16 longdouble abs_x 	(DW_OP_fbreg -64)
+  4 int prec 	(DW_OP_fbreg -20)
+  8 char* p 	(DW_OP_fbreg -72)
+  4 int n 	(DW_OP_fbreg -76)
+}
+
+
+0 void set_program_name (...)
+{
+  8 char* argv0 	(DW_OP_fbreg -40)
+  8 char* slash 	(DW_OP_fbreg -24)
+  8 char* base 	(DW_OP_fbreg -32)
+}
+
+
+8 char* quotearg_n_custom_mem (...)
+{
+  4 int n 	(DW_OP_fbreg -84)
+  8 char* left_quote 	(DW_OP_fbreg -96)
+  8 char* right_quote 	(DW_OP_fbreg -104)
+  8 char* arg 	(DW_OP_fbreg -112)
+  8 size_t argsize 	(DW_OP_fbreg -120)
+  56 quoting_options o 	(DW_OP_fbreg -80)
+}
+
+8 char* quotearg_alloc_mem (...)
+{
+  8 char* arg 	(DW_OP_fbreg -56)
+  8 size_t argsize 	(DW_OP_fbreg -64)
+  8 size_t* size 	(DW_OP_fbreg -72)
+  8 quoting_options* o 	(DW_OP_fbreg -80)
+  8 quoting_options* p 	(DW_OP_fbreg -24)
+  4 int e 	(DW_OP_fbreg -28)
+  4 int flags 	(DW_OP_fbreg -32)
+  8 size_t bufsize 	(DW_OP_fbreg -40)
+  8 char* buf 	(DW_OP_fbreg -48)
+}
+
+8 char* gettext_quote (...)
+{
+  8 char* msgid 	(DW_OP_fbreg -40)
+  4 unsignedintenum s 	(DW_OP_fbreg -44)
+  8 char* translation 	(DW_OP_fbreg -24)
+  8 char* locale_code 	(DW_OP_fbreg -32)
+}
+
+8 char* quotearg_n_options (...)
+{
+  4 int n 	(DW_OP_fbreg -84)
+  8 char* arg 	(DW_OP_fbreg -96)
+  8 size_t argsize 	(DW_OP_fbreg -104)
+  8 quoting_options* options 	(DW_OP_fbreg -112)
+  4 int e 	(DW_OP_fbreg -36)
+  8 slotvec* sv 	(DW_OP_fbreg -24)
+  1 _Bool preallocated 	(DW_OP_fbreg -37)
+  4 int nmax 	(DW_OP_fbreg -44)
+  8 size_t size 	(DW_OP_fbreg -56)
+  8 char* val 	(DW_OP_fbreg -32)
+  4 int flags 	(DW_OP_fbreg -60)
+  8 size_t qsize 	(DW_OP_fbreg -72)
+}
+
+4 int set_quoting_flags (...)
+{
+  8 quoting_options* o 	(DW_OP_fbreg -40)
+  4 int i 	(DW_OP_fbreg -44)
+  4 int r 	(DW_OP_fbreg -20)
+}
+
+8 char* quotearg_char_mem (...)
+{
+  8 char* arg 	(DW_OP_fbreg -88)
+  8 size_t argsize 	(DW_OP_fbreg -96)
+  1 char ch 	(DW_OP_fbreg -100)
+  56 quoting_options options 	(DW_OP_fbreg -80)
+}
+
+4 int set_char_quoting (...)
+{
+  8 quoting_options* o 	(DW_OP_fbreg -56)
+  1 char c 	(DW_OP_fbreg -60)
+  4 int i 	(DW_OP_fbreg -64)
+  1 unsignedchar uc 	(DW_OP_fbreg -17)
+  8 unsignedint* p 	(DW_OP_fbreg -32)
+  4 int shift 	(DW_OP_fbreg -36)
+  4 int r 	(DW_OP_fbreg -40)
+}
+
+8 char* quotearg_n_style (...)
+{
+  4 int n 	(DW_OP_fbreg -84)
+  4 unsignedintenum s 	(DW_OP_fbreg -88)
+  8 char* arg 	(DW_OP_fbreg -96)
+  56 quoting_options o 	(DW_OP_fbreg -80)
+}
+
+56 quoting_options quoting_options_from_style (...)
+{
+  4 unsignedintenum style 	(DW_OP_fbreg -92)
+  56 quoting_options o 	(DW_OP_fbreg -80)
+}
+
+8 char* quotearg_n_style_mem (...)
+{
+  4 int n 	(DW_OP_fbreg -84)
+  4 unsignedintenum s 	(DW_OP_fbreg -88)
+  8 char* arg 	(DW_OP_fbreg -96)
+  8 size_t argsize 	(DW_OP_fbreg -104)
+  56 quoting_options o 	(DW_OP_fbreg -80)
+}
+
+8 size_t quotearg_buffer_restyled (...)
+{
+  8 char* buffer 	(DW_OP_fbreg -168)
+  8 size_t buffersize 	(DW_OP_fbreg -176)
+  8 char* arg 	(DW_OP_fbreg -184)
+  8 size_t argsize 	(DW_OP_fbreg -192)
+  4 enum quoting_style 	(DW_OP_fbreg -196)
+  4 int flags 	(DW_OP_fbreg -200)
+  8 unsignedint* quote_these_too 	(DW_OP_fbreg +0)
+  8 char* left_quote 	(DW_OP_fbreg +8)
+  8 char* right_quote 	(DW_OP_fbreg +16)
+  8 size_t i 	(DW_OP_fbreg -40)
+  8 size_t len 	(DW_OP_fbreg -48)
+  8 size_t orig_buffersize 	(DW_OP_fbreg -56)
+  8 char* quote_string 	(DW_OP_fbreg -64)
+  8 size_t quote_string_len 	(DW_OP_fbreg -72)
+  1 _Bool backslash_escapes 	(DW_OP_fbreg -73)
+  1 _Bool unibyte_locale 	(DW_OP_fbreg -113)
+  1 _Bool elide_outer_quotes 	(DW_OP_fbreg -74)
+  1 _Bool pending_shell_escape_end 	(DW_OP_fbreg -75)
+  1 _Bool encountered_single_quote 	(DW_OP_fbreg -76)
+  1 _Bool all_c_and_shell_quote_compat 	(DW_OP_fbreg -77)
+  1 unsignedchar c 	(DW_OP_fbreg -78)
+  1 unsignedchar esc 	(DW_OP_fbreg -79)
+  1 _Bool is_right_quote 	(DW_OP_fbreg -80)
+  1 _Bool escaping 	(DW_OP_fbreg -81)
+  1 _Bool c_and_shell_quote_compat 	(DW_OP_fbreg -82)
+  8 size_t m 	(DW_OP_fbreg -96)
+  1 _Bool printable 	(DW_OP_fbreg -97)
+  8 mbstate_t mbstate 	(DW_OP_fbreg -144)
+  4 wchar_t w 	(DW_OP_fbreg -148)
+  8 size_t bytes 	(DW_OP_fbreg -128)
+  8 size_t j 	(DW_OP_fbreg -112)
+  8 size_t ilim 	(DW_OP_fbreg -136)
+}
+
+0 void quotearg_free (...)
+{
+  8 slotvec* sv 	(DW_OP_fbreg -32)
+  4 int i 	(DW_OP_fbreg -20)
+}
+
+8 quoting_options* clone_quoting_options (...)
+{
+  8 quoting_options* o 	(DW_OP_fbreg -40)
+  4 int e 	(DW_OP_fbreg -20)
+  8 quoting_options* p 	(DW_OP_fbreg -32)
+}
+
+8 size_t quotearg_buffer (...)
+{
+  8 char* buffer 	(DW_OP_fbreg -56)
+  8 size_t buffersize 	(DW_OP_fbreg -64)
+  8 char* arg 	(DW_OP_fbreg -72)
+  8 size_t argsize 	(DW_OP_fbreg -80)
+  8 quoting_options* o 	(DW_OP_fbreg -88)
+  8 quoting_options* p 	(DW_OP_fbreg -24)
+  4 int e 	(DW_OP_fbreg -28)
+  8 size_t r 	(DW_OP_fbreg -40)
+}
+
+8 char* quotearg_n_style_colon (...)
+{
+  4 int n 	(DW_OP_fbreg -84)
+  4 unsignedintenum s 	(DW_OP_fbreg -88)
+  8 char* arg 	(DW_OP_fbreg -96)
+  56 quoting_options options 	(DW_OP_fbreg -80)
+}
+
+0 void set_custom_quoting (...)
+{
+  8 quoting_options* o 	(DW_OP_fbreg -24)
+  8 char* left_quote 	(DW_OP_fbreg -32)
+  8 char* right_quote 	(DW_OP_fbreg -40)
+}
+
+8 char* quote_n_mem (...)
+{
+  4 int n 	(DW_OP_fbreg -20)
+  8 char* arg 	(DW_OP_fbreg -32)
+  8 size_t argsize 	(DW_OP_fbreg -40)
+}
+
+4 unsignedintenum get_quoting_style (...)
+{
+  8 quoting_options* o 	(DW_OP_fbreg -24)
+}
+
+8 char* quote_n (...)
+{
+  4 int n 	(DW_OP_fbreg -20)
+  8 char* arg 	(DW_OP_fbreg -32)
+}
+
+8 char* quotearg (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+}
+
+8 char* quotearg_char (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+  1 char ch 	(DW_OP_fbreg -28)
+}
+
+8 char* quote_mem (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+  8 size_t argsize 	(DW_OP_fbreg -32)
+}
+
+8 char* quotearg_n_mem (...)
+{
+  4 int n 	(DW_OP_fbreg -20)
+  8 char* arg 	(DW_OP_fbreg -32)
+  8 size_t argsize 	(DW_OP_fbreg -40)
+}
+
+8 char* quotearg_colon_mem (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+  8 size_t argsize 	(DW_OP_fbreg -32)
+}
+
+8 char* quotearg_style_mem (...)
+{
+  4 unsignedintenum s 	(DW_OP_fbreg -20)
+  8 char* arg 	(DW_OP_fbreg -32)
+  8 size_t argsize 	(DW_OP_fbreg -40)
+}
+
+8 char* quote (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+}
+
+8 char* quotearg_colon (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+}
+
+8 char* quotearg_style (...)
+{
+  4 unsignedintenum s 	(DW_OP_fbreg -20)
+  8 char* arg 	(DW_OP_fbreg -32)
+}
+
+0 void set_quoting_style (...)
+{
+  8 quoting_options* o 	(DW_OP_fbreg -24)
+  4 unsignedintenum s 	(DW_OP_fbreg -28)
+}
+
+8 char* quotearg_n (...)
+{
+  4 int n 	(DW_OP_fbreg -20)
+  8 char* arg 	(DW_OP_fbreg -32)
+}
+
+8 char* quotearg_custom_mem (...)
+{
+  8 char* left_quote 	(DW_OP_fbreg -24)
+  8 char* right_quote 	(DW_OP_fbreg -32)
+  8 char* arg 	(DW_OP_fbreg -40)
+  8 size_t argsize 	(DW_OP_fbreg -48)
+}
+
+8 char* quotearg_n_custom (...)
+{
+  4 int n 	(DW_OP_fbreg -20)
+  8 char* left_quote 	(DW_OP_fbreg -32)
+  8 char* right_quote 	(DW_OP_fbreg -40)
+  8 char* arg 	(DW_OP_fbreg -48)
+}
+
+8 char* quotearg_mem (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+  8 size_t argsize 	(DW_OP_fbreg -32)
+}
+
+8 char* quotearg_alloc (...)
+{
+  8 char* arg 	(DW_OP_fbreg -24)
+  8 size_t argsize 	(DW_OP_fbreg -32)
+  8 quoting_options* o 	(DW_OP_fbreg -40)
+}
+
+8 char* quotearg_custom (...)
+{
+  8 char* left_quote 	(DW_OP_fbreg -24)
+  8 char* right_quote 	(DW_OP_fbreg -32)
+  8 char* arg 	(DW_OP_fbreg -40)
+}
+
+
+0 void version_etc (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -232)
+  8 char* command_name 	(DW_OP_fbreg -240)
+  8 char* package 	(DW_OP_fbreg -248)
+  8 char* version 	(DW_OP_fbreg -256)
+  24 va_list authors 	(DW_OP_fbreg -216)
+}
+
+0 void version_etc_va (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -120)
+  8 char* command_name 	(DW_OP_fbreg -128)
+  8 char* package 	(DW_OP_fbreg -136)
+  8 char* version 	(DW_OP_fbreg -144)
+  8 __va_list_tag* authors 	(DW_OP_fbreg -152)
+  8 size_t n_authors 	(DW_OP_fbreg -24)
+  8 char*_[10] authtab 	(DW_OP_fbreg -112)
+}
+
+0 void version_etc_ar (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -40)
+  8 char* command_name 	(DW_OP_fbreg -48)
+  8 char* package 	(DW_OP_fbreg -56)
+  8 char* version 	(DW_OP_fbreg -64)
+  8 char** authors 	(DW_OP_fbreg -72)
+  8 size_t n_authors 	(DW_OP_fbreg -24)
+}
+
+0 void version_etc_arn (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -72)
+  8 char* command_name 	(DW_OP_fbreg -80)
+  8 char* package 	(DW_OP_fbreg -88)
+  8 char* version 	(DW_OP_fbreg -96)
+  8 char** authors 	(DW_OP_fbreg -104)
+  8 size_t n_authors 	(DW_OP_fbreg -112)
+}
+
+
+8 * xcalloc (...)
+{
+  8 size_t n 	(DW_OP_fbreg -40)
+  8 size_t s 	(DW_OP_fbreg -48)
+  8 void* p 	(DW_OP_fbreg -24)
+}
+
+8 * xmalloc (...)
+{
+  8 size_t n 	(DW_OP_fbreg -40)
+  8 void* p 	(DW_OP_fbreg -24)
+}
+
+8 * x2nrealloc (...)
+{
+  8 void* p 	(DW_OP_fbreg -40)
+  8 size_t* pn 	(DW_OP_fbreg -48)
+  8 size_t s 	(DW_OP_fbreg -56)
+  8 size_t n 	(DW_OP_fbreg -24)
+}
+
+8 * xnmalloc (...)
+{
+  8 size_t n 	(DW_OP_fbreg -24)
+  8 size_t s 	(DW_OP_fbreg -32)
+}
+
+8 * xmemdup (...)
+{
+  8 void* p 	(DW_OP_fbreg -24)
+  8 size_t s 	(DW_OP_fbreg -32)
+}
+
+8 * xrealloc (...)
+{
+  8 void* p 	(DW_OP_fbreg -24)
+  8 size_t n 	(DW_OP_fbreg -32)
+}
+
+8 * x2realloc (...)
+{
+  8 void* p 	(DW_OP_fbreg -24)
+  8 size_t* pn 	(DW_OP_fbreg -32)
+}
+
+8 char* xstrdup (...)
+{
+  8 char* string 	(DW_OP_fbreg -24)
+}
+
+8 * xnrealloc (...)
+{
+  8 void* p 	(DW_OP_fbreg -24)
+  8 size_t n 	(DW_OP_fbreg -32)
+  8 size_t s 	(DW_OP_fbreg -40)
+}
+
+8 char* xcharalloc (...)
+{
+  8 size_t n 	(DW_OP_fbreg -24)
+}
+
+8 * xzalloc (...)
+{
+  8 size_t s 	(DW_OP_fbreg -24)
+}
+
+
+0 void xset_binary_mode (...)
+{
+  4 int fd 	(DW_OP_fbreg -20)
+  4 int mode 	(DW_OP_fbreg -24)
+}
+
+
+4 int xvprintf (...)
+{
+  8 char* format 	(DW_OP_fbreg -56)
+  8 __va_list_tag* args 	(DW_OP_fbreg -64)
+  4 int retval 	(DW_OP_fbreg -36)
+}
+
+4 int xfprintf (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -232)
+  8 char* format 	(DW_OP_fbreg -240)
+  24 va_list args 	(DW_OP_fbreg -224)
+  4 int retval 	(DW_OP_fbreg -196)
+}
+
+4 int xvfprintf (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -56)
+  8 char* format 	(DW_OP_fbreg -64)
+  8 __va_list_tag* args 	(DW_OP_fbreg -72)
+  4 int retval 	(DW_OP_fbreg -36)
+}
+
+4 int xprintf (...)
+{
+  8 char* format 	(DW_OP_fbreg -232)
+  24 va_list args 	(DW_OP_fbreg -224)
+  4 int retval 	(DW_OP_fbreg -196)
+}
+
+
+0 void xstrtol_error (...)
+{
+  4 unsignedintenum err 	(DW_OP_fbreg -52)
+  4 int opt_idx 	(DW_OP_fbreg -56)
+  1 char c 	(DW_OP_fbreg -60)
+  8 rpl_option* long_options 	(DW_OP_fbreg -72)
+  8 char* arg 	(DW_OP_fbreg -80)
+  4 int exit_status 	(DW_OP_fbreg -64)
+  8 char* hyphens 	(DW_OP_fbreg -24)
+  8 char* msgid 	(DW_OP_fbreg -32)
+  8 char* rpl_option 	(DW_OP_fbreg -40)
+  1 char_[2] option_buffer 	(DW_OP_fbreg -42)
+}
+
+0 void xstrtol_fatal (...)
+{
+  4 unsignedintenum err 	(DW_OP_fbreg -20)
+  4 int opt_idx 	(DW_OP_fbreg -24)
+  1 char c 	(DW_OP_fbreg -28)
+  8 rpl_option* long_options 	(DW_OP_fbreg -40)
+  8 char* arg 	(DW_OP_fbreg -48)
+}
+
+
+4 strtol_error xstrtoumax (...)
+{
+  8 char* s 	(DW_OP_fbreg -88)
+  8 char** ptr 	(DW_OP_fbreg -96)
+  4 int strtol_base 	(DW_OP_fbreg -100)
+  8 uintmax_t* val 	(DW_OP_fbreg -112)
+  8 char* valid_suffixes 	(DW_OP_fbreg -120)
+  8 char* t_ptr 	(DW_OP_fbreg -64)
+  8 char** p 	(DW_OP_fbreg -56)
+  8 uintmax_t tmp 	(DW_OP_fbreg -72)
+  4 strtol_error err 	(DW_OP_fbreg -20)
+  1 char_[11] __PRETTY_FUNCTION__ 	(DW_OP_addr 0x413398)
+  8 char* q 	(DW_OP_fbreg -32)
+  1 unsignedchar ch 	(DW_OP_fbreg -33)
+  4 int base 	(DW_OP_fbreg -40)
+  4 int suffixes 	(DW_OP_fbreg -44)
+  4 strtol_error overflow 	(DW_OP_fbreg -48)
+}
+
+4 strtol_error bkm_scale_by_power (...)
+{
+  8 uintmax_t* x 	(DW_OP_fbreg -40)
+  4 int base 	(DW_OP_fbreg -44)
+  4 int power 	(DW_OP_fbreg -48)
+  4 strtol_error err 	(DW_OP_fbreg -20)
+}
+
+4 strtol_error bkm_scale (...)
+{
+  8 uintmax_t* x 	(DW_OP_fbreg -24)
+  4 int scale_factor 	(DW_OP_fbreg -28)
+}
+
+
+4 int rpl_fclose (...)
+{
+  8 FILE* fp 	(DW_OP_fbreg -40)
+  4 int saved_errno 	(DW_OP_fbreg -20)
+  4 int fd 	(DW_OP_fbreg -28)
+  4 int result 	(DW_OP_fbreg -24)
+}
+
+
+0 void clear_ungetc_buffer_preserving_position (...)
+{
+  8 FILE* fp 	(DW_OP_fbreg -24)
+}
+
+4 int rpl_fflush (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -24)
+}
+
+
+4 int rpl_fseeko (...)
+{
+  8 FILE* fp 	(DW_OP_fbreg -40)
+  8 off_t offset 	(DW_OP_fbreg -48)
+  4 int whence 	(DW_OP_fbreg -52)
+  8 off_t pos 	(DW_OP_fbreg -24)
+}
+
+
+4 int _getopt_internal_r (...)
+{
+  4 int argc 	(DW_OP_fbreg -68)
+  8 char** argv 	(DW_OP_fbreg -80)
+  8 char* optstring 	(DW_OP_fbreg -88)
+  8 rpl_option* longopts 	(DW_OP_fbreg -96)
+  8 int* longind 	(DW_OP_fbreg -104)
+  4 int long_only 	(DW_OP_fbreg -72)
+  8 _getopt_data* d 	(DW_OP_fbreg +0)
+  4 int posixly_correct 	(DW_OP_fbreg +8)
+  4 int print_errors 	(DW_OP_fbreg -36)
+  4 int code 	(DW_OP_fbreg -44)
+  1 char c 	(DW_OP_fbreg -37)
+  8 char* temp 	(DW_OP_fbreg -56)
+}
+
+0 void exchange (...)
+{
+  8 char** argv 	(DW_OP_fbreg -72)
+  8 _getopt_data* d 	(DW_OP_fbreg -80)
+  4 int bottom 	(DW_OP_fbreg -20)
+  4 int middle 	(DW_OP_fbreg -36)
+  4 int top 	(DW_OP_fbreg -24)
+  8 char* tem 	(DW_OP_fbreg -48)
+  4 int len 	(DW_OP_fbreg -40)
+  4 int i 	(DW_OP_fbreg -28)
+  4 int len 	(DW_OP_fbreg -52)
+  4 int i 	(DW_OP_fbreg -32)
+}
+
+4 int rpl_getopt_internal (...)
+{
+  4 int argc 	(DW_OP_fbreg -36)
+  8 char** argv 	(DW_OP_fbreg -48)
+  8 char* optstring 	(DW_OP_fbreg -56)
+  8 rpl_option* longopts 	(DW_OP_fbreg -64)
+  8 int* longind 	(DW_OP_fbreg -72)
+  4 int long_only 	(DW_OP_fbreg -40)
+  4 int posixly_correct 	(DW_OP_fbreg +0)
+  4 int result 	(DW_OP_fbreg -20)
+}
+
+4 int process_long_option (...)
+{
+  4 int argc 	(DW_OP_fbreg -100)
+  8 char** argv 	(DW_OP_fbreg -112)
+  8 char* optstring 	(DW_OP_fbreg -120)
+  8 rpl_option* longopts 	(DW_OP_fbreg -128)
+  8 int* longind 	(DW_OP_fbreg -136)
+  4 int long_only 	(DW_OP_fbreg -104)
+  8 _getopt_data* d 	(DW_OP_fbreg +0)
+  4 int print_errors 	(DW_OP_fbreg +8)
+  8 char* prefix 	(DW_OP_fbreg +16)
+  8 char* nameend 	(DW_OP_fbreg -40)
+  8 size_t namelen 	(DW_OP_fbreg -96)
+  8 rpl_option* p 	(DW_OP_fbreg -48)
+  8 rpl_option* pfound 	(DW_OP_fbreg -56)
+  4 int n_options 	(DW_OP_fbreg -60)
+  4 int option_index 	(DW_OP_fbreg -64)
+  8 unsignedchar* ambig_set 	(DW_OP_fbreg -72)
+  4 int ambig_malloced 	(DW_OP_fbreg -76)
+  4 int ambig_fallback 	(DW_OP_fbreg -80)
+  4 int indfound 	(DW_OP_fbreg -84)
+}
+
+8 char* _getopt_initialize (...)
+{
+  4 int argc 	(DW_OP_fbreg -20)
+  8 char** argv 	(DW_OP_fbreg -32)
+  8 char* optstring 	(DW_OP_fbreg -40)
+  8 _getopt_data* d 	(DW_OP_fbreg -48)
+  4 int posixly_correct 	(DW_OP_fbreg -24)
+}
+
+4 int rpl_getopt (...)
+{
+  4 int argc 	(DW_OP_fbreg -20)
+  8 char** argv 	(DW_OP_fbreg -32)
+  8 char* optstring 	(DW_OP_fbreg -40)
+}
+
+
+4 int rpl_getopt_long (...)
+{
+  4 int argc 	(DW_OP_fbreg -20)
+  8 char** argv 	(DW_OP_fbreg -32)
+  8 char* options 	(DW_OP_fbreg -40)
+  8 rpl_option* long_options 	(DW_OP_fbreg -48)
+  8 int* opt_index 	(DW_OP_fbreg -56)
+}
+
+4 int _getopt_long_r (...)
+{
+  4 int argc 	(DW_OP_fbreg -20)
+  8 char** argv 	(DW_OP_fbreg -32)
+  8 char* options 	(DW_OP_fbreg -40)
+  8 rpl_option* long_options 	(DW_OP_fbreg -48)
+  8 int* opt_index 	(DW_OP_fbreg -56)
+  8 _getopt_data* d 	(DW_OP_fbreg -64)
+}
+
+4 int rpl_getopt_long_only (...)
+{
+  4 int argc 	(DW_OP_fbreg -20)
+  8 char** argv 	(DW_OP_fbreg -32)
+  8 char* options 	(DW_OP_fbreg -40)
+  8 rpl_option* long_options 	(DW_OP_fbreg -48)
+  8 int* opt_index 	(DW_OP_fbreg -56)
+}
+
+4 int _getopt_long_only_r (...)
+{
+  4 int argc 	(DW_OP_fbreg -20)
+  8 char** argv 	(DW_OP_fbreg -32)
+  8 char* options 	(DW_OP_fbreg -40)
+  8 rpl_option* long_options 	(DW_OP_fbreg -48)
+  8 int* opt_index 	(DW_OP_fbreg -56)
+  8 _getopt_data* d 	(DW_OP_fbreg -64)
+}
+
+
+8 size_t rpl_mbrtowc (...)
+{
+  8 wchar_t* pwc 	(DW_OP_fbreg -40)
+  8 char* s 	(DW_OP_fbreg -48)
+  8 size_t n 	(DW_OP_fbreg -56)
+  8 mbstate_t* ps 	(DW_OP_fbreg -64)
+  8 size_t ret 	(DW_OP_fbreg -24)
+  4 wchar_t wc 	(DW_OP_fbreg -32)
+  1 unsignedchar uc 	(DW_OP_fbreg -25)
+}
+
+
+4 int rpl_vfprintf (...)
+{
+  8 FILE* fp 	(DW_OP_fbreg -2072)
+  8 char* format 	(DW_OP_fbreg -2080)
+  8 __va_list_tag* args 	(DW_OP_fbreg -2088)
+  1 char_[2000] buf 	(DW_OP_fbreg -2048)
+  8 char* output 	(DW_OP_fbreg -24)
+  8 size_t len 	(DW_OP_fbreg -32)
+  8 size_t lenbuf 	(DW_OP_fbreg -2056)
+  4 int saved_errno 	(DW_OP_fbreg -36)
+}
+
+
+4 int rpl_vprintf (...)
+{
+  8 char* format 	(DW_OP_fbreg -24)
+  8 __va_list_tag* args 	(DW_OP_fbreg -32)
+}
+
+
+4 int set_binary_mode (...)
+{
+  4 int fd 	(DW_OP_fbreg -36)
+  4 int mode 	(DW_OP_fbreg -40)
+  4 int r 	(DW_OP_fbreg -20)
+}
+
+4 int __gl_setmode_check (...)
+{
+  4 int fd 	(DW_OP_fbreg -20)
+}
+
+4 int __gl_setmode (...)
+{
+  4 int fd 	(DW_OP_fbreg -20)
+  4 int mode 	(DW_OP_fbreg -24)
+}
+
+
+4 int c_strcasecmp (...)
+{
+  8 char* s1 	(DW_OP_fbreg -56)
+  8 char* s2 	(DW_OP_fbreg -64)
+  8 unsignedchar* p1 	(DW_OP_reg12 R12)
+  8 unsignedchar* p2 	(DW_OP_reg3 RBX)
+  1 unsignedchar c1 	(DW_OP_fbreg -33)
+  1 unsignedchar c2 	(DW_OP_fbreg -34)
+}
+
+
+4 int close_stream (...)
+{
+  8 FILE* stream 	(DW_OP_fbreg -40)
+  1 _Bool some_pending 	(DW_OP_fbreg -17)
+  1 _Bool prev_fail 	(DW_OP_fbreg -18)
+  1 _Bool fclose_fail 	(DW_OP_fbreg -19)
+}
+
+
+1 _Bool hard_locale (...)
+{
+  4 int category 	(DW_OP_fbreg -36)
+  1 _Bool hard 	(DW_OP_fbreg -17)
+  8 char* p 	(DW_OP_fbreg -32)
+}
+
+
+8 char* locale_charset (...)
+{
+  8 char* codeset 	(DW_OP_fbreg -24)
+  8 char* aliases 	(DW_OP_fbreg -32)
+}
+
+8 char* get_charset_aliases (...)
+{
+  8 char* cp 	(DW_OP_fbreg -24)
+  8 char* malloc_dir 	(DW_OP_fbreg -144)
+  8 char* dir 	(DW_OP_fbreg -32)
+  8 char* base 	(DW_OP_fbreg -56)
+  8 char* file_name 	(DW_OP_fbreg -88)
+  8 size_t dir_len 	(DW_OP_fbreg -64)
+  8 size_t base_len 	(DW_OP_fbreg -72)
+  4 int add_slash 	(DW_OP_fbreg -76)
+  4 int fd 	(DW_OP_fbreg -92)
+  8 FILE* fp 	(DW_OP_fbreg -104)
+  8 char* res_ptr 	(DW_OP_fbreg -40)
+  8 size_t res_size 	(DW_OP_fbreg -48)
+  4 int c 	(DW_OP_fbreg -108)
+  1 char_[51] buf1 	(DW_OP_fbreg -272)
+  1 char_[51] buf2 	(DW_OP_fbreg -208)
+  8 size_t l1 	(DW_OP_fbreg -120)
+  8 size_t l2 	(DW_OP_fbreg -128)
+  8 char* old_res_ptr 	(DW_OP_fbreg -136)
+}
+
+
+0 void fseterr (...)
+{
+  8 FILE* fp 	(DW_OP_fbreg -24)
+}
+
+
+8 char* vasnprintf (...)
+{
+  8 char* resultbuf 	(DW_OP_fbreg -2248)
+  8 size_t* lengthp 	(DW_OP_fbreg -2256)
+  8 char* format 	(DW_OP_fbreg -2264)
+  8 __va_list_tag* args 	(DW_OP_fbreg -2272)
+  648 char_directives d 	(DW_OP_fbreg -1280)
+  240 arguments a 	(DW_OP_fbreg -1520)
+  8 size_t buf_neededlength 	(DW_OP_fbreg -328)
+  8 char* buf 	(DW_OP_fbreg -64)
+  8 char* buf_malloced 	(DW_OP_fbreg -72)
+  8 char* cp 	(DW_OP_fbreg -80)
+  8 size_t i 	(DW_OP_fbreg -48)
+  8 char_directive* dp 	(DW_OP_fbreg -56)
+  8 char* result 	(DW_OP_fbreg -40)
+  8 size_t allocated 	(DW_OP_fbreg -88)
+  8 size_t length 	(DW_OP_fbreg -96)
+  8 size_t buf_memsize 	(DW_OP_fbreg -336)
+  8 size_t n 	(DW_OP_fbreg -344)
+  8 size_t augmented_length 	(DW_OP_fbreg -352)
+  8 size_t memory_size 	(DW_OP_fbreg -360)
+  8 char* memory 	(DW_OP_fbreg -104)
+  8 size_t augmented_length 	(DW_OP_fbreg -384)
+  8 size_t memory_size 	(DW_OP_fbreg -392)
+  8 char* memory 	(DW_OP_fbreg -112)
+  4 int flags 	(DW_OP_fbreg -116)
+  8 size_t width 	(DW_OP_fbreg -128)
+  8 size_t count 	(DW_OP_fbreg -424)
+  4 int has_precision 	(DW_OP_fbreg -132)
+  8 size_t precision 	(DW_OP_fbreg -144)
+  8 size_t tmp_length 	(DW_OP_fbreg -152)
+  1 char_[700] tmpbuf 	(DW_OP_fbreg -2240)
+  8 char* tmp 	(DW_OP_fbreg -160)
+  8 char* pad_ptr 	(DW_OP_fbreg -168)
+  8 char* p 	(DW_OP_fbreg -176)
+  4 int arg 	(DW_OP_fbreg -396)
+  8 char* digitp 	(DW_OP_fbreg -184)
+  4 int arg 	(DW_OP_fbreg -400)
+  8 char* digitp 	(DW_OP_fbreg -192)
+  8 size_t tmp_memsize 	(DW_OP_fbreg -408)
+  16 longdouble arg 	(DW_OP_fbreg -208)
+  4 int sign 	(DW_OP_fbreg -212)
+  2 fpucw_t oldcw 	(DW_OP_fbreg -410)
+  2 fpucw_t _cw 	(DW_OP_fbreg -1522)
+  2 fpucw_t _ncw 	(DW_OP_fbreg -1524)
+  8 size_t ndigits 	(DW_OP_fbreg -224)
+  2 fpucw_t _ncw 	(DW_OP_fbreg -1526)
+  8 size_t pad 	(DW_OP_fbreg -232)
+  8 char* end 	(DW_OP_fbreg -432)
+  8 char* q 	(DW_OP_fbreg -240)
+  8 char* q 	(DW_OP_fbreg -248)
+  8 size_t n 	(DW_OP_fbreg -440)
+  8 size_t memory_size 	(DW_OP_fbreg -448)
+  8 char* memory 	(DW_OP_fbreg -256)
+  4 arg_type type 	(DW_OP_fbreg -452)
+  4 int flags 	(DW_OP_fbreg -456)
+  8 char* fbp 	(DW_OP_fbreg -264)
+  4 unsignedint prefix_count 	(DW_OP_fbreg -268)
+  4 int_[2] prefixes 	(DW_OP_fbreg -1536)
+  4 int orig_errno 	(DW_OP_fbreg -484)
+  8 size_t n 	(DW_OP_fbreg -464)
+  8 size_t n 	(DW_OP_fbreg -472)
+  8 size_t memory_size 	(DW_OP_fbreg -480)
+  8 char* memory 	(DW_OP_fbreg -280)
+  4 int count 	(DW_OP_fbreg -1540)
+  4 int retcount 	(DW_OP_fbreg -284)
+  8 size_t maxlen 	(DW_OP_fbreg -296)
+  4 int arg 	(DW_OP_fbreg -488)
+  4 unsignedint arg 	(DW_OP_fbreg -492)
+  4 int arg 	(DW_OP_fbreg -496)
+  4 unsignedint arg 	(DW_OP_fbreg -500)
+  4 int arg 	(DW_OP_fbreg -504)
+  4 unsignedint arg 	(DW_OP_fbreg -508)
+  8 longint arg 	(DW_OP_fbreg -520)
+  8 longunsignedint arg 	(DW_OP_fbreg -528)
+  8 longlongint arg 	(DW_OP_fbreg -536)
+  8 longlongunsignedint arg 	(DW_OP_fbreg -544)
+  8 double arg 	(DW_OP_fbreg -552)
+  16 longdouble arg 	(DW_OP_fbreg -576)
+  4 int arg 	(DW_OP_fbreg -580)
+  4 wint_t arg 	(DW_OP_fbreg -584)
+  8 char* arg 	(DW_OP_fbreg -592)
+  8 wchar_t* arg 	(DW_OP_fbreg -600)
+  8 void* arg 	(DW_OP_fbreg -608)
+  4 int saved_errno 	(DW_OP_fbreg -300)
+  8 size_t n 	(DW_OP_fbreg -616)
+  8 size_t memory_size 	(DW_OP_fbreg -624)
+  8 char* memory 	(DW_OP_fbreg -312)
+  8 size_t memory_size 	(DW_OP_fbreg -368)
+  8 char* memory 	(DW_OP_fbreg -320)
+  8 char* memory 	(DW_OP_fbreg -376)
+}
+
+1 char decimal_point_char (...)
+{
+  8 char* point 	(DW_OP_fbreg -24)
+}
+
+4 int is_infinite_or_zerol (...)
+{
+  16 longdouble x 	(DW_OP_fbreg +0)
+}
+
+
+1 _Bool c_iscntrl (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isprint (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isgraph (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isupper (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isdigit (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isspace (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_ispunct (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+4 int c_tolower (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_islower (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+4 int c_toupper (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isalpha (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isblank (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isxdigit (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isalnum (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+1 _Bool c_isascii (...)
+{
+  4 int c 	(DW_OP_fbreg -20)
+}
+
+
+8 size_t xsum (...)
+{
+  8 size_t size1 	(DW_OP_fbreg -40)
+  8 size_t size2 	(DW_OP_fbreg -48)
+  8 size_t sum 	(DW_OP_fbreg -24)
+}
+
+8 size_t xsum4 (...)
+{
+  8 size_t size1 	(DW_OP_fbreg -24)
+  8 size_t size2 	(DW_OP_fbreg -32)
+  8 size_t size3 	(DW_OP_fbreg -40)
+  8 size_t size4 	(DW_OP_fbreg -48)
+}
+
+8 size_t xsum3 (...)
+{
+  8 size_t size1 	(DW_OP_fbreg -24)
+  8 size_t size2 	(DW_OP_fbreg -32)
+  8 size_t size3 	(DW_OP_fbreg -40)
+}
+
+8 size_t xmax (...)
+{
+  8 size_t size1 	(DW_OP_fbreg -24)
+  8 size_t size2 	(DW_OP_fbreg -32)
+}
+
+
+4 int printf_fetchargs (...)
+{
+  8 __va_list_tag* args 	(DW_OP_fbreg -40)
+  8 arguments* a 	(DW_OP_fbreg -48)
+  8 size_t i 	(DW_OP_fbreg -24)
+  8 argument* ap 	(DW_OP_fbreg -32)
+  4 wchar_t_[7] wide_null_string 	(DW_OP_addr 0x413900)
+}
+
+
+4 int printf_parse (...)
+{
+  8 char* format 	(DW_OP_fbreg -264)
+  8 char_directives* d 	(DW_OP_fbreg -272)
+  8 arguments* a 	(DW_OP_fbreg -280)
+  8 char* cp 	(DW_OP_fbreg -24)
+  8 size_t arg_posn 	(DW_OP_fbreg -32)
+  8 size_t d_allocated 	(DW_OP_fbreg -40)
+  8 size_t a_allocated 	(DW_OP_fbreg -48)
+  8 size_t max_width_length 	(DW_OP_fbreg -56)
+  8 size_t max_precision_length 	(DW_OP_fbreg -64)
+  1 char c 	(DW_OP_fbreg -65)
+  8 size_t arg_index 	(DW_OP_fbreg -80)
+  8 char_directive* dp 	(DW_OP_fbreg -144)
+  8 char* np 	(DW_OP_fbreg -88)
+  8 size_t n 	(DW_OP_fbreg -96)
+  8 char* np 	(DW_OP_fbreg -104)
+  8 size_t n 	(DW_OP_fbreg -112)
+  8 size_t n 	(DW_OP_fbreg -152)
+  8 size_t memory_size 	(DW_OP_fbreg -160)
+  8 argument* memory 	(DW_OP_fbreg -168)
+  8 size_t width_length 	(DW_OP_fbreg -176)
+  8 char* np 	(DW_OP_fbreg -120)
+  8 size_t n 	(DW_OP_fbreg -128)
+  8 size_t n 	(DW_OP_fbreg -184)
+  8 size_t memory_size 	(DW_OP_fbreg -192)
+  8 argument* memory 	(DW_OP_fbreg -200)
+  8 size_t precision_length 	(DW_OP_fbreg -208)
+  4 arg_type type 	(DW_OP_fbreg -132)
+  4 int flags 	(DW_OP_fbreg -136)
+  8 size_t n 	(DW_OP_fbreg -216)
+  8 size_t memory_size 	(DW_OP_fbreg -224)
+  8 argument* memory 	(DW_OP_fbreg -232)
+  8 size_t memory_size 	(DW_OP_fbreg -240)
+  8 char_directive* memory 	(DW_OP_fbreg -248)
+}
+
+
+0 void __libc_csu_init (...)
+{
+  4 int argc 	(0x00000006
+  8 char** argv 	(0x00000058
+  8 char** envp 	(0x000000aa
+  8 size_t size 	(0x000000fa
+  8 size_t i 	(0x00000138
+}
+
+
+4 int atexit (...)
+{
+  8 void* func 	(0x00000173
+}
+
+
+4 int __fstat (...)
+{
+  4 int fd 	(0x000001b2
+  8 stat* buf 	(0x00000204
+}
+
+

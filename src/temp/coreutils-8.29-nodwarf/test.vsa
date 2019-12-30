@@ -1,0 +1,11 @@
+43
+Mem (Local ("initialize_exit_failure",6522UL),-4L,32)
+Mem (Local ("main",16111UL),-56L,64)
+Mem (Local ("main",16111UL),-48L,64)
+Mem (Local ("main",16111UL),-40L,64)
+Mem (Local ("main",16111UL),-36L,32)
+Mem (Local ("main",16111UL),-8L,64)
+Mem (Local ("set_program_name",16804UL),-48L,64)
+Mem (Local ("set_program_name",16804UL),-24L,64)
+Mem (Local ("set_program_name",16804UL),-16L,64)
+Mem (Local ("set_program_name",16804UL),-8L,64)

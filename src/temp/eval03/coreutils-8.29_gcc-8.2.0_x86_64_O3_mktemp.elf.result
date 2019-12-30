@@ -1,0 +1,9 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O3_mktemp.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+process_long_option                  3/3        100%          92%       3/3        100%           5%
+randint_genmax                       1/1        100%          94%       1/1        100%          12%
+version_etc                          0/1          0%         100%       0/1          0%           4%
+Dwarf_parsing_error 28
+Function : 32/34
+Total Env : 66% 95%
+Total ida : 66% 7%

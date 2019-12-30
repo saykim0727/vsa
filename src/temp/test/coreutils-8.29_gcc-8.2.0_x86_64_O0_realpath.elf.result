@@ -1,0 +1,61 @@
+coreutils-8.29_gcc-8.2.0_x86_64_O0_realpath.elfFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+record_file                          5/5        100%          28%       5/5        100%          16%
+version_etc_va                      6/16         37%          25%      7/16         43%          12%
+hash_find_entry                     7/10         70%          30%     10/10        100%           9%
+path_prefix                          2/2        100%          50%       2/2        100%          33%
+process_long_option                19/19        100%          13%     19/19        100%           5%
+areadlink_with_size                10/10        100%          16%     10/10        100%           9%
+quotearg_n_style                     3/4         75%          40%       3/4         75%          20%
+xrealloc                             2/2        100%          50%       2/2        100%          33%
+compute_bucket_size                  2/3         66%          50%       3/3        100%          25%
+rpl_getcwd                         18/26         69%          35%     25/26         96%           3%
+path_common_prefix                   4/4        100%          33%       4/4        100%          20%
+transfer_entries                     8/9         88%          20%       9/9        100%          10%
+triple_free                          2/2        100%          50%       2/2        100%          33%
+version_etc_arn                      6/6        100%          72%       6/6        100%           9%
+xgetcwd                              1/1        100%          66%       1/1        100%          50%
+hash_free                            4/4        100%          33%       4/4        100%          20%
+hash_initialize                      6/6        100%          25%       6/6        100%          14%
+next_prime                           1/1        100%          66%       1/1        100%          50%
+buffer_or_output                     4/4        100%          33%       4/4        100%          20%
+xstrdup                              1/1        100%          66%       1/1        100%          50%
+set_program_name                     3/3        100%          50%       3/3        100%          25%
+_getopt_initialize                   5/5        100%          28%       5/5        100%          16%
+usage                                1/1        100%          75%       1/1        100%          50%
+xcharalloc                           1/1        100%          66%       1/1        100%          50%
+allocate_entry                       2/2        100%          50%       2/2        100%          33%
+hash_insert                          4/4        100%          33%       4/4        100%          20%
+relpath                              8/8        100%          20%       8/8        100%          11%
+check_tuning                         2/3         66%          50%       3/3        100%          25%
+process_path                         3/3        100%          50%       3/3        100%          25%
+free_entry                           2/2        100%          50%       2/2        100%          33%
+exchange                            9/10         90%          18%     10/10        100%           9%
+_getopt_internal_r                 11/12         91%          35%     12/12        100%           7%
+set_char_quoting                     7/7        100%          22%       7/7        100%          12%
+rpl_getopt_internal                  8/8        100%          33%       8/8        100%          11%
+xmemdup                              2/2        100%          50%       2/2        100%          33%
+seen_file                            3/4         75%          62%       3/4         75%          14%
+quotearg_style                       2/2        100%          50%       2/2        100%          33%
+emit_ancillary_info                 4/11         36%          83%      4/11         36%           5%
+rpl_getopt_long                      5/5        100%          37%       5/5        100%          16%
+realpath_canon                       4/4        100%          33%       4/4        100%          20%
+quotearg_buffer_restyled           16/32         50%          15%     32/32        100%           2%
+quotearg_n_style_colon               3/4         75%          84%       3/4         75%           5%
+isdir                                1/2         50%          83%       1/2         50%          25%
+hash_rehash                          4/5         80%          76%       4/5         80%          16%
+quoting_options_from_style           1/2         50%          92%       1/2         50%          10%
+quotearg_n_options                  8/12         66%          20%     12/12        100%           7%
+is_prime                             3/3        100%          40%       3/3        100%          25%
+hash_lookup                          4/4        100%          42%       4/4        100%          20%
+hash_insert_if_absent                7/8         87%          30%       8/8        100%          11%
+main                                 9/9        100%          30%       9/9        100%          10%
+seen_triple                          4/4        100%          33%       4/4        100%          20%
+canonicalize_filename_mode         21/22         95%          16%     21/22         95%           4%
+version_etc                          4/5         80%          85%       4/5         80%           4%
+safe_hasher                          2/3         66%          50%       3/3        100%          25%
+xmalloc                              2/2        100%          50%       2/2        100%          33%
+Dwarf_parsing_error 1
+Function : 57/61
+Total Env : 88% 44%
+Total ida : 93% 20%

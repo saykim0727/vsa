@@ -1,0 +1,24 @@
+23
+"set_program_name" 22 1
+"atexit" 3 1
+"version_etc_arn" 18 1
+"version_etc_va" 40 1
+"parse_long_options" 15 1
+"exchange" 27 1
+"process_long_option" 132 1
+"_getopt_internal_r" 118 1
+"rpl_getopt_internal" 3 1
+"rpl_getopt_long" 3 1
+"read_utmp" 65 1
+"__strftime_internal" 66 1
+"fprintftime" 3 1
+"xrealloc" 13 1
+"quotearg_buffer_restyled" 4 1
+"xmalloc" 8 1
+"xalloc_die" 5 1
+"quotearg_n_options" 29 1
+"quotearg_n_style_colon" 4 1
+"uptime" 72 1
+"quote" 1 1
+"usage" 63 1
+"main" 31 1

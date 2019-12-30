@@ -1,0 +1,22 @@
+21
+"set_program_name" 22 1
+"atexit" 3 1
+"usage" 69 1
+"rpl_fseeko" 11 1
+"rpl_fflush" 9 1
+"rpl_fclose" 22 1
+"locale_charset" 113 1
+"u8_uctomb_aux" 15 1
+"print_unicode_char" 38 1
+"print_esc" 90 1
+"xrealloc" 13 1
+"quotearg_buffer_restyled" 4 1
+"quotearg_style" 26 1
+"quote" 1 1
+"verify_numeric" 19 1
+"vstrtoimax" 17 1
+"xalloc_die" 5 1
+"xmalloc" 8 1
+"version_etc_arn" 18 1
+"version_etc" 19 1
+"main" 176 1

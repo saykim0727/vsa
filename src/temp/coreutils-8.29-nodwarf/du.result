@@ -1,0 +1,15 @@
+duFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
+Env 0 ------------
+humblock                             5/7         71%          16%       7/7        100%          12%
+xmalloc                              2/2        100%          33%       2/2        100%           0%
+human_options                        4/4        100%          20%       4/4        100%           0%
+argmatch                             8/8        100%          11%       8/8        100%           0%
+bad_cast                             1/1        100%           0%       1/1        100%           0%
+set_program_name                     3/3        100%          25%       3/3        100%           0%
+usage                                1/1        100%          75%       1/1        100%           0%
+xzalloc                              1/1        100%          50%       1/1        100%           0%
+main                               10/22         45%          33%     20/22         90%          13%
+Dwarf_parsing_error 3
+Function : 13/161
+Total Env : 62% 20%
+Total ida : 68% 1%
