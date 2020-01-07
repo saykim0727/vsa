@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kim/vsa/src/Core.Tests/B2R2.Core.Tests.fsproj": {}
+  },
+  "projects": {
+    "/home/kim/vsa/src/Core.Tests/B2R2.Core.Tests.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/Core.Tests/B2R2.Core.Tests.fsproj",
+        "projectName": "B2R2.Core.Tests",
+        "projectPath": "/home/kim/vsa/src/Core.Tests/B2R2.Core.Tests.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/Core.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.5.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/Core/B2R2.Core.fsproj",
+        "projectName": "B2R2.Core",
+        "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

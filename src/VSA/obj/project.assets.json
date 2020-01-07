@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "FParsec/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.2.3",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/FParsec.dll": {},
+          "lib/netstandard1.6/FParsecCS.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/FParsec.dll": {},
+          "lib/netstandard1.6/FParsecCS.dll": {}
+        }
+      },
       "FSharp.Core/4.6.2": {
         "type": "package",
         "compile": {
@@ -270,15 +285,15 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
         }
       },
-      "B2R2.ABI/0.1.1": {
+      "B2R2.ABI/0.3.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.Core": "0.1.1",
-          "B2R2.FrontEnd": "0.1.1",
-          "B2R2.FrontEnd.Core": "0.1.1",
-          "B2R2.FrontEnd.Intel": "0.1.1",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.Core": "0.3.0",
+          "B2R2.FrontEnd": "0.3.0",
+          "B2R2.FrontEnd.Core": "0.3.0",
+          "B2R2.FrontEnd.Intel": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -288,11 +303,11 @@
           "bin/placeholder/B2R2.ABI.dll": {}
         }
       },
-      "B2R2.BinFile/0.1.1": {
+      "B2R2.BinFile/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.Core": "0.1.1",
+          "B2R2.Core": "0.3.0",
           "FSharp.Core": "4.6.2",
           "System.Reflection.Metadata": "1.6.0"
         },
@@ -303,20 +318,20 @@
           "bin/placeholder/B2R2.BinFile.dll": {}
         }
       },
-      "B2R2.BinGraph/0.1.1": {
+      "B2R2.BinGraph/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.ConcEval": "0.1.1",
-          "B2R2.Core": "0.1.1",
-          "B2R2.FrontEnd": "0.1.1",
-          "B2R2.FrontEnd.ARM32": "0.1.1",
-          "B2R2.FrontEnd.ARM64": "0.1.1",
-          "B2R2.FrontEnd.Core": "0.1.1",
-          "B2R2.FrontEnd.Intel": "0.1.1",
-          "B2R2.FrontEnd.MIPS": "0.1.1",
-          "B2R2.FrontEnd.Optimizer": "0.1.1",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.ConcEval": "0.3.0",
+          "B2R2.Core": "0.3.0",
+          "B2R2.FrontEnd": "0.3.0",
+          "B2R2.FrontEnd.ARM32": "0.3.0",
+          "B2R2.FrontEnd.ARM64": "0.3.0",
+          "B2R2.FrontEnd.Core": "0.3.0",
+          "B2R2.FrontEnd.Intel": "0.3.0",
+          "B2R2.FrontEnd.MIPS": "0.3.0",
+          "B2R2.FrontEnd.Optimizer": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -326,11 +341,12 @@
           "bin/placeholder/B2R2.BinGraph.dll": {}
         }
       },
-      "B2R2.BinIR/0.1.1": {
+      "B2R2.BinIR/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.Core": "0.1.1",
+          "B2R2.Core": "0.3.0",
+          "FParsec": "1.0.3",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -340,11 +356,11 @@
           "bin/placeholder/B2R2.BinIR.dll": {}
         }
       },
-      "B2R2.ConcEval/0.1.1": {
+      "B2R2.ConcEval/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinIR": "0.1.1",
+          "B2R2.BinIR": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -354,7 +370,7 @@
           "bin/placeholder/B2R2.ConcEval.dll": {}
         }
       },
-      "B2R2.Core/0.1.1": {
+      "B2R2.Core/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -367,11 +383,12 @@
           "bin/placeholder/B2R2.Core.dll": {}
         }
       },
-      "B2R2.FrontEnd/0.1.1": {
+      "B2R2.FrontEnd/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FSharp.Core": "4.6.2"
+          "FSharp.Core": "4.6.2",
+          "System.Reflection.Metadata": "1.6.0"
         },
         "compile": {
           "bin/placeholder/B2R2.FrontEnd.dll": {}
@@ -380,14 +397,14 @@
           "bin/placeholder/B2R2.FrontEnd.dll": {}
         }
       },
-      "B2R2.FrontEnd.ARM32/0.1.1": {
+      "B2R2.FrontEnd.ARM32/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinFile": "0.1.1",
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.Core": "0.1.1",
-          "B2R2.FrontEnd.Core": "0.1.1",
+          "B2R2.BinFile": "0.3.0",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.Core": "0.3.0",
+          "B2R2.FrontEnd.Core": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -397,14 +414,14 @@
           "bin/placeholder/B2R2.FrontEnd.ARM32.dll": {}
         }
       },
-      "B2R2.FrontEnd.ARM64/0.1.1": {
+      "B2R2.FrontEnd.ARM64/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinFile": "0.1.1",
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.Core": "0.1.1",
-          "B2R2.FrontEnd.Core": "0.1.1",
+          "B2R2.BinFile": "0.3.0",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.Core": "0.3.0",
+          "B2R2.FrontEnd.Core": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -414,13 +431,13 @@
           "bin/placeholder/B2R2.FrontEnd.ARM64.dll": {}
         }
       },
-      "B2R2.FrontEnd.Core/0.1.1": {
+      "B2R2.FrontEnd.Core/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinFile": "0.1.1",
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.Core": "0.1.1",
+          "B2R2.BinFile": "0.3.0",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.Core": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -430,14 +447,14 @@
           "bin/placeholder/B2R2.FrontEnd.Core.dll": {}
         }
       },
-      "B2R2.FrontEnd.Intel/0.1.1": {
+      "B2R2.FrontEnd.Intel/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinFile": "0.1.1",
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.Core": "0.1.1",
-          "B2R2.FrontEnd.Core": "0.1.1",
+          "B2R2.BinFile": "0.3.0",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.Core": "0.3.0",
+          "B2R2.FrontEnd.Core": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -447,14 +464,14 @@
           "bin/placeholder/B2R2.FrontEnd.Intel.dll": {}
         }
       },
-      "B2R2.FrontEnd.MIPS/0.1.1": {
+      "B2R2.FrontEnd.MIPS/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinFile": "0.1.1",
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.Core": "0.1.1",
-          "B2R2.FrontEnd.Core": "0.1.1",
+          "B2R2.BinFile": "0.3.0",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.Core": "0.3.0",
+          "B2R2.FrontEnd.Core": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -464,12 +481,12 @@
           "bin/placeholder/B2R2.FrontEnd.MIPS.dll": {}
         }
       },
-      "B2R2.FrontEnd.Optimizer/0.1.1": {
+      "B2R2.FrontEnd.Optimizer/0.3.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "B2R2.BinIR": "0.1.1",
-          "B2R2.Core": "0.1.1",
+          "B2R2.BinIR": "0.3.0",
+          "B2R2.Core": "0.3.0",
           "FSharp.Core": "4.6.2"
         },
         "compile": {
@@ -482,6 +499,29 @@
     }
   },
   "libraries": {
+    "FParsec/1.0.3": {
+      "sha512": "0VoZapcSUHsNCixYawx8RFZHJMRVykaKsks5OOUXRP0bZCpr7UCP6kIjbVFGHIqqBGPtICUMy7j521sH0ZcmrQ==",
+      "type": "package",
+      "path": "fparsec/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fparsec.1.0.3.nupkg.sha512",
+        "fparsec.nuspec",
+        "lib/net40-client/FParsec.dll",
+        "lib/net40-client/FParsec.xml",
+        "lib/net40-client/FParsecCS.dll",
+        "lib/net40-client/FParsecCS.xml",
+        "lib/netstandard1.6/FParsec.dll",
+        "lib/netstandard1.6/FParsec.xml",
+        "lib/netstandard1.6/FParsecCS.dll",
+        "lib/netstandard1.6/FParsecCS.xml",
+        "lib/portable-net45+win8+wp8+wpa81/FParsec.dll",
+        "lib/portable-net45+win8+wp8+wpa81/FParsec.xml",
+        "lib/portable-net45+win8+wp8+wpa81/FParsecCS.dll",
+        "lib/portable-net45+win8+wp8+wpa81/FParsecCS.xml"
+      ]
+    },
     "FSharp.Core/4.6.2": {
       "sha512": "/waJ3a7u7MjFOGnXOfokbG1N1FH7VCmP3Fw1tJ8Q75kIj60LYBL3eYzab9hDimL5E21uhQ/1wf04M3dRAYemlw==",
       "type": "package",
@@ -1020,67 +1060,67 @@
         "version.txt"
       ]
     },
-    "B2R2.ABI/0.1.1": {
+    "B2R2.ABI/0.3.0": {
       "type": "project",
       "path": "../ABI/B2R2.ABI.fsproj",
       "msbuildProject": "../ABI/B2R2.ABI.fsproj"
     },
-    "B2R2.BinFile/0.1.1": {
+    "B2R2.BinFile/0.3.0": {
       "type": "project",
       "path": "../BinFile/B2R2.BinFile.fsproj",
       "msbuildProject": "../BinFile/B2R2.BinFile.fsproj"
     },
-    "B2R2.BinGraph/0.1.1": {
+    "B2R2.BinGraph/0.3.0": {
       "type": "project",
       "path": "../BinGraph/B2R2.BinGraph.fsproj",
       "msbuildProject": "../BinGraph/B2R2.BinGraph.fsproj"
     },
-    "B2R2.BinIR/0.1.1": {
+    "B2R2.BinIR/0.3.0": {
       "type": "project",
       "path": "../BinIR/B2R2.BinIR.fsproj",
       "msbuildProject": "../BinIR/B2R2.BinIR.fsproj"
     },
-    "B2R2.ConcEval/0.1.1": {
+    "B2R2.ConcEval/0.3.0": {
       "type": "project",
       "path": "../ConcEval/B2R2.ConcEval.fsproj",
       "msbuildProject": "../ConcEval/B2R2.ConcEval.fsproj"
     },
-    "B2R2.Core/0.1.1": {
+    "B2R2.Core/0.3.0": {
       "type": "project",
       "path": "../Core/B2R2.Core.fsproj",
       "msbuildProject": "../Core/B2R2.Core.fsproj"
     },
-    "B2R2.FrontEnd/0.1.1": {
+    "B2R2.FrontEnd/0.3.0": {
       "type": "project",
       "path": "../FrontEnd/Library/B2R2.FrontEnd.Library.fsproj",
       "msbuildProject": "../FrontEnd/Library/B2R2.FrontEnd.Library.fsproj"
     },
-    "B2R2.FrontEnd.ARM32/0.1.1": {
+    "B2R2.FrontEnd.ARM32/0.3.0": {
       "type": "project",
       "path": "../FrontEnd/ARM32/B2R2.FrontEnd.ARM32.fsproj",
       "msbuildProject": "../FrontEnd/ARM32/B2R2.FrontEnd.ARM32.fsproj"
     },
-    "B2R2.FrontEnd.ARM64/0.1.1": {
+    "B2R2.FrontEnd.ARM64/0.3.0": {
       "type": "project",
       "path": "../FrontEnd/ARM64/B2R2.FrontEnd.ARM64.fsproj",
       "msbuildProject": "../FrontEnd/ARM64/B2R2.FrontEnd.ARM64.fsproj"
     },
-    "B2R2.FrontEnd.Core/0.1.1": {
+    "B2R2.FrontEnd.Core/0.3.0": {
       "type": "project",
       "path": "../FrontEnd/Core/B2R2.FrontEnd.Core.fsproj",
       "msbuildProject": "../FrontEnd/Core/B2R2.FrontEnd.Core.fsproj"
     },
-    "B2R2.FrontEnd.Intel/0.1.1": {
+    "B2R2.FrontEnd.Intel/0.3.0": {
       "type": "project",
       "path": "../FrontEnd/Intel/B2R2.FrontEnd.Intel.fsproj",
       "msbuildProject": "../FrontEnd/Intel/B2R2.FrontEnd.Intel.fsproj"
     },
-    "B2R2.FrontEnd.MIPS/0.1.1": {
+    "B2R2.FrontEnd.MIPS/0.3.0": {
       "type": "project",
       "path": "../FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj",
       "msbuildProject": "../FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj"
     },
-    "B2R2.FrontEnd.Optimizer/0.1.1": {
+    "B2R2.FrontEnd.Optimizer/0.3.0": {
       "type": "project",
       "path": "../FrontEnd/Optimizer/B2R2.FrontEnd.Optimizer.fsproj",
       "msbuildProject": "../FrontEnd/Optimizer/B2R2.FrontEnd.Optimizer.fsproj"
@@ -1088,10 +1128,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "B2R2.ABI >= 0.1.1",
-      "B2R2.BinGraph >= 0.1.1",
-      "B2R2.BinIR >= 0.1.1",
-      "B2R2.Core >= 0.1.1",
+      "B2R2.ABI >= 0.3.0",
+      "B2R2.BinGraph >= 0.3.0",
+      "B2R2.BinIR >= 0.3.0",
+      "B2R2.Core >= 0.3.0",
       "FSharp.Core >= 4.6.2",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -1101,13 +1141,13 @@
     "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "0.1.1",
+    "version": "0.3.0",
     "restore": {
-      "projectUniqueName": "/home/kim/fff/src/VSA/B2R2.VSA.fsproj",
+      "projectUniqueName": "/home/kim/vsa/src/VSA/B2R2.VSA.fsproj",
       "projectName": "B2R2.VSA",
-      "projectPath": "/home/kim/fff/src/VSA/B2R2.VSA.fsproj",
+      "projectPath": "/home/kim/vsa/src/VSA/B2R2.VSA.fsproj",
       "packagesPath": "/home/kim/.nuget/packages/",
-      "outputPath": "/home/kim/fff/src/VSA/obj/",
+      "outputPath": "/home/kim/vsa/src/VSA/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -1124,17 +1164,17 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/home/kim/fff/src/ABI/B2R2.ABI.fsproj": {
-              "projectPath": "/home/kim/fff/src/ABI/B2R2.ABI.fsproj"
+            "/home/kim/vsa/src/ABI/B2R2.ABI.fsproj": {
+              "projectPath": "/home/kim/vsa/src/ABI/B2R2.ABI.fsproj"
             },
-            "/home/kim/fff/src/BinGraph/B2R2.BinGraph.fsproj": {
-              "projectPath": "/home/kim/fff/src/BinGraph/B2R2.BinGraph.fsproj"
+            "/home/kim/vsa/src/BinGraph/B2R2.BinGraph.fsproj": {
+              "projectPath": "/home/kim/vsa/src/BinGraph/B2R2.BinGraph.fsproj"
             },
-            "/home/kim/fff/src/BinIR/B2R2.BinIR.fsproj": {
-              "projectPath": "/home/kim/fff/src/BinIR/B2R2.BinIR.fsproj"
+            "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj": {
+              "projectPath": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj"
             },
-            "/home/kim/fff/src/Core/B2R2.Core.fsproj": {
-              "projectPath": "/home/kim/fff/src/Core/B2R2.Core.fsproj"
+            "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+              "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
             }
           }
         }

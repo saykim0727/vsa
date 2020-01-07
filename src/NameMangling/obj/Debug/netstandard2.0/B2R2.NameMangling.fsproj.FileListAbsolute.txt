@@ -1,0 +1,9 @@
+/home/kim/vsa/src/NameMangling/bin/Debug/netstandard2.0/B2R2.NameMangling.deps.json
+/home/kim/vsa/src/NameMangling/bin/Debug/netstandard2.0/B2R2.NameMangling.dll
+/home/kim/vsa/src/NameMangling/bin/Debug/netstandard2.0/B2R2.NameMangling.pdb
+/home/kim/vsa/src/NameMangling/bin/Debug/netstandard2.0/B2R2.NameMangling.xml
+/home/kim/vsa/src/NameMangling/obj/Debug/netstandard2.0/B2R2.NameMangling.AssemblyInfoInputs.cache
+/home/kim/vsa/src/NameMangling/obj/Debug/netstandard2.0/B2R2.NameMangling.AssemblyInfo.fs
+/home/kim/vsa/src/NameMangling/obj/Debug/netstandard2.0/B2R2.NameMangling.dll
+/home/kim/vsa/src/NameMangling/obj/Debug/netstandard2.0/B2R2.NameMangling.xml
+/home/kim/vsa/src/NameMangling/obj/Debug/netstandard2.0/B2R2.NameMangling.pdb

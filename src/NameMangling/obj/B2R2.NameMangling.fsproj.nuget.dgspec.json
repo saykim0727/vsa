@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kim/vsa/src/NameMangling/B2R2.NameMangling.fsproj": {}
+  },
+  "projects": {
+    "/home/kim/vsa/src/NameMangling/B2R2.NameMangling.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/NameMangling/B2R2.NameMangling.fsproj",
+        "projectName": "B2R2.NameMangling",
+        "projectPath": "/home/kim/vsa/src/NameMangling/B2R2.NameMangling.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/NameMangling/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FParsec": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/home/kim/vsa/src/BinFile/bin/Release/netstandard2.0/B2R2.BinFile.deps.json
+/home/kim/vsa/src/BinFile/bin/Release/netstandard2.0/B2R2.BinFile.dll
+/home/kim/vsa/src/BinFile/bin/Release/netstandard2.0/B2R2.BinFile.pdb
+/home/kim/vsa/src/BinFile/bin/Release/netstandard2.0/B2R2.BinFile.xml
+/home/kim/vsa/src/BinFile/bin/Release/netstandard2.0/B2R2.Core.dll
+/home/kim/vsa/src/BinFile/bin/Release/netstandard2.0/B2R2.Core.pdb
+/home/kim/vsa/src/BinFile/bin/Release/netstandard2.0/B2R2.Core.xml
+/home/kim/vsa/src/BinFile/obj/Release/netstandard2.0/B2R2.BinFile.fsprojAssemblyReference.cache
+/home/kim/vsa/src/BinFile/obj/Release/netstandard2.0/B2R2.BinFile.AssemblyInfoInputs.cache
+/home/kim/vsa/src/BinFile/obj/Release/netstandard2.0/B2R2.BinFile.AssemblyInfo.fs
+/home/kim/vsa/src/BinFile/obj/Release/netstandard2.0/B2R2.BinFile.fsproj.CopyComplete
+/home/kim/vsa/src/BinFile/obj/Release/netstandard2.0/B2R2.BinFile.dll
+/home/kim/vsa/src/BinFile/obj/Release/netstandard2.0/B2R2.BinFile.xml
+/home/kim/vsa/src/BinFile/obj/Release/netstandard2.0/B2R2.BinFile.pdb

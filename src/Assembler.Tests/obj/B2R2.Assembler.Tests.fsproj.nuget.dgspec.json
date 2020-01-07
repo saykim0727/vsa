@@ -1,0 +1,607 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kim/vsa/src/Assembler.Tests/B2R2.Assembler.Tests.fsproj": {}
+  },
+  "projects": {
+    "/home/kim/vsa/src/Assembler.Tests/B2R2.Assembler.Tests.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/Assembler.Tests/B2R2.Assembler.Tests.fsproj",
+        "projectName": "B2R2.Assembler.Tests",
+        "projectPath": "/home/kim/vsa/src/Assembler.Tests/B2R2.Assembler.Tests.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/Assembler.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/home/kim/vsa/src/Assembler/Interface/B2R2.Assembler.Interface.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Assembler/Interface/B2R2.Assembler.Interface.fsproj"
+              },
+              "/home/kim/vsa/src/Assembler/LowUIR/B2R2.Assembler.LowUIR.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Assembler/LowUIR/B2R2.Assembler.LowUIR.fsproj"
+              },
+              "/home/kim/vsa/src/Assembler/MIPS/B2R2.Assembler.MIPS.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Assembler/MIPS/B2R2.Assembler.MIPS.fsproj"
+              },
+              "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj"
+              },
+              "/home/kim/vsa/src/FrontEnd/Intel/B2R2.FrontEnd.Intel.fsproj": {
+                "projectPath": "/home/kim/vsa/src/FrontEnd/Intel/B2R2.FrontEnd.Intel.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/Assembler/Interface/B2R2.Assembler.Interface.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/Assembler/Interface/B2R2.Assembler.Interface.fsproj",
+        "projectName": "B2R2.Assembler.Interface",
+        "projectPath": "/home/kim/vsa/src/Assembler/Interface/B2R2.Assembler.Interface.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/Assembler/Interface/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/Assembler/MIPS/B2R2.Assembler.MIPS.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Assembler/MIPS/B2R2.Assembler.MIPS.fsproj"
+              },
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/Assembler/LowUIR/B2R2.Assembler.LowUIR.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/Assembler/LowUIR/B2R2.Assembler.LowUIR.fsproj",
+        "projectName": "B2R2.Assembler.LowUIR",
+        "projectPath": "/home/kim/vsa/src/Assembler/LowUIR/B2R2.Assembler.LowUIR.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/Assembler/LowUIR/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj"
+              },
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              },
+              "/home/kim/vsa/src/FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj": {
+                "projectPath": "/home/kim/vsa/src/FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FParsec": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/Assembler/MIPS/B2R2.Assembler.MIPS.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/Assembler/MIPS/B2R2.Assembler.MIPS.fsproj",
+        "projectName": "B2R2.Assembler.MIPS",
+        "projectPath": "/home/kim/vsa/src/Assembler/MIPS/B2R2.Assembler.MIPS.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/Assembler/MIPS/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj": {
+                "projectPath": "/home/kim/vsa/src/FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FParsec": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj",
+        "projectName": "B2R2.BinFile",
+        "projectPath": "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/BinFile/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Reflection.Metadata": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj",
+        "projectName": "B2R2.BinIR",
+        "projectPath": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/BinIR/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FParsec": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/Core/B2R2.Core.fsproj",
+        "projectName": "B2R2.Core",
+        "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/FrontEnd/Core/B2R2.FrontEnd.Core.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/FrontEnd/Core/B2R2.FrontEnd.Core.fsproj",
+        "projectName": "B2R2.FrontEnd.Core",
+        "projectPath": "/home/kim/vsa/src/FrontEnd/Core/B2R2.FrontEnd.Core.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/FrontEnd/Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj"
+              },
+              "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj"
+              },
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/FrontEnd/Intel/B2R2.FrontEnd.Intel.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/FrontEnd/Intel/B2R2.FrontEnd.Intel.fsproj",
+        "projectName": "B2R2.FrontEnd.Intel",
+        "projectPath": "/home/kim/vsa/src/FrontEnd/Intel/B2R2.FrontEnd.Intel.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/FrontEnd/Intel/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj"
+              },
+              "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj"
+              },
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              },
+              "/home/kim/vsa/src/FrontEnd/Core/B2R2.FrontEnd.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/FrontEnd/Core/B2R2.FrontEnd.Core.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/home/kim/vsa/src/FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "/home/kim/vsa/src/FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj",
+        "projectName": "B2R2.FrontEnd.MIPS",
+        "projectPath": "/home/kim/vsa/src/FrontEnd/MIPS/B2R2.FrontEnd.MIPS.fsproj",
+        "packagesPath": "/home/kim/.nuget/packages/",
+        "outputPath": "/home/kim/vsa/src/FrontEnd/MIPS/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/kim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinFile/B2R2.BinFile.fsproj"
+              },
+              "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj": {
+                "projectPath": "/home/kim/vsa/src/BinIR/B2R2.BinIR.fsproj"
+              },
+              "/home/kim/vsa/src/Core/B2R2.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/Core/B2R2.Core.fsproj"
+              },
+              "/home/kim/vsa/src/FrontEnd/Core/B2R2.FrontEnd.Core.fsproj": {
+                "projectPath": "/home/kim/vsa/src/FrontEnd/Core/B2R2.FrontEnd.Core.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -85,6 +85,20 @@ type Vertex<'V when 'V :> VertexData> (?v: 'V) =
   /// List of successors.
   member val Succs: Vertex<'V> list = [] with get, set
 
+  member val Visited: bool = false with get, set
+
+  member __.IsVisited = __.Visited
+
+  member __.Visit () = __.Visited <-true
+
+  member __.UnVisit () = __.Visited <-false
+
+  member val VisitedLoop: bool = false with get, set
+
+  member __.IsVisitedLoop = __.VisitedLoop
+
+  member __.VisitLoop () = __.VisitedLoop <-true
+
   /// Return the ID of the given vertex.
   static member GetID (v: Vertex<#VertexData>) = v.GetID ()
 

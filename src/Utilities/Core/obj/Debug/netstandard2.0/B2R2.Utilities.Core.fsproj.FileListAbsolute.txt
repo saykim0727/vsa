@@ -1,0 +1,14 @@
+/home/kim/vsa/src/Utilities/Core/bin/Debug/netstandard2.0/B2R2.Utilities.Core.deps.json
+/home/kim/vsa/src/Utilities/Core/bin/Debug/netstandard2.0/B2R2.Utilities.Core.dll
+/home/kim/vsa/src/Utilities/Core/bin/Debug/netstandard2.0/B2R2.Utilities.Core.pdb
+/home/kim/vsa/src/Utilities/Core/bin/Debug/netstandard2.0/B2R2.Utilities.Core.xml
+/home/kim/vsa/src/Utilities/Core/bin/Debug/netstandard2.0/B2R2.Core.dll
+/home/kim/vsa/src/Utilities/Core/bin/Debug/netstandard2.0/B2R2.Core.pdb
+/home/kim/vsa/src/Utilities/Core/bin/Debug/netstandard2.0/B2R2.Core.xml
+/home/kim/vsa/src/Utilities/Core/obj/Debug/netstandard2.0/B2R2.Utilities.Core.fsprojAssemblyReference.cache
+/home/kim/vsa/src/Utilities/Core/obj/Debug/netstandard2.0/B2R2.Utilities.Core.AssemblyInfoInputs.cache
+/home/kim/vsa/src/Utilities/Core/obj/Debug/netstandard2.0/B2R2.Utilities.Core.AssemblyInfo.fs
+/home/kim/vsa/src/Utilities/Core/obj/Debug/netstandard2.0/B2R2.Utilities.Core.fsproj.CopyComplete
+/home/kim/vsa/src/Utilities/Core/obj/Debug/netstandard2.0/B2R2.Utilities.Core.dll
+/home/kim/vsa/src/Utilities/Core/obj/Debug/netstandard2.0/B2R2.Utilities.Core.xml
+/home/kim/vsa/src/Utilities/Core/obj/Debug/netstandard2.0/B2R2.Utilities.Core.pdb

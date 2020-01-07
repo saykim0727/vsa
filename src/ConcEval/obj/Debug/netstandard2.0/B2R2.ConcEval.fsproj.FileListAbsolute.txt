@@ -1,0 +1,17 @@
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.ConcEval.deps.json
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.ConcEval.dll
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.ConcEval.pdb
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.ConcEval.xml
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.BinIR.dll
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.Core.dll
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.BinIR.pdb
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.BinIR.xml
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.Core.pdb
+/home/kim/vsa/src/ConcEval/bin/Debug/netstandard2.0/B2R2.Core.xml
+/home/kim/vsa/src/ConcEval/obj/Debug/netstandard2.0/B2R2.ConcEval.fsprojAssemblyReference.cache
+/home/kim/vsa/src/ConcEval/obj/Debug/netstandard2.0/B2R2.ConcEval.AssemblyInfoInputs.cache
+/home/kim/vsa/src/ConcEval/obj/Debug/netstandard2.0/B2R2.ConcEval.AssemblyInfo.fs
+/home/kim/vsa/src/ConcEval/obj/Debug/netstandard2.0/B2R2.ConcEval.fsproj.CopyComplete
+/home/kim/vsa/src/ConcEval/obj/Debug/netstandard2.0/B2R2.ConcEval.dll
+/home/kim/vsa/src/ConcEval/obj/Debug/netstandard2.0/B2R2.ConcEval.xml
+/home/kim/vsa/src/ConcEval/obj/Debug/netstandard2.0/B2R2.ConcEval.pdb

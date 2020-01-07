@@ -31,9 +31,10 @@ open B2R2.BinIR
 open B2R2.BinIR.SSA
 open B2R2.BinGraph
 
-let getAddr (v:Vertex<SSAVertexData>) =
-  let a,b = v.VData.IRVertexData.GetPpoint ()
-  if a then fst b else 0UL
+let getAddr (v:Vertex<SSABBlock>) =
+  let point = v.VData.PPoint
+  //if point.Address then fst point.Position else 0UL
+  point.Address
 
 let getTail cycleList (v: Vertex<_>) =
   cycleList |> List.filter (fun elem -> List.contains (v.GetID()) elem.Tail)
@@ -55,12 +56,12 @@ let isTail (v:Vertex<_>) cycleList =
   if List.isEmpty cycle then false else true
 
 let isFuncCall (pred:Vertex<_>) (succ:Vertex<_>) (cfg: DiGraph<_, _>) =
-  let edge = cfg.FindEdge pred succ
+  let edge = cfg.FindEdgeData pred succ
   match edge with
   | CallEdge -> true
   | _ -> false
 
-let rec findLoopBody (head:Vertex<SSAVertexData>) (v:Vertex<SSAVertexData>)
+let rec findLoopBody (head:Vertex<SSABBlock>) (v:Vertex<SSABBlock>)
                       succ result cycleList cfg =
   if v = head then List.append [(v.GetID())] result |> List.distinct
   elif List.contains (v.GetID()) result then result
@@ -96,21 +97,21 @@ let rec getEdge (head:Vertex<_>) body bblList edges (cfg: DiGraph<_, _>) =
   let no = succs |> List.filter (fun elem -> List.contains elem bblList = false)
   if List.isEmpty no then
     let succ = List.head succ
-    List.append [(cfg.FindEdge head succ)] edges
+    List.append [(cfg.FindEdgeData head succ)] edges
   else
     let no = List.head no
-    if List.isEmpty succ then List.append [(cfg.FindEdge head no)] edges
+    if List.isEmpty succ then List.append [(cfg.FindEdgeData head no)] edges
     elif List.contains (no.GetID()) body then
       let succ = List.head succ
-      let new_edges = List.append [(cfg.FindEdge head succ)] edges
+      let new_edges = List.append [(cfg.FindEdgeData head succ)] edges
       getEdge no body bblList new_edges cfg
     else
       let succ = List.head succ
-      List.append [(cfg.FindEdge head succ)] edges
+      List.append [(cfg.FindEdgeData head succ)] edges
 
 let rec getLoopEdge (flow:Vertex<_> list) edges (cfg: DiGraph<_, _>) =
   if List.length flow <= 1 then
-    if List.isEmpty edges then [JmpEdge]
+    if List.isEmpty edges then [InterJmpEdge]
     else edges
   else
     let v = List.head flow
@@ -125,7 +126,7 @@ let rec getLoopEdge (flow:Vertex<_> list) edges (cfg: DiGraph<_, _>) =
       getLoopEdge flow edges cfg
     else*)
 //    let no = v.Succs |> List.filter (fun elem -> elem <> next) |> List.head
-    let edges = List.append edges [(cfg.FindEdge v next)]
+    let edges = List.append edges [(cfg.FindEdgeData v next)]
     getLoopEdge flow edges cfg
 
 let mergeCycle loop1 loop2 cycleList =
@@ -162,9 +163,11 @@ let rec handleVertex (v:Vertex<_>) pred bblList cycleList ssacfg =
     if List.isEmpty v.Succs then cycleList
     else v.Succs |> List.fold handleSucc cycleList
 
-let analyzeLoop (f: Function) (cycleList) =
-  let cfg = f.SSACFG
-  let root = cfg.GetRoot ()
+let analyzeLoop ess hdl fAddr (cycleList) =
+  let cfg, root = ess.SCFG.GetFunctionCFG fAddr
+  let lens = SSALens.Init hdl ess.SCFG
+  let cfg, roots = lens.Filter cfg [root] ess.BinaryApparatus
+  let root = List.head roots
   let result = handleVertex root root [] [] cfg
   let result = result |> List.fold (fun acc elem ->
     let head = cfg.FindVertexByID elem.Head
@@ -175,18 +178,20 @@ let analyzeLoop (f: Function) (cycleList) =
     List.append [cycle] acc) []
   List.append result (cycleList)
 
-let rec analyzeFuncs (func: Vertex<Function>) funcList =
+(*
+let rec analyzeFuncs func funcList =
   let analyzeFunc acc (elem: Vertex<_>) =
     if List.contains (elem.VData) acc then acc
     else analyzeFuncs elem acc
   let funcList = List.append [func.VData] funcList
   func.Succs |> List.fold analyzeFunc funcList
+*)
 
-
-let main (func:Vertex<Function>) =
-  let funcList = analyzeFuncs func []
-  printfn "%A" (List.length funcList)
-  funcList, funcList |> List.fold (fun acc elem -> analyzeLoop elem acc ) []
+let main ess hdl funcAddrs =
+  //funcs : list of addrs of functions
+  //let funcList = analyzeFuncs func []
+  printfn "%A" (List.length funcAddrs)
+  funcAddrs |> List.fold (fun acc elem -> analyzeLoop ess hdl elem acc ) []
 
 
 

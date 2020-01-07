@@ -1,0 +1,17 @@
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.BinAnalysis.deps.json
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.BinAnalysis.dll
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.BinAnalysis.pdb
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.BinAnalysis.xml
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.BinIR.dll
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.Core.dll
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.BinIR.pdb
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.BinIR.xml
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.Core.pdb
+/home/kim/vsa/src/BinAnalysis/bin/Release/netstandard2.0/B2R2.Core.xml
+/home/kim/vsa/src/BinAnalysis/obj/Release/netstandard2.0/B2R2.BinAnalysis.fsprojAssemblyReference.cache
+/home/kim/vsa/src/BinAnalysis/obj/Release/netstandard2.0/B2R2.BinAnalysis.AssemblyInfoInputs.cache
+/home/kim/vsa/src/BinAnalysis/obj/Release/netstandard2.0/B2R2.BinAnalysis.AssemblyInfo.fs
+/home/kim/vsa/src/BinAnalysis/obj/Release/netstandard2.0/B2R2.BinAnalysis.fsproj.CopyComplete
+/home/kim/vsa/src/BinAnalysis/obj/Release/netstandard2.0/B2R2.BinAnalysis.dll
+/home/kim/vsa/src/BinAnalysis/obj/Release/netstandard2.0/B2R2.BinAnalysis.xml
+/home/kim/vsa/src/BinAnalysis/obj/Release/netstandard2.0/B2R2.BinAnalysis.pdb

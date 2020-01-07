@@ -276,7 +276,7 @@ with
     { ctxt with C2 = env }
 
 type FunContext = {
-  RetBBL : Vertex<SSAVertexData> list // to find function call destination
+  RetBBL : Vertex<SSABBlock> list // to find function call destination
   FEnv : AbsEnv
 }
 with
@@ -307,12 +307,12 @@ type Context = {
   RetEnv : AbsEnv // result env
   CurBBLId : VertexID // current BBL
   ParBBLId : VertexID // parent BBL
-  BBL : Map<VertexID, Vertex<SSAVertexData>> // BBL ID * BBL
+  BBL : Map<VertexID, Vertex<SSABBlock>> // BBL ID * BBL
   Edge : Map<VertexID,CFGEdgeKind> // VertexID * Edge (True, False)
   ALocs : ALoc list
 
   // For widening in Loop
-  Def : Map<Destination, WExpr> // Reg * Expr
+  Def : Map<Variable, WExpr> // Reg * Expr
   Cond : Map<ALoc, StridedInterval list>
 
   // For Loop
@@ -334,17 +334,17 @@ type Context = {
   // for evaluation interprocedural
   CFGList : SSACFG list
 
-  test : Vertex<SSAVertexData>
-  test2 : Vertex<SSAVertexData>
+  test : Vertex<SSABBlock>
+  test2 : Vertex<SSABBlock>
 
   paths : int
 }
 with
-  static member init env (v:Vertex<SSAVertexData>) =
+  static member init env (v:Vertex<SSABBlock>) =
     { Env = env; RetEnv = env; CurBBLId = (v.GetID()); ParBBLId = (v.GetID());
       BBL = Map.empty; Edge = Map.empty; Cond = Map.empty; CFGList = List.empty;
       Def = Map.empty; LoopStack = List.empty; ALocs = List.empty;
-      LoopFlag = 0; LoopCurId = 0; JmpFlag = JmpEdge; LoopCtxt = Map.empty;
+      LoopFlag = 0; LoopCurId = 0; JmpFlag = InterJmpEdge; LoopCtxt = Map.empty;
       FunCtxt = FunContext.init env; LoopTempId = 0; LoopCond = 0;
       test = v; test2 = v; paths = 0}
 

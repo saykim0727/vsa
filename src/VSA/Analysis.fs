@@ -29,10 +29,10 @@ module B2R2.VSA.Analysis
 
 open B2R2
 open B2R2.BinIR
+open B2R2.ABI
 open B2R2.BinIR.SSA
 open B2R2.BinGraph
 open B2R2.FrontEnd
-open B2R2.ABI
 open B2R2.VSA.LoopAnalysis
 
 exception InvalidExprException
@@ -61,12 +61,12 @@ let recoverVariables (env: AbsEnv) =
   env |> Seq.iter doPrint
 
 (* TODO: convert LowUIR.AST.TypeCheck module *)
-let getTypeDest (dest: SSA.Destination) =
-  match dest with
-  | RegVar (t, _, _, _)
-  | PCVar (t, _)
+let getTypeDest (dest: Variable) =
+  match dest.Kind with
+  | RegVar (t, _, _)
+  | PCVar (t)
   | TempVar (t, _) -> t
-  | MemVar _ -> 64<rt>
+  | MemVar -> 64<rt>
 
 (* TODO: convert LowUIR.AST.TypeCheck module *)
 let rec getType (expr: SSA.Expr) =
@@ -84,15 +84,15 @@ let rec getType (expr: SSA.Expr) =
   | Undefined (t, _) -> t
   | FuncName (_) -> raise InvalidExprException
   // TODO: Consider return type
-  | Return -> 64<rt>
+  | Return (_)-> 64<rt>
 
-let translateDestALoc (dest: SSA.Destination) =
-  match dest with
-  | PCVar (typ, idx) -> ALoc.Register ("PC", idx, typ)
-  | RegVar (typ, id, name, idx) -> ALoc.Register (name, idx, typ)
-  | TempVar (typ, idx) -> ALoc.Register ("Temp", idx, typ)
+let translateDestALoc (dest: Variable) =
+  match dest.Kind with
+  | PCVar (typ) -> ALoc.Register ("PC", dest.Identifier, typ)
+  | RegVar (typ, id, name) -> ALoc.Register (name, dest.Identifier, typ)
+  | TempVar (typ, _) -> ALoc.Register ("Temp", dest.Identifier, typ)
   // TODO: handle MemVar properly.
-  | MemVar (idx) -> ALoc.Temp ("MemVar", idx, 64<rt>)
+  | MemVar -> ALoc.Temp ("MemVar", dest.Identifier, 64<rt>)
 
 let translateALoc (expr: SSA.Expr) =
   match expr with
@@ -613,7 +613,7 @@ let rec evalSSAExpr aloc (expr: SSA.Expr) (env: AbsEnv) ctxt =
     let vs1, _ = evalSSAExpr aloc e1 env ctxt
     if vs1 = ValueSet.True then evalSSAExpr aloc e2 env ctxt
     else evalSSAExpr aloc e3 env ctxt
-  | Return ->
+  | Return (addr)->
     let retALoc =
       match aloc with
       | Register (name, idx, typ) -> ALoc.Register (name, idx - 1, typ)
@@ -626,13 +626,15 @@ let rec evalSSAExpr aloc (expr: SSA.Expr) (env: AbsEnv) ctxt =
     vs, retEnv
   | (_ as e) -> failwithf "evalSSAExpr aloc: Not implemented: %A" e
 
-let genDef n = function
-  | RegVar (ty, r, s, _) -> RegVar(ty,r,s,n)
-  | PCVar (ty, _) -> PCVar(ty,n)
-  | TempVar (ty, _) -> TempVar (ty, n)
-  | MemVar _ -> MemVar n
+let genDef n dest =
+  match dest.Kind with
+  | RegVar (ty, r, s) -> { Kind = dest.Kind; Identifier = n }
+  | PCVar (ty) -> { Kind = dest.Kind; Identifier = n }
+  | TempVar (ty, _) -> { Kind = dest.Kind; Identifier = n }
+  | MemVar -> { Kind = dest.Kind; Identifier = n }
 
-let rec releaseWExpr ctxt dest = function
+let rec releaseWExpr ctxt dest wExpr =
+  match wExpr with
   | Normal expr -> releaseExpr ctxt expr
   | PhiNum ns ->
     let defs = List.map (fun n-> genDef n dest) <| Array.toList ns
@@ -640,10 +642,15 @@ let rec releaseWExpr ctxt dest = function
     let def = List.head defs
     releaseWExpr ctxt dest <| (Map.find def ctxt.Def)
 
-and releaseExpr ctxt = function
+and releaseExpr ctxt expr_ =
+  match expr_ with
   | Num _ as expr -> expr
-  | Var (TempVar _ as dest) -> releaseWExpr ctxt dest <| Map.find dest ctxt.Def
-  | Var _ as expr -> expr
+  | Var dest ->
+    match dest.Kind with
+    | TempVar _ -> releaseWExpr ctxt dest <| Map.find dest ctxt.Def
+    | _ -> expr_
+//  | Var (TempVar _ as dest) -> releaseWExpr ctxt dest <| Map.find dest ctxt.Def
+//  | Var _ as expr -> expr
   | Load (dest, ty, addr) -> Load (dest, ty, releaseExpr ctxt addr)
   | Store (dest, addr, expr) ->
     Store (dest, releaseExpr ctxt addr, releaseExpr ctxt expr)
@@ -694,35 +701,35 @@ let getDest = function
   | _ as e -> failwithf "%A" e
 
 let inferCondFlag = function
-  | (RegVar (_, _, "ZF", _) as dest), RegVar (_, _, _, _)
-  | RegVar (_, _, _, _), (RegVar (_, _, "ZF", _) as dest) -> dest
+  | (RegVar (_, _, "ZF") as dest), RegVar (_, _, _)
+  | RegVar (_, _, _), (RegVar (_, _, "ZF") as dest) -> dest
   | _ as e -> failwithf "infercondFlag %A" e
 
 let calEqCond dest1 dest2 ctxt = function
   | true -> // EQ
     let result = ValueSet.eq dest1 dest2
-    if result = ValueSet.True then Context.setJmpFlag CJmpTrueEdge ctxt
-    elif result = ValueSet.Maybe then Context.setJmpFlag JmpEdge ctxt
-    else Context.setJmpFlag CJmpFalseEdge ctxt
+    if result = ValueSet.True then Context.setJmpFlag InterCJmpTrueEdge ctxt
+    elif result = ValueSet.Maybe then Context.setJmpFlag InterJmpEdge ctxt
+    else Context.setJmpFlag InterCJmpFalseEdge ctxt
   | false ->  // NEQ
     let result = ValueSet.neq dest1 dest2
-    if result = ValueSet.True then Context.setJmpFlag CJmpTrueEdge ctxt
-    elif result = ValueSet.Maybe then Context.setJmpFlag JmpEdge ctxt
-    else Context.setJmpFlag CJmpFalseEdge ctxt
+    if result = ValueSet.True then Context.setJmpFlag InterCJmpTrueEdge ctxt
+    elif result = ValueSet.Maybe then Context.setJmpFlag InterJmpEdge ctxt
+    else Context.setJmpFlag InterCJmpFalseEdge ctxt
 
 let calOrCond dest1 dest2 ctxt =
   let one = ValueSet.one 1<rt>
   let result = ValueSet.bor dest1 dest2
-  if ValueSet.isAll result then Context.setJmpFlag JmpEdge ctxt
-  elif result = one then Context.setJmpFlag CJmpTrueEdge ctxt
-  else Context.setJmpFlag CJmpFalseEdge ctxt
+  if ValueSet.isAll result then Context.setJmpFlag InterJmpEdge ctxt
+  elif result = one then Context.setJmpFlag InterCJmpTrueEdge ctxt
+  else Context.setJmpFlag InterCJmpFalseEdge ctxt
 
 let calAndCond dest1 dest2 ctxt =
   let one = ValueSet.one 1<rt>
   let result = ValueSet.band dest1 dest2
-  if ValueSet.isAll result then Context.setJmpFlag JmpEdge ctxt
-  elif result = one then Context.setJmpFlag CJmpTrueEdge ctxt
-  else Context.setJmpFlag CJmpFalseEdge ctxt
+  if ValueSet.isAll result then Context.setJmpFlag InterJmpEdge ctxt
+  elif result = one then Context.setJmpFlag InterCJmpTrueEdge ctxt
+  else Context.setJmpFlag InterCJmpFalseEdge ctxt
 
 let inferBound si =
   if StridedInterval.isConstSi si then
@@ -736,10 +743,10 @@ let inferBound si =
 
 
 let joinCond ctxt edge =
-  if edge <> CJmpFalseEdge && edge <> CJmpTrueEdge then ctxt, edge
+  if edge <> InterCJmpFalseEdge && edge <> InterCJmpTrueEdge then ctxt, edge
   else
     let getCondSi acc si =
-      let si1, si2 = if edge = CJmpTrueEdge then si, si else inferBound si
+      let si1, si2 = if edge = InterCJmpTrueEdge then si, si else inferBound si
       List.append [si1;si2] acc
     let main env aloc siList =
       let siList = siList |> List.fold getCondSi [] |> List.distinct
@@ -825,19 +832,21 @@ let inferOperandCF ctxt isPos dest =
   | Extract (BinOp _, _, _) -> ctxt
   | _ -> ctxt////printfn "%A" expr; failwith "Not Implemented Yet"
 
-let type1 ctxt = function
-  | RegVar (_, _, "ZF", _) as dest -> inferOperandZF ctxt true dest
-  | RegVar (_, _, "SF", _) as dest -> inferOperandSF ctxt true dest
-  | RegVar (_, _, "CF", _) as dest -> inferOperandCF ctxt true dest
-  | RegVar (_, _, "OF", _) as dest -> ctxt
-  | RegVar (_, _, "PF", _) as dest -> ctxt
+let type1 ctxt var =
+  match var.Kind with
+  | RegVar (_, _, "ZF") as dest -> inferOperandZF ctxt true var
+  | RegVar (_, _, "SF") as dest -> inferOperandSF ctxt true var
+  | RegVar (_, _, "CF") as dest -> inferOperandCF ctxt true var
+  | RegVar (_, _, "OF") as dest -> ctxt
+  | RegVar (_, _, "PF") as dest -> ctxt
   | expr -> ctxt //printfn "%A" expr; failwith "No"
 
-let type2 ctxt = function
-  | RegVar (_, _, "ZF", _) as dest -> inferOperandZF ctxt false dest
-  | RegVar (_, _, "SF", _) as dest -> inferOperandSF ctxt false dest
-  | RegVar (_, _, "CF", _) as dest -> inferOperandCF ctxt false dest
-  | RegVar (_, _, "OF", _) as dest -> ctxt
+let type2 ctxt var =
+  match var.Kind with
+  | RegVar (_, _, "ZF") as dest -> inferOperandZF ctxt false var
+  | RegVar (_, _, "SF") as dest -> inferOperandSF ctxt false var
+  | RegVar (_, _, "CF") as dest -> inferOperandCF ctxt false var
+  | RegVar (_, _, "OF") as dest -> ctxt
   | expr -> ctxt //printfn "%A" expr; failwith "No"
 
 let type3Aux ctxt dest =
@@ -852,10 +861,10 @@ let type3Aux ctxt dest =
   | RelOp (RelOpType.EQ, BinOp (BinOpType.SUB, ty, Var _, Var _), Num _) -> ctxt
   | _ -> ctxt////printfn "%A" expr; failwith "Not Implemented Yet"
 
-let type3 ctxt = function
-  | RegVar (_, _, "CF", _), (RegVar (_, _, "ZF", _) as dest)
-  | (RegVar (_, _, "ZF", _) as dest), RegVar (_, _, "CF", _) ->
-    type3Aux ctxt dest
+let type3 ctxt var1 var2 =
+  match var1.Kind, var2.Kind with
+  | RegVar (_, _, "CF"), (RegVar (_, _, "ZF") as dest) -> type3Aux ctxt var2
+  | (RegVar (_, _, "ZF") as dest), RegVar (_, _, "CF") -> type3Aux ctxt var1
   | _ -> failwith "No"
 
 let type4Aux ctxt dest =
@@ -872,10 +881,10 @@ let type4Aux ctxt dest =
   | RelOp (RelOpType.EQ, BinOp (BinOpType.SUB, ty, Var _, Var _), Num _) -> ctxt
   | _ -> ctxt////printfn "%A" expr; failwith "Not Implemented Yet"
 
-let type4 ctxt = function
-  | RegVar (_, _, "CF", _), (RegVar (_, _, "ZF", _) as dest)
-  | (RegVar (_, _, "ZF", _) as dest), RegVar (_, _, "CF", _) ->
-    type4Aux ctxt dest
+let type4 ctxt var1 var2 =
+  match var1.Kind, var2.Kind with
+  | RegVar (_, _, "CF"), RegVar (_, _, "ZF") -> type4Aux ctxt var2
+  | RegVar (_, _, "ZF"), RegVar (_, _, "CF") -> type4Aux ctxt var1
   | _ -> failwith "No"
 
 let type5Aux ctxt dest =
@@ -896,9 +905,9 @@ let type5Aux ctxt dest =
   | Extract (BinOp (BinOpType.SUB, _, Var _, Load _), _, _) -> ctxt
   | _ -> ctxt////printfn "%A" expr; failwith "Not Implemented Yet"
 
-let type5 ctxt = function
-  | RegVar (_, _, "ZF", _) as dest, RegVar _, RegVar _ ->
-    type5Aux ctxt dest
+let type5 ctxt var1 var2 var3 =
+  match var1.Kind, var2.Kind, var3.Kind with
+  | RegVar (_, _, "ZF") as dest, RegVar _, RegVar _ ->  type5Aux ctxt var1
   | _ -> failwith "No"
 
 let type6Aux ctxt dest =
@@ -919,9 +928,9 @@ let type6Aux ctxt dest =
     else ctxt
   | _ -> ctxt////printfn "%A" expr; failwith "Not Implemented Yet"
 
-let type6 ctxt = function
-  | RegVar (_, _, "ZF", _) as dest, RegVar _, RegVar _ ->
-    type6Aux ctxt dest
+let type6 ctxt var1 var2 var3 =
+  match var1.Kind, var2.Kind, var3.Kind with
+  | RegVar (_, _, "ZF") as dest, RegVar _, RegVar _ -> type6Aux ctxt var1
   | _ -> failwith "No"
 
 let type7Aux ctxt dest =
@@ -931,9 +940,9 @@ let type7Aux ctxt dest =
   | Extract (BinOp (BinOpType.SUB, _, Load _, Var _), _, _) -> ctxt
   | _ -> ctxt////printfn "%A" expr; failwith "Not Implemented Yet"
 
-let type7 ctxt = function
-  | RegVar (_, _, "SF", _) as dest, RegVar _ ->
-    type7Aux ctxt dest
+let type7 ctxt var1 var2 =
+  match var1.Kind, var2.Kind with
+  | RegVar (_, _, "SF") as dest, RegVar _ -> type7Aux ctxt var1
   | _ -> failwith "No"
 
 let type8Aux ctxt dest =
@@ -945,9 +954,9 @@ let type8Aux ctxt dest =
     if dest1 = dest2 then failwith "Not Implemented Yet" else ctxt
   | _ -> ctxt////printfn "%A" expr; failwith "Not Implemented Yet"
 
-let type8 ctxt = function
-  | RegVar (_, _, "SF", _) as dest, RegVar _ ->
-    type8Aux ctxt dest
+let type8 ctxt var1 var2 =
+  match var1.Kind, var2.Kind with
+  | RegVar (_, _, "SF") as dest, RegVar _ -> type8Aux ctxt var1
   | _ -> failwith "No"
 
 let inferCondKind expr ctxt =
@@ -974,7 +983,7 @@ let inferCondKind expr ctxt =
     let vs, _ = lookupALoc (translateDestALoc dest1) ctxt.Env
     let vs1, _ = lookupALoc (translateDestALoc dest2) ctxt.Env
     let ctxt = calOrCond vs vs1 ctxt
-    type3 ctxt (dest1, dest2)
+    type3 ctxt dest1 dest2
   | RelOp (RelOpType.EQ,
            BinOp (BinOpType.OR, 1<rt>, Var (dest1), Var (dest2)),
            Num num) ->
@@ -983,7 +992,7 @@ let inferCondKind expr ctxt =
     let vs = ValueSet.bor vs vs1
     let vs1 = ValueSet.ofBV num
     let ctxt = calEqCond vs vs1 ctxt true
-    type4 ctxt (dest1, dest2)
+    type4 ctxt dest1 dest2
   | BinOp (BinOpType.OR, 1<rt>, Var (dest1),
            RelOp (RelOpType.NEQ, Var (dest2), Var (dest3))) ->
     let vs, _ = lookupALoc (translateDestALoc dest1) ctxt.Env
@@ -991,7 +1000,7 @@ let inferCondKind expr ctxt =
     let vs2, _ = lookupALoc (translateDestALoc dest3) ctxt.Env
     let vs1 = opNeq vs1 vs2
     let ctxt = calOrCond vs vs1 ctxt
-    type5 ctxt (dest1, dest2, dest3)
+    type5 ctxt dest1 dest2 dest3
   | BinOp (BinOpType.AND, 1<rt>, RelOp (RelOpType.EQ, Var (dest1), Num num),
            RelOp (RelOpType.EQ, Var (dest2), Var (dest3))) ->
     let vs1, _ = lookupALoc (translateDestALoc dest1) ctxt.Env
@@ -1001,17 +1010,17 @@ let inferCondKind expr ctxt =
     let vs = opEq vs1 vs2
     let vs1 = opEq vs3 vs4
     let ctxt = calAndCond vs vs1 ctxt
-    type6 ctxt (dest1, dest2, dest3)
+    type6 ctxt dest1 dest2 dest3
   | RelOp (RelOpType.EQ, Var (dest1), Var (dest2)) ->
     let vs, _ = lookupALoc (translateDestALoc dest1) ctxt.Env
     let vs1, _ = lookupALoc (translateDestALoc dest2) ctxt.Env
     let ctxt = calEqCond vs vs1 ctxt true
-    type7 ctxt (dest1, dest2)
+    type7 ctxt dest1 dest2
   | RelOp (RelOpType.NEQ, Var (dest1), Var (dest2)) ->
     let vs, _ = lookupALoc (translateDestALoc dest1) ctxt.Env
     let vs1, _ = lookupALoc (translateDestALoc dest2) ctxt.Env
     let ctxt = calEqCond vs vs1 ctxt false
-    type8 ctxt (dest1, dest2)
+    type8 ctxt dest1 dest2
   | _ as e -> failwithf "%A is not implemented" e
 
 let restoreSP (env: AbsEnv) =
@@ -1033,7 +1042,7 @@ let removeSP env =
     | Register (name, idx, typ) when (name = "RBP" || name = "RSP") -> false
     | _ -> true)
 
-let removeRetAddr (func: Function) ctxt =
+let removeRetAddr ess hdl func_name ctxt =
   //printfn "subcall exit"
   let env = ctxt.Env
   let rec getLastMem alocs retALoc addr =
@@ -1049,9 +1058,7 @@ let removeRetAddr (func: Function) ctxt =
     | Mem (mem, addr, typ) ->
       match mem with
       | Local (name, addr)
-      | Heap (name, addr) ->
-        if name = func.Name then true
-        else false
+      | Heap (name, addr) -> true
       | _ -> false
     | _ -> false
   let aloc = ALoc.Temp ("MemVar", 0, 64<rt>)
@@ -1059,14 +1066,6 @@ let removeRetAddr (func: Function) ctxt =
   let memALocs = alocs |> Seq.filter isMemALoc
   let lastMemALoc = getLastMem memALocs aloc 0L
   Context.addEnv (env |> Map.remove lastMemALoc) ctxt
-
-let fallThroughFunc ctxt (func: Function) =
-  let ssacfg = func.SSACFG
-  let root = ssacfg.GetRoot ()
-  let rootId = root.GetID ()
-  match Map.tryFind rootId ctxt.BBL with
-  | Some x -> true
-  | Option.None -> false
 
 let mergeAtEndCall oldEnv newEnv f f_ ctxt =
   // 1. Remove ESP, EBP of newEnv
@@ -1089,31 +1088,18 @@ let getFunction env funcs addr =
         if BitVector.isTrue <| BitVector.sge value zero then Some(value)
         else Option.None) vs_
       BitVector.toUInt64 value_
-    | Return -> 0UL
+    | Return _ -> 0UL
     | (_ as e) -> failwithf "getFunction not implemented %A" e
   funcs |> Seq.tryPick (fun (KeyValue (k,v)) ->
     if k = funcAddr then Some(v) else Option.None)
-
-let getAddr stmt =
-  match stmt with
-  | Jmp (jmpTyp) ->
-    match jmpTyp with
-    | InterJmp (pc, address) -> address
-    // TODO : Consider other value instead of return
-    | _ -> Return
-  | _ -> Return
 
 let getTempBits aloc expr env ctxt =
   match expr with
   | Store (dest, e1, e2) ->
     let vs1, env1 = evalSSAExpr aloc e1 env ctxt
     ValueSet.getType vs1
-  | Return -> 64<rt>
+  | Return _ -> 64<rt>
   | (_ as e) -> failwithf "getTempBits not implemented %A" e
-
-let getAddr1 (v:Vertex<SSAVertexData>) =
-  let a,b = v.VData.IRVertexData.GetPpoint()
-  if a then fst b else 0UL
 
 let AbstractTransformer (stmt: SSA.Stmt) ctxt (env: AbsEnv) =
   // TODO: Check if we have to translate RSP to RBP or RBP to RSP
@@ -1176,28 +1162,28 @@ let AbstractTransformer (stmt: SSA.Stmt) ctxt (env: AbsEnv) =
     | SideEffect (e) -> ctxt // TODO : Handle sideeffect
   ctxt
 
-let initializeSP (f: Function) (env: AbsEnv)  =
+let initializeSP name addr (env: AbsEnv)  =
   //TODO: Generalize stack pointer a-loc setup
   let sp = Intel.Register.ofRegID X86_64.abi.StackPtrRegister
   let bp = Intel.Register.ofRegID X86_64.abi.StackBasePtrRegister
   let bits = WordSize.toRegType X86_64.abi.WordSize
   let aloc = ALoc.Register (sp.ToString (), 0, bits)
   let aloc1 = ALoc.Register (bp.ToString (), 0, bits)
-  let memRgn = MemRgn.Local (f.Name, f.Entry)
+  let memRgn = MemRgn.Local (name, addr)
   let defaultVS = ValueSet.zeroMemRgn bits memRgn
   env |> Map.add aloc defaultVS |> Map.add aloc1 defaultVS
 
-let initializeAbsEnv (f: Function) =
+let initializeAbsEnv name addr =
   (* TODO: check if we can get/set global a-locs here. Currently, this will be
    * handled lazily *)
-  AbsEnv [] |> initializeSP f
+  AbsEnv [] |> initializeSP name addr
 
 let handleVertex ctxt =
   let handleStmt accCtxt (stmt: SSA.Stmt) =
     AbstractTransformer stmt accCtxt accCtxt.Env
   let succ = ctxt.BBL.[ctxt.CurBBLId]
-  let stmts = succ.VData.GetStmts ()
-  stmts |> List.fold handleStmt ctxt
+  let stmts = succ.VData.Stmts
+  stmts |> Array.toList |> List.fold handleStmt ctxt
 
 (*let readyToEscapeLoop ctxt =
   let id = ctxt.CurBBLId
@@ -1325,44 +1311,51 @@ let getRetDest (par: Vertex<_>) curBBL ctxt =
   Context.setFunCtxt funCtxt ctxt
 
 let pathSens edge ctxt =
-  if ctxt.LoopFlag = -1 then Context.setJmpFlag JmpEdge ctxt, edge
+  if ctxt.LoopFlag = -1 then Context.setJmpFlag InterJmpEdge ctxt, edge
   else
-    if ctxt.JmpFlag = CJmpTrueEdge || ctxt.JmpFlag = CJmpFalseEdge then
+    if ctxt.JmpFlag = InterCJmpTrueEdge || ctxt.JmpFlag = InterCJmpFalseEdge then
       if ctxt.JmpFlag <> edge then ctxt, RetEdge
-      else Context.setJmpFlag JmpEdge ctxt, edge
-    else Context.setJmpFlag JmpEdge ctxt, edge
+      else Context.setJmpFlag InterJmpEdge ctxt, edge
+    else Context.setJmpFlag InterJmpEdge ctxt, edge
 
-let rec intraProceduralVSA ctxt (f: Function) funcs cs  =
-  //printfn "func : %A" (f.Name)
+let getCFG ess hdl addr =
+  let cfg, root = ess.SCFG.GetFunctionCFG addr
+  let lens = SSALens.Init hdl ess.SCFG
+  let cfg, roots = lens.Filter cfg [root] ess.BinaryApparatus
+  let root = List.head roots
+  cfg, root
+
+let intraProceduralVSA ess hdl ctxt name addr cs =
+  (*
   let interProceduralVSA ctxt caller funcs stmt cs =
     let addr = getAddr stmt
-    //printfn "func addr : %A" addr
+    printfn "func addr : %A" addr
     let callee = getFunction ctxt.Env funcs addr
     match callee with
     | Some(callee) ->
       // If we called the function, we will skip the function
-      // if fallThroughFunc ctxt callee then ctxt
-      // else
+      if fallThroughFunc ctxt callee then ctxt
+      else
       // Give last idx register + all Mem instead of oldEnv
-      let env = AbsEnvAPI.changeIdx 0 ctxt.FunCtxt.FEnv
-      let a = ctxt.LoopFlag
-      let ctxt1 = Context.addEnv env ctxt |> Context.setLoopFlag 0
-      let ctxt1 = intraProceduralVSA ctxt1 callee funcs cs
-      let newEnv = ctxt1.Env |> AbsEnvAPI.getLastIdxReg
-      Context.addEnv (mergeAtEndCall ctxt.Env newEnv caller callee ctxt) ctxt
-      |> Context.setLoopFlag a
+        let env = AbsEnvAPI.changeIdx 0 ctxt.FunCtxt.FEnv
+        let a = ctxt.LoopFlag
+        let ctxt1 = Context.addEnv env ctxt |> Context.setLoopFlag 0
+        let ctxt1 = intraProceduralVSA ctxt1 callee funcs cs
+        let newEnv = ctxt1.Env |> AbsEnvAPI.getLastIdxReg
+        Context.addEnv (mergeAtEndCall ctxt.Env newEnv caller callee ctxt) ctxt
+        |> Context.setLoopFlag a
     | Option.None -> ctxt
+    *)
   let env = AbsEnvAPI.removeALocName "RSP" ctxt.Env
-  let ctxt = Context.addEnv (AbsEnvAPI.merge (initializeAbsEnv f) env) ctxt
+  let ctxt = Context.addEnv (AbsEnvAPI.merge (initializeAbsEnv name addr) env) ctxt
   let absEnvMap = AbsEnvMap ();
-  let ssacfg = f.SSACFG
-  let root = ssacfg.GetRoot ()
+  let ssacfg, root = getCFG ess hdl addr
   let rootId = root.GetID ()
-  let rec iterLoop (v: Vertex<SSAVertexData>) pred oldCtxt cs =
+  let rec iterLoop (v: Vertex<SSABBlock>) pred oldCtxt cs =
     let mainLoop edge paramCtxt =
       if edge <> CallEdge || edge <> RetEdge then handleVertex paramCtxt
       else paramCtxt
-    let handleSucc acc (n: Vertex<SSAVertexData>) =
+    let handleSucc acc (n: Vertex<SSABBlock>) =
       let newCtxt = iterLoop n v acc cs
       n.UnVisit()
 //      Context.addRetEnv newCtxt.RetEnv acc |> Context.mergeBBL newCtxt.BBL
@@ -1380,39 +1373,43 @@ let rec intraProceduralVSA ctxt (f: Function) funcs cs  =
       v.Visit()
       let id = v.GetID ()
       let oldCtxt = Context.setCurBBLId id v oldCtxt
-      let edge = ssacfg.FindEdge pred v
+      let edge = ssacfg.FindEdgeData pred v
       let oldCtxt, edge = Context.addEdge oldCtxt.ParBBLId edge oldCtxt
                           |> Context.addBBL id v |> pathSens edge
       let oldCtxt, edge = loopHandler v oldCtxt edge
       let oldCtxt, edge = joinCond oldCtxt edge
       if edge = RetEdge then Context.addRetEnv oldCtxt.Env oldCtxt
       elif edge = CallEdge then
-        let oldCtxt = removeRetAddr f oldCtxt
+        //let oldCtxt = removeRetAddr ess hdl addr oldCtxt
         Context.addRetEnv oldCtxt.Env oldCtxt
       else
         let oldCtxt =
           if edge = FallThroughEdge then
-            removeRetAddr f oldCtxt |> mainLoop edge
+            //removeRetAddr ess hdl addr oldCtxt |> mainLoop edge
+            mainLoop edge oldCtxt
           else mainLoop edge oldCtxt
         if List.isEmpty v.Succs then Context.addRetEnv oldCtxt.Env oldCtxt
         else v.Succs |> List.fold handleSucc oldCtxt
   absEnvMap.[ rootId ] <- ctxt.Env
   iterLoop root root ctxt []
 
-let analyzeVSA (func: Vertex<Function>) funcs_ =
-  let fList, cycleList = LoopAnalysis.main func
-  let main (f:Function) =
+let analyzeVSA ess hdl funcAddrs =
+  let cycleList = LoopAnalysis.main ess hdl funcAddrs
+  let main addr =
+    let name =
+      match hdl.FileInfo.TryFindFunctionSymbolName addr |> Utils.tupleToOpt with
+      | Option.None -> "func_" + addr.ToString("X")
+      | Some name -> name
     try
-      let ssacfg = f.SSACFG
-      let root = ssacfg.GetRoot ()
-      let ctxt = Context.init (initializeAbsEnv f) (root)
+      let ssacfg, root = getCFG ess hdl addr
+      let ctxt = Context.init (initializeAbsEnv name addr) (root)
                  |> Context.addLoopCtxt cycleList
-      let ret = intraProceduralVSA ctxt f funcs_ []
+      let ret = intraProceduralVSA ess hdl ctxt name addr []
       recoverVariables ret.RetEnv
       //printfn "%A %A %A" f.Name (ssacfg.Size()) (Map.toList ret.BBL |> List.length)
-      ret.CFGList |> List.iter (fun (g:SSACFG) -> g.IterVertex (fun (v: SSAVertex) -> v.UnVisit()))
+      //ret.CFGList |> List.iter (fun (g:SSACFG) -> g.IterVertex (fun (v: SSAVertex) -> v.UnVisit()))
     with
-    | _ -> ()
-  fList |> List.iter (fun elem -> main elem)
+    | _ -> ()//printfn "%A error" name
+  funcAddrs |> List.iter (fun elem -> main elem)
   //re |> List.iter (fun elem -> printfn "%A" elem )
   ()

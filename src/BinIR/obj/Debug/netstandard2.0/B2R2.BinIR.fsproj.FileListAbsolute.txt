@@ -1,0 +1,14 @@
+/home/kim/vsa/src/BinIR/bin/Debug/netstandard2.0/B2R2.BinIR.deps.json
+/home/kim/vsa/src/BinIR/bin/Debug/netstandard2.0/B2R2.BinIR.dll
+/home/kim/vsa/src/BinIR/bin/Debug/netstandard2.0/B2R2.BinIR.pdb
+/home/kim/vsa/src/BinIR/bin/Debug/netstandard2.0/B2R2.BinIR.xml
+/home/kim/vsa/src/BinIR/bin/Debug/netstandard2.0/B2R2.Core.dll
+/home/kim/vsa/src/BinIR/bin/Debug/netstandard2.0/B2R2.Core.pdb
+/home/kim/vsa/src/BinIR/bin/Debug/netstandard2.0/B2R2.Core.xml
+/home/kim/vsa/src/BinIR/obj/Debug/netstandard2.0/B2R2.BinIR.fsprojAssemblyReference.cache
+/home/kim/vsa/src/BinIR/obj/Debug/netstandard2.0/B2R2.BinIR.AssemblyInfoInputs.cache
+/home/kim/vsa/src/BinIR/obj/Debug/netstandard2.0/B2R2.BinIR.AssemblyInfo.fs
+/home/kim/vsa/src/BinIR/obj/Debug/netstandard2.0/B2R2.BinIR.fsproj.CopyComplete
+/home/kim/vsa/src/BinIR/obj/Debug/netstandard2.0/B2R2.BinIR.dll
+/home/kim/vsa/src/BinIR/obj/Debug/netstandard2.0/B2R2.BinIR.xml
+/home/kim/vsa/src/BinIR/obj/Debug/netstandard2.0/B2R2.BinIR.pdb
