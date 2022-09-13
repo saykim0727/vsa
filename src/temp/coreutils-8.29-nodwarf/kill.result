@@ -1,9 +1,0 @@
-killFunc_Name                      vsa/dwarf fit_percent over_percent ida/dwarf fit_percent over_percent
-Env 0 ------------
-usage                                1/1        100%          80%       1/1        100%           0%
-main                                 6/7         85%          25%       6/7         85%          25%
-set_program_name                     3/3        100%          25%       3/3        100%           0%
-Dwarf_parsing_error 0
-Function : 4/27
-Total Env : 71% 32%
-Total ida : 71% 6%
